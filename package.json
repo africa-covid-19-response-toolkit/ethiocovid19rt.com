@@ -1,11 +1,11 @@
 {
-  "name": "argon-design-system-react",
+  "name": "ecrt",
   "version": "1.1.0",
-  "description": "React version of Argon Design System by Creative Tim",
+  "description": "Ethiopian COVID-19 Response team",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+    "url": "git+https://github.com/Ethiopia-COVID19/ecrt-website.git"
   },
   "keywords": [
     "react",
@@ -25,7 +25,7 @@
   "author": "Creative Tim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
+    "url": "https://github.com/Ethiopia-COVID19/ecrt-website/issues"
   },
   "homepage": "https://github.com/Ethiopia-COVID19/ecrt-website/",
   "scripts": {
