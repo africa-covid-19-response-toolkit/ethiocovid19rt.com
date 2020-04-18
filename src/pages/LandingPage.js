@@ -1,18 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import classnames from 'classnames';
-
 // reactstrap components
 import {
-  Badge,
   Button,
   Card,
   CardBody,
   CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
@@ -20,10 +12,9 @@ import {
 
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
-import CardsFooter from 'components/Footers/CardsFooter.js';
+import SimpleFooter from 'components/Footers/SimpleFooter.js';
 
 // index page sections
-import Download from 'views/IndexSections/Download.js';
 import Projects from 'components/Projects';
 import Hero from 'components/Hero';
 
@@ -116,56 +107,37 @@ const LandingPage = () => {
                   src={require('assets/img/theme/promo-1.png')}
                 />
               </Col>
-              <Col className="order-md-1" md="6">
-                <div className="pr-md-5">
-                  <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                    <i className="ni ni-settings-gear-65" />
-                  </div>
-                  <h3>Awesome features</h3>
-                  <p>
-                    The kit comes with three pre-built pages to help you get
-                    started faster. You can change the text and images and
-                    you're good to go.
-                  </p>
-                  <ul className="list-unstyled mt-5">
-                    <li className="py-2">
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <Badge className="badge-circle mr-3" color="success">
-                            <i className="ni ni-settings-gear-65" />
-                          </Badge>
-                        </div>
-                        <div>
-                          <h6 className="mb-0">Carefully crafted components</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <Badge className="badge-circle mr-3" color="success">
-                            <i className="ni ni-html5" />
-                          </Badge>
-                        </div>
-                        <div>
-                          <h6 className="mb-0">Amazing page examples</h6>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <Badge className="badge-circle mr-3" color="success">
-                            <i className="ni ni-satisfied" />
-                          </Badge>
-                        </div>
-                        <div>
-                          <h6 className="mb-0">Super friendly support team</h6>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+            </Row>
+            <Row className="row-grid mt-5">
+              <Col lg="4">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-settings text-primary" />
                 </div>
+                <h5 className="text-white mt-3">Building tools</h5>
+                <p className="text-white mt-3">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </Col>
+              <Col lg="4">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-ruler-pencil text-primary" />
+                </div>
+                <h5 className="text-white mt-3">Grow your market</h5>
+                <p className="text-white mt-3">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </Col>
+              <Col lg="4">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-atom text-primary" />
+                </div>
+                <h5 className="text-white mt-3">Launch time</h5>
+                <p className="text-white mt-3">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
               </Col>
             </Row>
           </Container>
@@ -250,7 +222,8 @@ const LandingPage = () => {
             </Row>
           </Container>
         </section>
-        <section className="section pb-0 bg-gradient-warning">
+
+        <section className="section pb-0 bg-gradient-secondary">
           <Container>
             <Row className="row-grid align-items-center">
               <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -258,43 +231,39 @@ const LandingPage = () => {
                   <img
                     alt="..."
                     className="img-center img-fluid"
-                    src={require('assets/img/ill/ill-2.svg')}
+                    src={require('assets/img/theme/africa_covid19_2.svg')}
                   />
                 </div>
               </Col>
               <Col className="order-lg-1" lg="6">
                 <div className="d-flex px-3">
-                  <div>
-                    <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                      <i className="ni ni-building text-primary" />
-                    </div>
-                  </div>
                   <div className="pl-4">
-                    <h4 className="display-3 text-white">Modern Interface</h4>
-                    <p className="text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever.
+                    <h4 className="display-3 text-black">
+                      Africa Covid-19 Response Toolkit
+                    </h4>
+                    <p className="text-black">
+                      Civic Engagement Workstream, is aimed at information,
+                      galvanizing, and coordinating volunteer and civic
+                      organizations responding to COVID-19 in Africa. The civic
+                      engagement team collects all the lessons, solutions and
+                      developed tools so that other groups in other countries in
+                      Africa are also able to take the information, adapt then
+                      implement it in their communities. We use our blog AFRICA
+                      COVID-19 TOOL KIT to collect and disband information.
                     </p>
                   </div>
                 </div>
                 <Card className="shadow shadow-lg--hover mt-5">
                   <CardBody>
                     <div className="d-flex px-3">
-                      <div>
-                        <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
-                          <i className="ni ni-satisfied" />
-                        </div>
-                      </div>
                       <div className="pl-4">
-                        <h5 className="title text-success">Awesome Support</h5>
+                        <h5 className="title text-danger">View Tools</h5>
                         <p>
-                          The Arctic Ocean freezes every winter and much of the
-                          sea-ice then thaws every summer, and that process will
-                          continue whatever.
+                          View our products built under the Tool Kit to collect
+                          and disband information!
                         </p>
                         <a
-                          className="text-success"
+                          className="text-danger"
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
                         >
@@ -307,19 +276,12 @@ const LandingPage = () => {
                 <Card className="shadow shadow-lg--hover mt-5">
                   <CardBody>
                     <div className="d-flex px-3">
-                      <div>
-                        <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                          <i className="ni ni-active-40" />
-                        </div>
-                      </div>
                       <div className="pl-4">
-                        <h5 className="title text-warning">
-                          Modular Components
-                        </h5>
+                        <h5 className="title text-warning">Read Blog</h5>
                         <p>
-                          The Arctic Ocean freezes every winter and much of the
-                          sea-ice then thaws every summer, and that process will
-                          continue whatever.
+                          We use our blog AFRICA COVID-19 TOOL KIT to collect
+                          and disband information. Please read our blog and let
+                          us know what you think!
                         </p>
                         <a
                           className="text-warning"
@@ -349,369 +311,45 @@ const LandingPage = () => {
             </svg>
           </div>
         </section>
+
         <section className="section section-lg">
           <Container>
-            <Row className="justify-content-center text-center mb-lg">
-              <Col lg="8">
-                <h2 className="display-3">The amazing Team</h2>
-                <p className="lead text-muted">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+            <Row className="row-grid justify-content-center">
+              <Col className="text-center" lg="8">
+                <h2 className="display-3">
+                  Do you love this awesome{' '}
+                  <span className="text-success">
+                    work being done by volunteers like you ?
+                  </span>
+                </h2>
+                <p className="lead">
+                  Cause if you do, it can be yours for FREE. Hit the button
+                  below to navigate to Creative Tim where you can find the
+                  Design System in React. Start a new project or give an old
+                  Bootstrap project a new look!
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                <div className="px-4">
-                  <img
-                    alt="..."
-                    className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                    src={require('assets/img/theme/team-1-800x800.jpg')}
-                    style={{ width: '200px' }}
-                  />
-                  <div className="pt-4 text-center">
-                    <h5 className="title">
-                      <span className="d-block mb-1">Ryan Tompson</span>
-                      <small className="h6 text-muted">Web Developer</small>
-                    </h5>
-                    <div className="mt-3">
-                      <Button
-                        className="btn-icon-only rounded-circle"
-                        color="warning"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-twitter" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="warning"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-facebook" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="warning"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-dribbble" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                <div className="px-4">
-                  <img
-                    alt="..."
-                    className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                    src={require('assets/img/theme/team-2-800x800.jpg')}
-                    style={{ width: '200px' }}
-                  />
-                  <div className="pt-4 text-center">
-                    <h5 className="title">
-                      <span className="d-block mb-1">Romina Hadid</span>
-                      <small className="h6 text-muted">
-                        Marketing Strategist
-                      </small>
-                    </h5>
-                    <div className="mt-3">
-                      <Button
-                        className="btn-icon-only rounded-circle"
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-twitter" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-facebook" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-dribbble" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                <div className="px-4">
-                  <img
-                    alt="..."
-                    className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                    src={require('assets/img/theme/team-3-800x800.jpg')}
-                    style={{ width: '200px' }}
-                  />
-                  <div className="pt-4 text-center">
-                    <h5 className="title">
-                      <span className="d-block mb-1">Alexander Smith</span>
-                      <small className="h6 text-muted">UI/UX Designer</small>
-                    </h5>
-                    <div className="mt-3">
-                      <Button
-                        className="btn-icon-only rounded-circle"
-                        color="info"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-twitter" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="info"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-facebook" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="info"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-dribbble" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                <div className="px-4">
-                  <img
-                    alt="..."
-                    className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                    src={require('assets/img/theme/team-4-800x800.jpg')}
-                    style={{ width: '200px' }}
-                  />
-                  <div className="pt-4 text-center">
-                    <h5 className="title">
-                      <span className="d-block mb-1">John Doe</span>
-                      <small className="h6 text-muted">Founder and CEO</small>
-                    </h5>
-                    <div className="mt-3">
-                      <Button
-                        className="btn-icon-only rounded-circle"
-                        color="success"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-twitter" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="success"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-facebook" />
-                      </Button>
-                      <Button
-                        className="btn-icon-only rounded-circle ml-1"
-                        color="success"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fa fa-dribbble" />
-                      </Button>
-                    </div>
-                  </div>
+                <div className="btn-wrapper">
+                  <Button
+                    className="mb-3 mb-sm-0"
+                    color="primary"
+                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                  >
+                    Sign up for our Newsletter
+                  </Button>
+                  <Button
+                    className="mb-3 mb-sm-0"
+                    color="primary"
+                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                  >
+                    Join a project
+                  </Button>
                 </div>
               </Col>
             </Row>
           </Container>
         </section>
-        <section className="section section-lg pt-0">
-          <Container>
-            <Card className="bg-gradient-warning shadow-lg border-0">
-              <div className="p-5">
-                <Row className="align-items-center">
-                  <Col lg="8">
-                    <h3 className="text-white">
-                      We made website building easier for you.
-                    </h3>
-                    <p className="lead text-white mt-3">
-                      I will be the leader of a company that ends up being worth
-                      billions of dollars, because I got the answers. I
-                      understand culture.
-                    </p>
-                  </Col>
-                  <Col className="ml-lg-auto" lg="3">
-                    <Button
-                      block
-                      className="btn-white"
-                      color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                      size="lg"
-                    >
-                      Download React
-                    </Button>
-                  </Col>
-                </Row>
-              </div>
-            </Card>
-          </Container>
-        </section>
-        <section className="section section-lg bg-gradient-default">
-          <Container className="pt-lg pb-300">
-            <Row className="text-center justify-content-center">
-              <Col lg="10">
-                <h2 className="display-3 text-white">Build something</h2>
-                <p className="lead text-white">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice.
-                </p>
-              </Col>
-            </Row>
-            <Row className="row-grid mt-5">
-              <Col lg="4">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i className="ni ni-settings text-primary" />
-                </div>
-                <h5 className="text-white mt-3">Building tools</h5>
-                <p className="text-white mt-3">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </Col>
-              <Col lg="4">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i className="ni ni-ruler-pencil text-primary" />
-                </div>
-                <h5 className="text-white mt-3">Grow your market</h5>
-                <p className="text-white mt-3">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </Col>
-              <Col lg="4">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i className="ni ni-atom text-primary" />
-                </div>
-                <h5 className="text-white mt-3">Launch time</h5>
-                <p className="text-white mt-3">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-          {/* SVG separator */}
-          <div className="separator separator-bottom separator-skew zindex-100">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon className="fill-white" points="2560 0 2560 100 0 100" />
-            </svg>
-          </div>
-        </section>
-        <section className="section section-lg pt-lg-0 section-contact-us">
-          <Container>
-            <Row className="justify-content-center mt--300">
-              <Col lg="8">
-                <Card className="bg-gradient-secondary shadow">
-                  <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Want to work with us?</h4>
-                    <p className="mt-0">
-                      Your project is very important to us.
-                    </p>
-                    <FormGroup
-                      className={classnames('mt-5', {
-                        focused: state.nameFocused,
-                      })}
-                    >
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-user-run" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input
-                          placeholder="Your name"
-                          type="text"
-                          onFocus={(e) =>
-                            setState({ ...state, nameFocused: true })
-                          }
-                          onBlur={(e) =>
-                            setState({ ...state, nameFocused: false })
-                          }
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup
-                      className={classnames({
-                        focused: state.emailFocused,
-                      })}
-                    >
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-email-83" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input
-                          placeholder="Email address"
-                          type="email"
-                          onFocus={(e) =>
-                            setState({ ...state, emailFocused: true })
-                          }
-                          onBlur={(e) =>
-                            setState({ ...state, emailFocused: false })
-                          }
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className="mb-4">
-                      <Input
-                        className="form-control-alternative"
-                        cols="80"
-                        name="name"
-                        placeholder="Type a message..."
-                        rows="4"
-                        type="textarea"
-                      />
-                    </FormGroup>
-                    <div>
-                      <Button
-                        block
-                        className="btn-round"
-                        color="default"
-                        size="lg"
-                        type="button"
-                      >
-                        Send Message
-                      </Button>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <Download />
       </main>
-      <CardsFooter />
+      <SimpleFooter />
     </>
   );
 };
