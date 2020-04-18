@@ -38,7 +38,7 @@ const LandingPage = () => {
         <div className="position-relative">
           {/* shape Hero */}
           <section className="section section-lg section-shaped pb-250">
-            <div className="shape shape-default">
+            <div className="shape shape-style-1 shape-default alpha-4">
               <span />
               <span />
               <span />
