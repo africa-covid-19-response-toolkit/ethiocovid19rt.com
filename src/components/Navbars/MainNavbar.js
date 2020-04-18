@@ -128,6 +128,19 @@ class MainNavbar extends React.Component {
                       Team
                     </NavLink>
                   </NavItem>
+                  <NavItem>
+                    <NavLink
+                      onClick={(e) => {
+                        console.log(this.props);
+                        this.props.history.push('mutalaid');
+                      }}
+                      href=""
+                      role="tab"
+                    >
+                      Mutal Aid
+                    </NavLink>
+                  </NavItem>
+
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>

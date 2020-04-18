@@ -59,7 +59,7 @@ const ProjectCard = ({ project }) => {
               <i className="ni ni-check-bold" />
             </div>
             <h6 className="text-primary text-uppercase">{project.name}</h6>
-            <p className="description mt-3">{project.description}</p>
+            <p className="description mt-3">{project.summary}</p>
             <div>
               {project.tags.map((tag, index) => (
                 <Badge

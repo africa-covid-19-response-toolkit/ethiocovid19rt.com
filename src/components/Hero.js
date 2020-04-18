@@ -8,11 +8,11 @@ const Hero = () => {
       <div className="col px-0">
         <Row>
           <Col lg="12">
-            <h1 className="display-3 text-white">
+            <h1 className="display-3 text-black">
               Ethiopian
-              <span>COVID-19 Response Team</span>
+              <span className="text-black" >COVID-19 Response Team</span>
             </h1>
-            <p className="text-white">
+            <p className="text-black">
               We are a global volunteer team of engineers, health professionals,
               designers, marketing professionals, architects, product managers,
               and other industry professionals. We have mobilized to build and
