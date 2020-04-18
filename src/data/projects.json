@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Project one",
+        "description": "Project one description",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "awareness"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Project two",
+        "description": "Project two description",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "awareness"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Project three",
+        "description": "Project three description",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "awareness"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    }
+]
