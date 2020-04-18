@@ -6,7 +6,8 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   return (
     <>
-      {list.map((project, index) => (
+      {/* Only 3 items to feature */}
+      {list.slice(0, 3).map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
     </>

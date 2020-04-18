@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import { Badge, Button, Card, CardBody, Col, Modal } from 'reactstrap';
+import { truncate } from 'lodash';
 
 const DetailModal = ({ project, isOpen, closeModal }) => (
   <Modal
@@ -59,7 +59,9 @@ const ProjectCard = ({ project }) => {
               <i className="ni ni-check-bold" />
             </div>
             <h6 className="text-primary text-uppercase">{project.name}</h6>
-            <p className="description mt-3">{project.summary}</p>
+            <p className="description mt-3">
+              {truncate(project.summary, { length: 80 })}
+            </p>
             <div>
               {project.tags.map((tag, index) => (
                 <Badge

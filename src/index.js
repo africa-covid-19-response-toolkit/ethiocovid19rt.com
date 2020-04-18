@@ -1,23 +1,6 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import 'assets/vendor/nucleo/css/nucleo.css';
 import 'assets/vendor/font-awesome/css/font-awesome.min.css';
@@ -26,14 +9,24 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 import LandingPage from 'pages/LandingPage';
 import TeamPage from 'pages/TeamPage';
 import MutalAidPage from 'pages/MutualAidPage';
+import ProjectsPage from 'pages/ProjectsPage';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
       <Route path="/team" exact render={(props) => <TeamPage {...props} />} />
-      <Route path="/mutalaid" exact render={(props) => <MutalAidPage {...props} />} />
-      <Redirect to="/" />
+      <Route
+        path="/projects"
+        exact
+        render={(props) => <ProjectsPage {...props} />}
+      />
+      <Route
+        path="/mutalaid"
+        exact
+        render={(props) => <MutalAidPage {...props} />}
+      />
+      {/* <Redirect to="/" /> */}
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')

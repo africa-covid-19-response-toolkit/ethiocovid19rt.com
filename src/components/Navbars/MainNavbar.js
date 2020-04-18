@@ -98,20 +98,29 @@ class MainNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Workstreams</span>
+                      <span className="nav-link-inner--text">Projects</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to="/landing-page" tag={Link}>
-                        Landing
+                      <DropdownItem to="/projects/civic-engagement" tag={Link}>
+                        Civic Engagement
                       </DropdownItem>
-                      <DropdownItem to="/profile-page" tag={Link}>
-                        Profile
+                      <DropdownItem to="/projects/public-awareness" tag={Link}>
+                        Public Awareness
                       </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Login
+                      <DropdownItem
+                        to="/projects/surveillance-reporting"
+                        tag={Link}
+                      >
+                        Surveillance and Reporting
                       </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
+                      <DropdownItem to="/projects/delivery" tag={Link}>
+                        Delivery
+                      </DropdownItem>
+                      <DropdownItem to="/projects/diy-gear" tag={Link}>
+                        DIY Gear
+                      </DropdownItem>
+                      <DropdownItem to="/projects/mutual-aid" tag={Link}>
+                        Mutual Aid
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
@@ -140,7 +149,6 @@ class MainNavbar extends React.Component {
                       Mutal Aid
                     </NavLink>
                   </NavItem>
-
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>

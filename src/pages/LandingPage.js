@@ -80,6 +80,7 @@ const LandingPage = () => {
         </div>
         <section className="section section-sm pt-lg-0 mt--200">
           <Container>
+            <h3>Our Projects</h3>
             <Row className="justify-content-center">
               <Col lg="12">
                 <Row className="row-grid">
@@ -89,7 +90,23 @@ const LandingPage = () => {
             </Row>
           </Container>
         </section>
-        <section className="section section-lg">
+        <section>
+          <Row className="justify-content-center text-center">
+            <Col lg="8">
+              <Button
+                // color="success"
+                size="lg"
+                type="button"
+                className="btn-white text-primary text-uppercase"
+                color="default"
+              >
+                All Our Projects
+              </Button>
+            </Col>
+          </Row>
+        </section>
+
+        {/* <section className="section section-lg">
           <Container>
             <Row className="row-grid align-items-center">
               <Col className="order-md-2" md="6">
@@ -152,7 +169,7 @@ const LandingPage = () => {
               </Col>
             </Row>
           </Container>
-        </section>
+        </section> */}
         <section className="section section-lg">
           <Container>
             <Row className="row-grid align-items-center">
