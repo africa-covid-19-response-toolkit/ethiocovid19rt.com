@@ -153,14 +153,14 @@ const LandingPage = () => {
             </Row>
           </Container>
         </section>
-        <section className="section bg-secondary">
+        <section className="section section-lg">
           <Container>
             <Row className="row-grid align-items-center">
               <Col md="6">
                 <Card className="bg-default shadow border-0">
                   <CardImg
                     alt="..."
-                    src={require('assets/img/theme/img-1-1200x1000.jpg')}
+                    src={require('assets/img/theme/ENELEGNA.JPG')}
                     top
                   />
                   <blockquote className="card-blockquote">

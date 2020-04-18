@@ -1,7 +1,116 @@
 [
     {
-        "name": "Project one",
-        "description": "Project one description",
+        "name": "Civic Engagement",
+        "summary": "Civic Engagement Workstream, is aimed at information, galvanizing SHORT!",
+        "slackChannel": "cccc",
+        "description": "Civic Engagement Workstream, is aimed at information, galvanizing, and coordinating volunteer and civic organizations responding to COVID-19 in Africa. The civic engagement team collects all the lessons, solutions and developed tools so that other groups in other countries in Africa are also able to take the information, adapt then implement it in their communities. We use our blog AFRICA COVID-19 TOOL KIT to collect and disband information. Please read our blog and let us know what you think!",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "civic engagment"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Public Dashboard",
+        "summary": "Unified internal dashboard that shows real-time data on COVID-19 cases",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "surveillance"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "API",
+        "summary": "Creating a single beautiful API to rule them all for critical systems to access and push data- forms, dashboards, bots, SMS",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "surveillance"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Data Collection Bots",
+        "summary": "Unified internal dashboard that shows real-time data on COVID-19 cases",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "surveillance"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Social Media Asset Creation",
+        "summary": "Creating and verifying COVID-19 prevention health information and sharing it on all social media platforms",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "surveillance"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Quarantine location delivery",
+        "summary": "Funding and facilitating food and essential items delivery for quarantine centers, food-insecure families in Ethiopia, and healthcare workers",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "surveillance"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Social Media Asset Creation",
+        "summary": "Creating and verifying COVID-19 prevention health information and sharing it on all social media platforms",
         "tags": [
             {
                 "key": "status",
@@ -18,8 +127,8 @@
         ]
     },
     {
-        "name": "Project two",
-        "description": "Project two description",
+        "name": "Social Media outreach and tracking",
+        "summary": "Establish contact and confirm participation of all influencer & social media partners",
         "tags": [
             {
                 "key": "status",
@@ -36,8 +145,144 @@
         ]
     },
     {
-        "name": "Project three",
-        "description": "Project three description",
+        "name": "Blog Posts",
+        "summary": "To aggregate and share resources created by Ethiopia COVID-19 Response Team and make it available and usable to other countries.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "civic engagment"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Mutual Aid site",
+        "summary": "Create, populate, and moderate a discovery platform to match efforts on the ground with organizations that can provide resources they need",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "civic engagment"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "ECRT Site",
+        "summary": "Focused on building a wesbite for the response team to make it more visible and accessible.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "civic engagment"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Quarantine location delivery",
+        "summary": "Funding and facilitating food and essential items delivery for quarantine centers, food-insecure families in Ethiopia, and healthcare workers.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "food delivery"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "Care packages / delivery promotion to communities",
+        "summary": "Facilitate and promote food delivery in general; Source and support the delivery of care package/food and essentials/ for food-insecure and vulnerable families in Ethiopia.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "food delivery"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "DIY Masks/PPE",
+        "summary": "Research, source and create Personal Protection Equipment alternatives for the general public  in Ethiopia.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "diy gear"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "DIY Ventilator",
+        "summary": "Research, source and create Mechanical Ventilator alternatives in Ethiopia.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "diy gear"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "DIY Face Shields",
+        "summary": "Research and source the production of face shields for medical professionals in Ethiopia.",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "work stream": "diy gear"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ]
+    },
+    {
+        "name": "zz",
+        "summary": "zz",
         "tags": [
             {
                 "key": "status",

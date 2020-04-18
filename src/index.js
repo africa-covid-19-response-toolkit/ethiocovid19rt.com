@@ -25,12 +25,14 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 
 import LandingPage from 'pages/LandingPage';
 import TeamPage from 'pages/TeamPage';
+import MutalAidPage from 'pages/MutualAidPage';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
       <Route path="/team" exact render={(props) => <TeamPage {...props} />} />
+      <Route path="/mutalaid" exact render={(props) => <MutalAidPage {...props} />} />
       <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
