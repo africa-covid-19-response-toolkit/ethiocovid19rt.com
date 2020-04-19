@@ -1,25 +1,9 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 /*eslint-disable*/
 import React from 'react';
 // reactstrap components
 import { Button, Container, Row, Col, UncontrolledTooltip } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 class SimpleFooter extends React.Component {
   render() {
@@ -93,7 +77,7 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip495507257">
                   Star on Github
                 </UncontrolledTooltip>
-                
+
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="twitter"
@@ -105,7 +89,6 @@ class SimpleFooter extends React.Component {
                   </span>
                 </Button>
 
-                
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="youtube"
@@ -117,20 +100,16 @@ class SimpleFooter extends React.Component {
                   </span>
                 </Button>
 
-             
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="twitter"
-                  href="https://t.me/ethiocovid19rt"   
+                  href="https://t.me/ethiocovid19rt"
                   target="_blank"
                 >
                   <span className="btn-inner--icon">
                     <i className="fa fa-telegram" />
                   </span>
                 </Button>
-
-
-
               </Col>
             </Row>
             <hr />
@@ -138,7 +117,9 @@ class SimpleFooter extends React.Component {
               <Col md="6">
                 <div className=" copyright">
                   © {new Date().getFullYear()}{' '}
-                  <Link to={`/#about`}>Ethiopia COVID-19 Response Team</Link>
+                  <HashLink to={`/#about`}>
+                    Ethiopia COVID-19 Response Team
+                  </HashLink>
                 </div>
               </Col>
             </Row>

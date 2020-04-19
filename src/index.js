@@ -11,7 +11,7 @@ import TeamPage from 'pages/TeamPage';
 import ProjectsPage from 'pages/ProjectsPage';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
       <Route

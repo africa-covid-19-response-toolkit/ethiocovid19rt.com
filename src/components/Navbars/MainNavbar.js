@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import Headroom from 'headroom.js';
 // reactstrap components
@@ -89,7 +90,7 @@ class MainNavbar extends React.Component {
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>
-                    <NavLink href="/#about" role="tab">
+                    <NavLink to="/#about" tag={HashLink} role="tab">
                       About
                     </NavLink>
                   </NavItem>
@@ -207,48 +208,46 @@ class MainNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                        className="nav-link-icon"
-                        color="linkedin"
-                        href="https://www.linkedin.com/company/ethiocovid19rt/"
-                        id="tooltip495507257"
-                        target="_blank"
-                      >
-                        <i className="fa fa-linkedin" />
-                        <span className="nav-link-inner--text d-lg-none ml-2">
-                          Github
-                        </span>
-                      </NavLink>
+                      className="nav-link-icon"
+                      color="linkedin"
+                      href="https://www.linkedin.com/company/ethiocovid19rt/"
+                      id="tooltip495507257"
+                      target="_blank"
+                    >
+                      <i className="fa fa-linkedin" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Github
+                      </span>
+                    </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                        className="nav-link-icon"
-                        color="youtube"
-                        href="https://www.youtube.com/company/ethiocovid19rt/"
-                        id="tooltip495507257"
-                        target="_blank"
-                      >
-                        <i className="fa fa-youtube" />
-                        <span className="nav-link-inner--text d-lg-none ml-2">
-                          Youtube
-                        </span>
-                      </NavLink>
-                     
+                      className="nav-link-icon"
+                      color="youtube"
+                      href="https://www.youtube.com/company/ethiocovid19rt/"
+                      id="tooltip495507257"
+                      target="_blank"
+                    >
+                      <i className="fa fa-youtube" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Youtube
+                      </span>
+                    </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                        className="nav-link-icon"
-                        color="youtube"
-                        href="https://t.me/ethiocovid19rt/"
-                        id="tooltip495507257"
-                        target="_blank"
-                      >
-                        <i className="fa fa-telegram" />
-                        <span className="nav-link-inner--text d-lg-none ml-2">
-                          Youtube
-                        </span>
-                      </NavLink>
+                      className="nav-link-icon"
+                      color="youtube"
+                      href="https://t.me/ethiocovid19rt/"
+                      id="tooltip495507257"
+                      target="_blank"
+                    >
+                      <i className="fa fa-telegram" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Youtube
+                      </span>
+                    </NavLink>
                   </NavItem>
-
                 </Nav>
               </UncontrolledCollapse>
             </Container>
