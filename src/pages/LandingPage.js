@@ -190,7 +190,7 @@ const LandingPage = (props) => {
                     <div className="d-flex px-3">
                       <div className="pl-4">
                         <h5 className="title text-dark display-3 ">
-                          Africa Covid-19 Response Toolkit
+                          Africa COVID-19 Response Toolkit
                         </h5>
                         <p className="text-black">
                           Civic Engagement Workstream, is aimed at information,
