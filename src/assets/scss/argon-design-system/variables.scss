@@ -68,14 +68,14 @@ $colors: map-merge((
 ), $colors);
 
 $default:       #ffd600 !default;
-$primary:       #5e72e4 !default;
-$secondary:     #f4f5f7 !default;
+$primary:       #ffd600 !default;
+$secondary:     #007771 !default;
 $success:       $green !default;
 $info:          $teal !default;
 $warning:       $orange !default;
 $danger:        $red !default;
 $light:         $gray-500 !default;
-$dark:          $gray-900 !default;
+$dark:          #790000 !default;
 $darker:        darken($gray-900, 15%) !default;
 
 $facebook:      #3b5999 !default;

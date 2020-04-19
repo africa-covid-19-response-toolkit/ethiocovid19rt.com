@@ -146,7 +146,7 @@ const LandingPage = () => {
           <Container>
             <Row className="row-grid align-items-center">
               <Col md="6">
-                <Card className="bg-default shadow border-0">
+                <Card className="bg-secondary shadow border-0">
                   <CardImg
                     alt="..."
                     src={require('assets/img/theme/ENELEGNA.JPG')}
@@ -155,16 +155,16 @@ const LandingPage = () => {
                   <blockquote className="card-blockquote">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="svg-bg"
+                      className="svg-bg secondary"
                       preserveAspectRatio="none"
                       viewBox="0 0 583 95"
                     >
                       <polygon
-                        className="fill-default"
+                        className="fill-secondary"
                         points="0,52 583,95 0,95"
                       />
                       <polygon
-                        className="fill-default"
+                        className="fill-secondary"
                         opacity=".2"
                         points="0,42 583,95 683,0 0,95"
                       />
@@ -223,7 +223,7 @@ const LandingPage = () => {
           </Container>
         </section>
 
-        <section className="section pb-0 bg-gradient-secondary">
+        <section className="section pb-0 bg-primary">
           <Container>
             <Row className="row-grid align-items-center">
               <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -240,7 +240,7 @@ const LandingPage = () => {
                   <CardBody>
                     <div className="d-flex px-3">
                       <div className="pl-4">
-                        <h5 className="title text-warning display-3 ">
+                        <h5 className="title text-dark display-3 ">
                           Africa Covid-19 Response Toolkit
                         </h5>
                         <p className="text-black">
@@ -257,14 +257,14 @@ const LandingPage = () => {
 
                         <Button
                           className="mb-3"
-                          color="secondary"
+                          color="dark"
                           href="https://medium.com/africa-covid-19-response-toolkit"
                         >
                           Read our blog
                         </Button>
                         <Button
                           className="mb-3 "
-                          color="secondary"
+                          color="dark"
                           href="https://medium.com/africa-covid-19-response-toolkit"
                         >
                           View our Products
@@ -297,7 +297,7 @@ const LandingPage = () => {
               <Col className="text-center" lg="8">
                 <h2 className="display-3">
                   Do you love this awesome{' '}
-                  <span className="text-success">
+                  <span className="text-black">
                     work being done by volunteers like you ?
                   </span>
                 </h2>

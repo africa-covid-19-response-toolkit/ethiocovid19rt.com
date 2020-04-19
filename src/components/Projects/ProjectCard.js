@@ -58,7 +58,7 @@ const ProjectCard = ({ project }) => {
             <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
               <i className="ni ni-check-bold" />
             </div>
-            <h6 className="text-primary text-uppercase">{project.name}</h6>
+            <h6 className="text-black text-uppercase">{project.name}</h6>
             <p className="description mt-3">
               {truncate(project.summary, { length: 80 })}
             </p>
