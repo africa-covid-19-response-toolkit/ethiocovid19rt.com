@@ -71,7 +71,7 @@ const LandingPage = () => {
         </div>
         <section className="section section-sm pt-lg-0 mt--200">
           <Container>
-            <h3>Our Projects</h3>
+            <h3 className="display-4 text-black">Featured Projects</h3>
             <Row className="justify-content-center">
               <Col lg="12">
                 <Row className="row-grid">
@@ -301,26 +301,20 @@ const LandingPage = () => {
                     work being done by volunteers like you ?
                   </span>
                 </h2>
-                <p className="lead">
-                  Cause if you do, it can be yours for FREE. Hit the button
-                  below to navigate to Creative Tim where you can find the
-                  Design System in React. Start a new project or give an old
-                  Bootstrap project a new look!
-                </p>
                 <div className="btn-wrapper">
                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
-                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe1moOVG3JUmE-szQ0Mgf8am65k5QljGLQ_KuyKFGjGO14nvw/viewform"
                   >
-                    Sign up for our Newsletter
+                    Sign up!
                   </Button>
                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
-                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                    href="/projects"
                   >
-                    Join a project
+                    Join an exsisting project
                   </Button>
                 </div>
               </Col>
