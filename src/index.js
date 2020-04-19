@@ -24,7 +24,7 @@ ReactDOM.render(
       <Route
         path="/projects/:slug"
         exact
-        render={(props) => <MainLayout {...props} />}
+        render={(props) => <ProjectsPage {...props} />}
       />
       <Route path="/team" exact render={(props) => <TeamPage {...props} />} />
 

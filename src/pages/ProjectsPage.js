@@ -2,10 +2,10 @@ import React from 'react';
 import MainLayout from 'components/Layout/MainLayout';
 import Projects from 'components/Projects';
 
-const ProjectsPage = () => {
+const ProjectsPage = (props) => {
   return (
     <MainLayout>
-      <Projects />
+      <Projects {...props} />
     </MainLayout>
   );
 };

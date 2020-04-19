@@ -1,8 +1,11 @@
+import CivicEngagementDetail from 'components/Projects/CivicEngagement/CivicEngagementDetail';
+
 export default [
   {
     name: 'Civic Engagement',
     summary:
       'Civic Engagement Workstream, is aimed at information, galvanizing SHORT!',
+    description: `<p>Civic Engagement Workstream, is aimed at information, galvanizing, and coordinating volunteer and civic organizations responding to COVID-19 in Africa. The civic engagement team collects all the lessons, solutions and developed tools so that other groups in other countries in Africa are also able to take the information, adapt then implement it in their communities. We use our blog AFRICA COVID-19 TOOL KIT to collect and disband information. Please read our blog and let us know what you think!</p>`,
     slackChannel: 'cccc',
     tags: [
       {
@@ -17,6 +20,7 @@ export default [
         value: 'needed',
       },
     ],
+    components: [CivicEngagementDetail],
     slug: 'civic-engagement',
   },
   {
@@ -126,7 +130,20 @@ export default [
     name: 'Mutual Aid site',
     slackChannel: 'cccc',
     summary:
-      'Create, populate, and moderate a discovery platform to match efforts on the ground with organizations that can provide resources they need',
+      'Our team of volunteers is able to provide technical, resource-based and awareness support., but it was clear that a better clearing mechanism was needed for people and initiatives that are not part of our platform to access resources like money, connection, and material goods.',
+    description: `<p>Our team of volunteers is able to provide technical, resource-based and awareness support., but it was clear that a better clearing mechanism was needed for people and initiatives that are not part of our platform to access resources like money, connection, and material goods. Mutual-aid refers to a voluntary reciprocal exchange of resources and services for mutual benefit.</p>
+    <p>We, therefore, created a space where efforts on the ground could be matched with resources available through our volunteer group Resources both needed and available for use include volunteers, technical support, funding and so much more. 
+    We require a minimal amount coordination solution for the maximum outcome and impact, and this concept and its execution achieved just that.</p>
+    <iframe
+    title="projects"
+    className="airtable-embed"
+    src="https://airtable.com/embed/shr2J750ULFDomQMO?backgroundColor=gray&viewControls=on"
+    frameBorder="0"
+    width="100%"
+    height="533"
+    style={{ background: 'transparent', border: ' 1px solid #ccc' }}
+  />
+    `,
     tags: [
       {
         key: 'status',
