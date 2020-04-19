@@ -8,9 +8,7 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 
 import LandingPage from 'pages/LandingPage';
 import TeamPage from 'pages/TeamPage';
-import MutalAidPage from 'pages/MutualAidPage';
 import ProjectsPage from 'pages/ProjectsPage';
-import MainLayout from 'components/Layout/MainLayout';
 
 ReactDOM.render(
   <BrowserRouter>

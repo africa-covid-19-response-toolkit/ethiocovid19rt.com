@@ -1,33 +1,7 @@
-import React, { useState } from 'react';
-import { Badge, Button, Card, CardBody, Col, Modal } from 'reactstrap';
+import React from 'react';
+import { Badge, Button, Card, CardBody, Col } from 'reactstrap';
 import { truncate } from 'lodash';
 import { Link } from 'react-router-dom';
-
-const DetailModal = ({ project, isOpen, closeModal }) => (
-  <Modal
-    className="modal-dialog-centered"
-    isOpen={isOpen}
-    toggle={() => closeModal}
-  >
-    <div className="modal-header">
-      <h5 className="modal-title" id="exampleModalLabel">
-        {project.name}
-      </h5>
-      <button
-        aria-label="Close"
-        className="close"
-        data-dismiss="modal"
-        type="button"
-        onClick={closeModal}
-      >
-        <span aria-hidden={true}>×</span>
-      </button>
-    </div>
-    <div className="modal-body">
-      <p>{project.description}</p>
-    </div>
-  </Modal>
-);
 
 const getTagColor = (tag) => {
   switch (tag) {

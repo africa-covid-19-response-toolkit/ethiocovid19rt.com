@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Badge, Row } from 'reactstrap';
+import { Col, Badge, Row } from 'reactstrap';
 
 const CivicEngagementDetail = () => {
   return (
