@@ -93,6 +93,44 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip495507257">
                   Star on Github
                 </UncontrolledTooltip>
+                
+                <Button
+                  className="btn-icon-only rounded-circle ml-1"
+                  color="twitter"
+                  href="https://www.linkedin.com/company/ethiocovid19rt/"
+                  target="_blank"
+                >
+                  <span className="btn-inner--icon">
+                    <i className="fa fa-linkedin" />
+                  </span>
+                </Button>
+
+                
+                <Button
+                  className="btn-icon-only rounded-circle ml-1"
+                  color="youtube"
+                  href="https://www.youtube.com/company/ethiocovid19rt/"
+                  target="_blank"
+                >
+                  <span className="btn-inner--icon">
+                    <i className="fa fa-youtube" />
+                  </span>
+                </Button>
+
+             
+                <Button
+                  className="btn-icon-only rounded-circle ml-1"
+                  color="twitter"
+                  href="https://t.me/ethiocovid19rt"   
+                  target="_blank"
+                >
+                  <span className="btn-inner--icon">
+                    <i className="fa fa-telegram" />
+                  </span>
+                </Button>
+
+
+
               </Col>
             </Row>
             <hr />
