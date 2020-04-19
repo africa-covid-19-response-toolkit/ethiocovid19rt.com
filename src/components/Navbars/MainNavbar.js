@@ -96,7 +96,7 @@ class MainNavbar extends React.Component {
                   </NavItem>
 
                   <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
+                    <DropdownToggle nav to="/projects" tag={Link}>
                       <i className="ni ni-collection d-lg-none mr-1" />
                       <span className="nav-link-inner--text">Projects</span>
                     </DropdownToggle>
@@ -126,27 +126,18 @@ class MainNavbar extends React.Component {
                   </UncontrolledDropdown>
 
                   <NavItem>
-                    <NavLink
-                      onClick={(e) => {
-                        console.log(this.props);
-                        this.props.history.push('team');
-                      }}
-                      href=""
-                      role="tab"
-                    >
+                    <NavLink to="/team" tag={Link} href="" role="tab">
                       Team
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      onClick={(e) => {
-                        console.log(this.props);
-                        this.props.history.push('mutalaid');
-                      }}
+                      to="/projects/mutual-aid"
+                      tag={Link}
                       href=""
                       role="tab"
                     >
-                      Mutal Aid
+                      Mutual Aid
                     </NavLink>
                   </NavItem>
                 </Nav>
