@@ -117,7 +117,7 @@ class SimpleFooter extends React.Component {
               <Col md="6">
                 <div className=" copyright">
                   © {new Date().getFullYear()}{' '}
-                  <HashLink to={`/#about`}>
+                  <HashLink smooth to={`/#about`}>
                     Ethiopia COVID-19 Response Team
                   </HashLink>
                 </div>
