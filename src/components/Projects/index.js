@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectList from './ProjectList';
+
 import { Col, Row, Container } from 'reactstrap';
 
 const Projects = () => {
@@ -20,7 +20,15 @@ const Projects = () => {
 
       <Col lg="12">
         <Row className="row-grid">
-          <ProjectList />
+          <iframe
+            title="projects"
+            className="airtable-embed"
+            src="https://airtable.com/embed/shr2J750ULFDomQMO?backgroundColor=gray&viewControls=on"
+            frameBorder="0"
+            width="100%"
+            height="533"
+            style={{ background: 'transparent', border: ' 1px solid #ccc' }}
+          />
         </Row>
       </Col>
     </>
