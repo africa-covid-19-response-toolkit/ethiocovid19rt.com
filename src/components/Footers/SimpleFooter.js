@@ -16,18 +16,10 @@
 
 */
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col,
-  UncontrolledTooltip
-} from "reactstrap";
+import { Button, Container, Row, Col, UncontrolledTooltip } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class SimpleFooter extends React.Component {
   render() {
@@ -107,14 +99,8 @@ class SimpleFooter extends React.Component {
             <Row className=" text-primary align-items-center justify-content-md-between">
               <Col md="6">
                 <div className=" copyright">
-                  © {new Date().getFullYear()}{" "}
-                  <a
-                    href="/#about"
-                    target="_blank"
-                  >
-                    Ethiopia COVID-19 Response Team
-                  </a>
-                  .
+                  © {new Date().getFullYear()}{' '}
+                  <Link to={`/#about`}>Ethiopia COVID-19 Response Team</Link>
                 </div>
               </Col>
             </Row>

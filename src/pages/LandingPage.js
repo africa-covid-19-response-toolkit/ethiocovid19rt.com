@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 // reactstrap components
 import {
   Button,
@@ -15,16 +15,12 @@ import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
 
 // index page sections
-import Projects from 'components/Projects';
+
 import Hero from 'components/Hero';
+import ProjectList from 'components/Projects/ProjectList';
 
-const LandingPage = () => {
+const LandingPage = (props) => {
   const mainRef = useRef(null);
-
-  const [state, setState] = useState({
-    nameFocused: false,
-    emailFocused: false,
-  });
 
   useEffect(() => {
     document.documentElement.scrollTop = 0;
@@ -75,7 +71,7 @@ const LandingPage = () => {
             <Row className="justify-content-center">
               <Col lg="12">
                 <Row className="row-grid">
-                  <Projects />
+                  <ProjectList limit={3} showIcon showTags />
                 </Row>
               </Col>
             </Row>
@@ -87,6 +83,7 @@ const LandingPage = () => {
               <Button
                 size="lg"
                 className="btn-white text-primary text-uppercase"
+                onClick={() => props.history.push('/projects')}
               >
                 All Projects
               </Button>

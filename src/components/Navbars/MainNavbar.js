@@ -24,7 +24,6 @@ class MainNavbar extends React.Component {
   componentDidMount() {
     let headroom = new Headroom(document.getElementById('navbar-main'));
 
-    // initialise
     headroom.init();
   }
   state = {

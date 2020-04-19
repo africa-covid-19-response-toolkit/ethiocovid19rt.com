@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Badge, Button, Card, CardBody, Col, Modal } from 'reactstrap';
 import { truncate } from 'lodash';
+import { Link } from 'react-router-dom';
 
 const DetailModal = ({ project, isOpen, closeModal }) => (
   <Modal
@@ -41,47 +42,42 @@ const getTagColor = (tag) => {
   }
 };
 
-const ProjectCard = ({ project }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const ProjectCard = ({ project, showIcon = false, showTags = false }) => {
   return (
     <>
-      <DetailModal
-        project={project}
-        isOpen={isOpen}
-        closeModal={() => {
-          setIsOpen(false);
-        }}
-      />
       <Col lg="4">
         <Card className="card-lift--hover shadow border-10">
           <CardBody className="py-10">
-            <div className="icon icon-shape rounded-circle">
-              <i className="fa fa-star text-yellow" />
-            </div>
-            <h6 className="text-black text-uppercase">{project.name}</h6>
+            {showIcon && (
+              <div className="icon icon-shape rounded-circle">
+                <i className="fa fa-star text-yellow" />
+              </div>
+            )}
+            <h6 className="text-black text-uppercase">
+              {truncate(project.name, { length: 24 })}
+            </h6>
             <p className="description mt-3">
-              {truncate(project.summary, { length: 80 })}
+              {truncate(project.summary, { length: 60 })}
             </p>
-            <div>
-              {project.tags.map((tag, index) => (
-                <Badge
-                  key={index}
-                  color={getTagColor(tag.key)}
-                  pill
-                  className="mr-1"
-                >
-                  {tag.value}
-                </Badge>
-              ))}
-            </div>
+            {showTags && (
+              <div>
+                {project.tags.map((tag, index) => (
+                  <Badge
+                    key={index}
+                    color={getTagColor(tag.key)}
+                    pill
+                    className="mr-1"
+                  >
+                    {tag.value}
+                  </Badge>
+                ))}
+              </div>
+            )}
             <Button
               className="mt-4"
               color="primary"
-              href=""
-              onClick={(e) => {
-                e.preventDefault();
-                setIsOpen(true);
-              }}
+              to={`projects/${project.slug}`}
+              tag={Link}
             >
               Learn more
             </Button>

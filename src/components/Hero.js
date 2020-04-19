@@ -9,8 +9,8 @@ const Hero = () => {
         <Row>
           <Col lg="12">
             <h1 className="display-3 text-black">
-              Ethiopian
-              <span className="text-black" >COVID-19 Response Team</span>
+              Ethiopia
+              <span className="text-black">COVID-19 Response Team</span>
             </h1>
             <p className="text-black">
               We are a global volunteer team of engineers, health professionals,
