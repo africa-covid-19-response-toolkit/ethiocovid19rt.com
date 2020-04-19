@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Button, Card, Container, Row, Col } from 'reactstrap';
 import MainNavbar from 'components/Navbars/MainNavbar';
 import SimpleFooter from 'components/Footers/SimpleFooter';
-import Tabs from 'components/Tabs'
+
 
 const TeamPage = () => {
   const mainRef = useRef(null);
@@ -44,7 +44,7 @@ const TeamPage = () => {
        
         <section className="section section-lg section-shaped pb-250">
           <Container>
-            <Tabs />
+         
           </Container>
         </section>
       </main>

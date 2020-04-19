@@ -38,7 +38,7 @@ const LandingPage = () => {
         <div className="position-relative">
           {/* shape Hero */}
           <section className="section section-lg section-shaped pb-250">
-            <div className="shape shape-default">
+            <div className="shape shape-style-1 shape-default alpha-4">
               <span />
               <span />
               <span />
@@ -71,7 +71,7 @@ const LandingPage = () => {
         </div>
         <section className="section section-sm pt-lg-0 mt--200">
           <Container>
-            <h3>Projects</h3>
+            <h3 className="display-4 text-black">Featured Projects</h3>
             <Row className="justify-content-center">
               <Col lg="12">
                 <Row className="row-grid">
@@ -98,7 +98,7 @@ const LandingPage = () => {
           <Container>
             <Row className="row-grid align-items-center">
               <Col md="6">
-                <Card className="bg-default shadow border-0">
+                <Card className="bg-secondary shadow border-0">
                   <CardImg
                     alt="..."
                     src={require('assets/img/theme/ENELEGNA.JPG')}
@@ -107,16 +107,16 @@ const LandingPage = () => {
                   <blockquote className="card-blockquote">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="svg-bg"
+                      className="svg-bg secondary"
                       preserveAspectRatio="none"
                       viewBox="0 0 583 95"
                     >
                       <polygon
-                        className="fill-default"
+                        className="fill-secondary"
                         points="0,52 583,95 0,95"
                       />
                       <polygon
-                        className="fill-default"
+                        className="fill-secondary"
                         opacity=".2"
                         points="0,42 583,95 683,0 0,95"
                       />
@@ -175,7 +175,7 @@ const LandingPage = () => {
           </Container>
         </section>
 
-        <section className="section pb-0 bg-gradient-secondary">
+        <section className="section pb-0 bg-primary">
           <Container>
             <Row className="row-grid align-items-center">
               <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -188,60 +188,39 @@ const LandingPage = () => {
                 </div>
               </Col>
               <Col className="order-lg-1" lg="6">
-                <div className="d-flex px-3">
-                  <div className="pl-4">
-                    <h4 className="display-3 text-black">
-                      Africa Covid-19 Response Toolkit
-                    </h4>
-                    <p className="text-black">
-                      Civic Engagement Workstream, is aimed at information,
-                      galvanizing, and coordinating volunteer and civic
-                      organizations responding to COVID-19 in Africa. The civic
-                      engagement team collects all the lessons, solutions and
-                      developed tools so that other groups in other countries in
-                      Africa are also able to take the information, adapt then
-                      implement it in their communities. We use our blog AFRICA
-                      COVID-19 TOOL KIT to collect and disband information.
-                    </p>
-                  </div>
-                </div>
                 <Card className="shadow shadow-lg--hover mt-5">
                   <CardBody>
                     <div className="d-flex px-3">
                       <div className="pl-4">
-                        <h5 className="title text-danger">View Tools</h5>
-                        <p>
-                          View our products built under the Tool Kit to collect
-                          and disband information!
+                        <h5 className="title text-dark display-3 ">
+                          Africa Covid-19 Response Toolkit
+                        </h5>
+                        <p className="text-black">
+                          Civic Engagement Workstream, is aimed at information,
+                          galvanizing, and coordinating volunteer and civic
+                          organizations responding to COVID-19 in Africa. The
+                          civic engagement team collects all the lessons,
+                          solutions and developed tools so that other groups in
+                          other countries in Africa are also able to take the
+                          information, adapt then implement it in their
+                          communities. We use our blog AFRICA COVID-19 TOOL KIT
+                          to collect and disband information.
                         </p>
-                        <a
-                          className="text-danger"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+
+                        <Button
+                          className="mb-3"
+                          color="dark"
+                          href="https://medium.com/africa-covid-19-response-toolkit"
                         >
-                          Learn more
-                        </a>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="shadow shadow-lg--hover mt-5">
-                  <CardBody>
-                    <div className="d-flex px-3">
-                      <div className="pl-4">
-                        <h5 className="title text-warning">Read Blog</h5>
-                        <p>
-                          We use our blog AFRICA COVID-19 TOOL KIT to collect
-                          and disband information. Please read our blog and let
-                          us know what you think!
-                        </p>
-                        <a
-                          className="text-warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          Read our blog
+                        </Button>
+                        <Button
+                          className="mb-3 "
+                          color="dark"
+                          href="https://medium.com/africa-covid-19-response-toolkit"
                         >
-                          Learn more
-                        </a>
+                          View our Products
+                        </Button>
                       </div>
                     </div>
                   </CardBody>
@@ -270,30 +249,24 @@ const LandingPage = () => {
               <Col className="text-center" lg="8">
                 <h2 className="display-3">
                   Do you love this awesome{' '}
-                  <span className="text-success">
+                  <span className="text-black">
                     work being done by volunteers like you ?
                   </span>
                 </h2>
-                <p className="lead">
-                  Cause if you do, it can be yours for FREE. Hit the button
-                  below to navigate to Creative Tim where you can find the
-                  Design System in React. Start a new project or give an old
-                  Bootstrap project a new look!
-                </p>
                 <div className="btn-wrapper">
                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
-                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe1moOVG3JUmE-szQ0Mgf8am65k5QljGLQ_KuyKFGjGO14nvw/viewform"
                   >
-                    Sign up for our Newsletter
+                    Sign up!
                   </Button>
                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
-                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                    href="/projects"
                   >
-                    Join a project
+                    Join an exsisting project
                   </Button>
                 </div>
               </Col>
