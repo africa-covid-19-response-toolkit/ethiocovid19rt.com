@@ -207,6 +207,7 @@ const LandingPage = (props) => {
                         <Button
                           className="mb-3"
                           color="dark"
+                          target="_blank"
                           href="https://medium.com/africa-covid-19-response-toolkit"
                         >
                           Read our blog
@@ -214,6 +215,7 @@ const LandingPage = (props) => {
                         <Button
                           className="mb-3 "
                           color="dark"
+                          target="_blank"
                           href="https://medium.com/africa-covid-19-response-toolkit"
                         >
                           View our Products
@@ -254,7 +256,8 @@ const LandingPage = (props) => {
                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSe1moOVG3JUmE-szQ0Mgf8am65k5QljGLQ_KuyKFGjGO14nvw/viewform"
+                    target="_blank"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform"
                   >
                     Sign up!
                   </Button>
