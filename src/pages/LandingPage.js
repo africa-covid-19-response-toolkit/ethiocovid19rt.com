@@ -236,60 +236,39 @@ const LandingPage = () => {
                 </div>
               </Col>
               <Col className="order-lg-1" lg="6">
-                <div className="d-flex px-3">
-                  <div className="pl-4">
-                    <h4 className="display-3 text-black">
-                      Africa Covid-19 Response Toolkit
-                    </h4>
-                    <p className="text-black">
-                      Civic Engagement Workstream, is aimed at information,
-                      galvanizing, and coordinating volunteer and civic
-                      organizations responding to COVID-19 in Africa. The civic
-                      engagement team collects all the lessons, solutions and
-                      developed tools so that other groups in other countries in
-                      Africa are also able to take the information, adapt then
-                      implement it in their communities. We use our blog AFRICA
-                      COVID-19 TOOL KIT to collect and disband information.
-                    </p>
-                  </div>
-                </div>
                 <Card className="shadow shadow-lg--hover mt-5">
                   <CardBody>
                     <div className="d-flex px-3">
                       <div className="pl-4">
-                        <h5 className="title text-danger">View Tools</h5>
-                        <p>
-                          View our products built under the Tool Kit to collect
-                          and disband information!
+                        <h5 className="title text-warning display-3 ">
+                          Africa Covid-19 Response Toolkit
+                        </h5>
+                        <p className="text-black">
+                          Civic Engagement Workstream, is aimed at information,
+                          galvanizing, and coordinating volunteer and civic
+                          organizations responding to COVID-19 in Africa. The
+                          civic engagement team collects all the lessons,
+                          solutions and developed tools so that other groups in
+                          other countries in Africa are also able to take the
+                          information, adapt then implement it in their
+                          communities. We use our blog AFRICA COVID-19 TOOL KIT
+                          to collect and disband information.
                         </p>
-                        <a
-                          className="text-danger"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+
+                        <Button
+                          className="mb-3"
+                          color="secondary"
+                          href="https://medium.com/africa-covid-19-response-toolkit"
                         >
-                          Learn more
-                        </a>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="shadow shadow-lg--hover mt-5">
-                  <CardBody>
-                    <div className="d-flex px-3">
-                      <div className="pl-4">
-                        <h5 className="title text-warning">Read Blog</h5>
-                        <p>
-                          We use our blog AFRICA COVID-19 TOOL KIT to collect
-                          and disband information. Please read our blog and let
-                          us know what you think!
-                        </p>
-                        <a
-                          className="text-warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          Read our blog
+                        </Button>
+                        <Button
+                          className="mb-3 "
+                          color="secondary"
+                          href="https://medium.com/africa-covid-19-response-toolkit"
                         >
-                          Learn more
-                        </a>
+                          View our Products
+                        </Button>
                       </div>
                     </div>
                   </CardBody>
