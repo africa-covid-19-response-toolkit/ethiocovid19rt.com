@@ -71,7 +71,7 @@ const LandingPage = () => {
         </div>
         <section className="section section-sm pt-lg-0 mt--200">
           <Container>
-            <h3>Our Projects</h3>
+            <h3>Projects</h3>
             <Row className="justify-content-center">
               <Col lg="12">
                 <Row className="row-grid">
@@ -85,63 +85,15 @@ const LandingPage = () => {
           <Row className="justify-content-center text-center">
             <Col lg="8">
               <Button
-                // color="success"
                 size="lg"
-                type="button"
                 className="btn-white text-primary text-uppercase"
-                color="default"
               >
-                All Our Projects
+                All Projects
               </Button>
             </Col>
           </Row>
         </section>
 
-        {/* <section className="section section-lg">
-          <Container>
-            <Row className="row-grid align-items-center">
-              <Col className="order-md-2" md="6">
-                <img
-                  alt="..."
-                  className="img-fluid floating"
-                  src={require('assets/img/theme/promo-1.png')}
-                />
-              </Col>
-            </Row>
-            <Row className="row-grid mt-5">
-              <Col lg="4">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i className="ni ni-settings text-primary" />
-                </div>
-                <h5 className="text-white mt-3">Building tools</h5>
-                <p className="text-white mt-3">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </Col>
-              <Col lg="4">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i className="ni ni-ruler-pencil text-primary" />
-                </div>
-                <h5 className="text-white mt-3">Grow your market</h5>
-                <p className="text-white mt-3">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </Col>
-              <Col lg="4">
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                  <i className="ni ni-atom text-primary" />
-                </div>
-                <h5 className="text-white mt-3">Launch time</h5>
-                <p className="text-white mt-3">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </section> */}
         <section className="section section-lg">
           <Container>
             <Row className="row-grid align-items-center">

@@ -16,7 +16,8 @@
                 "key": "volunteers",
                 "value": "needed"
             }
-        ]
+        ],
+        "slug": "civic-engagement"
     },
     {
         "name": "Public Dashboard",
@@ -34,7 +35,27 @@
                 "key": "volunteers",
                 "value": "needed"
             }
-        ]
+        ],
+        "slug": "public-awareness"
+    },
+    {
+        "name": "Surveillance and Reporting",
+        "summary": "Unified internal dashboard that shows real-time data on COVID-19 cases",
+        "tags": [
+            {
+                "key": "status",
+                "value": "in progress"
+            },
+            {
+                "key": "work stream",
+                "value": "surveillance"
+            },
+            {
+                "key": "volunteers",
+                "value": "needed"
+            }
+        ],
+        "slug": "public-awareness"
     },
     {
         "name": "API",

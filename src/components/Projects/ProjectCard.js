@@ -54,9 +54,9 @@ const ProjectCard = ({ project }) => {
       />
       <Col lg="4">
         <Card className="card-lift--hover shadow border-10">
-          <CardBody className="py-5">
-            <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-              <i className="ni ni-check-bold" />
+          <CardBody className="py-10">
+            <div className="icon icon-shape rounded-circle">
+              <i className="fa fa-star text-yellow" />
             </div>
             <h6 className="text-primary text-uppercase">{project.name}</h6>
             <p className="description mt-3">
