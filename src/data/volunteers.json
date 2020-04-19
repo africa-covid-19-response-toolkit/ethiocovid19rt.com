@@ -1,7 +1,7 @@
 [
     {
         "name": "Goat Engagement",
-        "workstream": "awareness",
+        "workstream": "diy",
         "lead": "yes",
         "handles": [
             {
@@ -39,4 +39,60 @@
             
    
     }
+    ,  {
+        "name": "Goat Engagement 3",
+        "workstream": "awareness",
+        "lead": "yes",
+        "handles": [
+            {
+                "facebook":  "https://facebook.com",
+                "twitter":  "https://twitter.com",
+                "linkedin": ""
+            }
+        ]
+            
+   
+    },
+  {
+    "name": "Goat Engagement 3",
+    "workstream": "delivery",
+    "lead": "yes",
+    "handles": [
+        {
+            "facebook":  "https://facebook.com",
+            "twitter":  "https://twitter.com",
+            "linkedin": ""
+        }
+    ]
+        
+
+}
+,  {
+    "name": "Goat Engagement 112",
+    "workstream": "civd",
+    "lead": "yes",
+    "handles": [
+        {
+            "facebook":  "https://facebook.com",
+            "twitter":  "https://twitter.com",
+            "linkedin": ""
+        }
+    ]
+        
+
+}
+,  {
+    "name": "Goat Engagement 3",
+    "workstream": "diy",
+    "lead": "yes",
+    "handles": [
+        {
+            "facebook":  "https://facebook.com",
+            "twitter":  "https://twitter.com",
+            "linkedin": ""
+        }
+    ]
+        
+
+}
 ]
