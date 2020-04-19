@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Ethiopia-COVID19/ecrt-website/precache-manifest.f0e8c771adc948e7b4e89ce698732376.js"
+  "/Ethiopia-COVID19/ecrt-website/precache-manifest.b27c30bae219726e06b761de9ddfc137.js"
 );
 
 self.addEventListener('message', (event) => {

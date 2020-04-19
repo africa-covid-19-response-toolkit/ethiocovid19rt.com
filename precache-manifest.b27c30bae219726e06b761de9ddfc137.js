@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d32ab6f4881678917fe764766786af4f",
+    "revision": "c55727d78618ecb85f8454700dd870e3",
     "url": "/Ethiopia-COVID19/ecrt-website/index.html"
   },
   {
-    "revision": "4c63c9b010ff389fe441",
-    "url": "/Ethiopia-COVID19/ecrt-website/static/css/main.892826ed.chunk.css"
+    "revision": "fb68ed177bc5b1f3e291",
+    "url": "/Ethiopia-COVID19/ecrt-website/static/css/main.33c3c567.chunk.css"
   },
   {
-    "revision": "e4b10d0fc272ccde8d97",
-    "url": "/Ethiopia-COVID19/ecrt-website/static/js/2.85956607.chunk.js"
+    "revision": "9b817c78eb83145ee2f6",
+    "url": "/Ethiopia-COVID19/ecrt-website/static/js/2.354d9aff.chunk.js"
   },
   {
     "revision": "f3559a585326a5bcf7c913f6e55005fd",
-    "url": "/Ethiopia-COVID19/ecrt-website/static/js/2.85956607.chunk.js.LICENSE.txt"
+    "url": "/Ethiopia-COVID19/ecrt-website/static/js/2.354d9aff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c63c9b010ff389fe441",
-    "url": "/Ethiopia-COVID19/ecrt-website/static/js/main.ffc4cb21.chunk.js"
+    "revision": "fb68ed177bc5b1f3e291",
+    "url": "/Ethiopia-COVID19/ecrt-website/static/js/main.179cb888.chunk.js"
   },
   {
     "revision": "b5a9e8a22926b73022e8",
@@ -28,8 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ethiopia-COVID19/ecrt-website/static/media/ENELEGNA.aee89369.JPG"
   },
   {
-    "revision": "8cb9ffe7a5d54fdc26549a72adbb4bc4",
-    "url": "/Ethiopia-COVID19/ecrt-website/static/media/africa_covid19_2.8cb9ffe7.svg"
+    "revision": "a2faa9ecf3975bc6ccaa8b4e451f4e76",
+    "url": "/Ethiopia-COVID19/ecrt-website/static/media/acr_toolkit_logo.a2faa9ec.webp"
+  },
+  {
+    "revision": "d5360b11dc4ecede11365c8b68f63a91",
+    "url": "/Ethiopia-COVID19/ecrt-website/static/media/africa_covid19_2.d5360b11.svg"
   },
   {
     "revision": "1aa6308cc5cc01b18a4ffdd717f6c6d8",
