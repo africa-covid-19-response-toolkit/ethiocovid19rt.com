@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from 'react';
 // nodejs library that concatenates classes
 import classnames from 'classnames';
@@ -39,18 +22,21 @@ class TabsSection extends React.Component {
     plainTabs: 1,
     data: [],
   };
+
   toggleNavs = (e, state, index) => {
     e.preventDefault();
     this.setState({
       [state]: index,
     });
   };
+
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
 
     Tabletop.init({
-      key: 'https://docs.google.com/spreadsheets/d/18iq-c-NvggsY3Yl5qElgovUzD6awAXSCzzHZ91Bwbzs/pubhtml',
+      key:
+        'https://docs.google.com/spreadsheets/d/18iq-c-NvggsY3Yl5qElgovUzD6awAXSCzzHZ91Bwbzs/pubhtml',
       simpleSheet: true,
       callback: (googleData) => {
         this.setState({
@@ -59,6 +45,9 @@ class TabsSection extends React.Component {
       },
     });
   }
+
+  renderTable(role) {}
+
   render() {
     const { data } = this.state;
     return (
@@ -152,51 +141,36 @@ class TabsSection extends React.Component {
               <CardBody>
                 <TabContent activeTab={'plainTabs' + this.state.plainTabs}>
                   <TabPane tabId="plainTabs1">
-                    <p className="description">
-                      Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                      cleanse. Mustache cliche tempor, williamsburg carles vegan
-                      helvetica. Reprehenderit butcher retro keffiyeh
-                      dreamcatcher synth.
-                    </p>
-                    <p className="description">
-                      Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                      cleanse.
-                    </p>
-                  </TabPane>
-                  <TabPane tabId="plainTabs2">
-                    <p className="description">
-                      Cosby sweater eu banh mi, qui irure terry richardson ex
-                      squid. Aliquip placeat salvia cillum iphone. Seitan
-                      aliquip quis cardigan american apparel, butcher voluptate
-                      nisi qui.
-                    </p>
-                  </TabPane>
-                  <TabPane tabId="plainTabs3">
-                    <p className="description">
-                      Raw denim you probably haven't heard of them jean shorts
-                      Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                      cleanse. Mustache cliche tempor, williamsburg carles vegan
-                      helvetica. Reprehenderit butcher retro keffiyeh
-                      dreamcatcher synth.
-                    </p>
-                    <table className="table">
+                  <table className="table">
                       <thead>
                         <tr>
                           <th scope="col">Name</th>
-                          <th scope="col">Handle</th>
+                          <th scope="col" colSpan="3">
+                            Social Media
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
                         {data.map((obj) => {
                           return (
                             <tr>
-                              <td>{obj.Name} gag</td>
+                              <td>{obj.Name}</td>
                               <td>
                                 <a
-                                  className="fa fa-facebook-square"
-                                  href={'https://' + obj.LinkedIn}
+                                  className="fa fa-linkedin-square  "
+                                  href={obj.LinkedIn}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-facebook-square "
+                                  href={obj.Facbook}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-twitter-square "
+                                  href={obj.Twitter}
                                 ></a>
                               </td>
                             </tr>
@@ -205,6 +179,169 @@ class TabsSection extends React.Component {
                       </tbody>
                     </table>
                   </TabPane>
+                  <TabPane tabId="plainTabs2">
+                  <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col" colSpan="3">
+                            Social Media
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {data.map((obj) => {
+                          return (
+                            <tr>
+                              <td>{obj.Name}</td>
+                              <td>
+                                <a
+                                  className="fa fa-linkedin-square  "
+                                  href={obj.LinkedIn}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-facebook-square "
+                                  href={obj.Facbook}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-twitter-square "
+                                  href={obj.Twitter}
+                                ></a>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  
+                  </TabPane>
+                  <TabPane tabId="plainTabs3">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col" colSpan="3">
+                            Social Media
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {data.map((obj) => {
+                          return (
+                            <tr>
+                              <td>{obj.Name}</td>
+                              <td>
+                                <a
+                                  className="fa fa-linkedin-square  "
+                                  href={obj.LinkedIn}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-facebook-square "
+                                  href={obj.Facbook}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-twitter-square "
+                                  href={obj.Twitter}
+                                ></a>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  
+                  </TabPane>
+                  <TabPane tabId="plainTabs4">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col" colSpan="3">
+                            Social Media
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {data.map((obj) => {
+                          return (
+                            <tr>
+                              <td>{obj.Name}</td>
+                              <td>
+                                <a
+                                  className="fa fa-linkedin-square  "
+                                  href={obj.LinkedIn}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-facebook-square "
+                                  href={obj.Facbook}
+                                ></a>
+                              </td>
+                              <td>
+                              
+                                <a
+                                  className="fa fa-twitter-square "
+                                  href={obj.Twitter}
+                                ></a>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  
+                  </TabPane>
+                
+                  <TabPane tabId="plainTabs5">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col" colSpan="3">
+                            Social Media
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {data.map((obj) => {
+                          return (
+                            <tr>
+                              <td>{obj.Name}</td>
+                              <td>
+                                <a
+                                  className="fa fa-linkedin-square  "
+                                  href={obj.LinkedIn}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-facebook-square "
+                                  href={obj.Facbook}
+                                ></a>
+                              </td>
+                              <td>
+                                <a
+                                  className="fa fa-twitter-square "
+                                  href={obj.Twitter}
+                                ></a>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  
+                  </TabPane>
+                
                 </TabContent>
               </CardBody>
             </Card>
