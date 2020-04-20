@@ -1,15 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MainLayout from 'components/Layout/MainLayout';
 import Tabs from 'components/Tabs';
-import classnames from "classnames";
 import {
-  Card,
-  CardBody,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Row,
   Col
 } from 'reactstrap';
