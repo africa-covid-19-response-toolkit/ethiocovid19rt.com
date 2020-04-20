@@ -6,8 +6,9 @@ import { Card, Container } from 'reactstrap';
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter';
+import MainLayoutHeader from './MainLayoutHeader';
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ title, description, children }) => {
   const mainRef = useRef(null);
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const MainLayout = ({ children }) => {
     <>
       <MainNavbar />
       <main className="profile-page" ref={mainRef}>
-        <section className="section-profile-cover section-shaped my-0">
+        <section className="section section-lg section-shaped pb-250">
           {/* Circles background */}
           <div className="shape shape-style-1 shape-default alpha-4">
             <span />
@@ -31,6 +32,7 @@ const MainLayout = ({ children }) => {
             <span />
             <span />
           </div>
+          <MainLayoutHeader title={title} description={description} />
           {/* SVG separator */}
           <div className="separator separator-bottom separator-skew">
             <svg
