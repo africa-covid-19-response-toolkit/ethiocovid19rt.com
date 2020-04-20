@@ -82,10 +82,10 @@ const LandingPage = (props) => {
             <Col lg="8">
               <Button
                 size="lg"
-                className="btn-white text-primary text-uppercase"
+                className="btn-default text-black text-uppercase"
                 onClick={() => props.history.push('/projects')}
               >
-                All Projects
+                View All Projects
               </Button>
             </Col>
           </Row>
