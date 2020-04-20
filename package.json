@@ -65,7 +65,8 @@
     "react-router-dom": "5.1.2",
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.4.1",
-    "reactstrap": "8.4.1"
+    "reactstrap": "8.4.1",
+    "tabletop": "^1.6.2"
   },
   "devDependencies": {
     "@types/googlemaps": "3.39.2",

@@ -130,6 +130,12 @@ class MainNavbar extends React.Component {
                       Team
                     </NavLink>
                   </NavItem>
+
+                  <NavItem>
+                    <NavLink to="/volunteers" tag={Link} href="" role="tab">
+                    Volunteers
+                    </NavLink>
+                  </NavItem>
                   <NavItem>
                     <NavLink
                       to="/projects/mutual-aid"

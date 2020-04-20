@@ -9,6 +9,7 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 import LandingPage from 'pages/LandingPage';
 import TeamPage from 'pages/TeamPage';
 import ProjectsPage from 'pages/ProjectsPage';
+import VolunteersPage from 'pages/VolunteersPage';
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -25,6 +26,7 @@ ReactDOM.render(
         render={(props) => <ProjectsPage {...props} />}
       />
       <Route path="/team" exact render={(props) => <TeamPage {...props} />} />
+      <Route path="/volunteers" exact render={(props) => <VolunteersPage {...props} />} />
 
       <Redirect to="/" />
     </Switch>
