@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ecrt-website/static/css/main.fa8e4630.chunk.css",
-    "main.js": "/ecrt-website/static/js/main.fd06bca7.chunk.js",
-    "main.js.map": "/ecrt-website/static/js/main.fd06bca7.chunk.js.map",
+    "main.css": "/ecrt-website/static/css/main.e0d32a30.chunk.css",
+    "main.js": "/ecrt-website/static/js/main.2f8f027a.chunk.js",
+    "main.js.map": "/ecrt-website/static/js/main.2f8f027a.chunk.js.map",
     "runtime-main.js": "/ecrt-website/static/js/runtime-main.459bb09d.js",
     "runtime-main.js.map": "/ecrt-website/static/js/runtime-main.459bb09d.js.map",
-    "static/js/2.e4c54db1.chunk.js": "/ecrt-website/static/js/2.e4c54db1.chunk.js",
-    "static/js/2.e4c54db1.chunk.js.map": "/ecrt-website/static/js/2.e4c54db1.chunk.js.map",
+    "static/js/2.3013974b.chunk.js": "/ecrt-website/static/js/2.3013974b.chunk.js",
+    "static/js/2.3013974b.chunk.js.map": "/ecrt-website/static/js/2.3013974b.chunk.js.map",
     "index.html": "/ecrt-website/index.html",
-    "precache-manifest.6309b1faaa7f8b6512fa1e7f9af72fbf.js": "/ecrt-website/precache-manifest.6309b1faaa7f8b6512fa1e7f9af72fbf.js",
+    "precache-manifest.3fdc3fb42ef3c88d0045644ef84d71ad.js": "/ecrt-website/precache-manifest.3fdc3fb42ef3c88d0045644ef84d71ad.js",
     "service-worker.js": "/ecrt-website/service-worker.js",
-    "static/css/main.fa8e4630.chunk.css.map": "/ecrt-website/static/css/main.fa8e4630.chunk.css.map",
-    "static/js/2.e4c54db1.chunk.js.LICENSE.txt": "/ecrt-website/static/js/2.e4c54db1.chunk.js.LICENSE.txt",
+    "static/css/main.e0d32a30.chunk.css.map": "/ecrt-website/static/css/main.e0d32a30.chunk.css.map",
+    "static/js/2.3013974b.chunk.js.LICENSE.txt": "/ecrt-website/static/js/2.3013974b.chunk.js.LICENSE.txt",
     "static/media/ENELEGNA.JPG": "/ecrt-website/static/media/ENELEGNA.aee89369.JPG",
     "static/media/acr_toolkit_logo.webp": "/ecrt-website/static/media/acr_toolkit_logo.a2faa9ec.webp",
     "static/media/africa_covid19_2.svg": "/ecrt-website/static/media/africa_covid19_2.d5360b11.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.459bb09d.js",
-    "static/js/2.e4c54db1.chunk.js",
-    "static/css/main.fa8e4630.chunk.css",
-    "static/js/main.fd06bca7.chunk.js"
+    "static/js/2.3013974b.chunk.js",
+    "static/css/main.e0d32a30.chunk.css",
+    "static/js/main.2f8f027a.chunk.js"
   ]
 }
