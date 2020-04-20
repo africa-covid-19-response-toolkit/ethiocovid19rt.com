@@ -25,7 +25,6 @@ ReactDOM.render(
         exact
         render={(props) => <ProjectsPage {...props} />}
       />
-      <Route path="/team" exact render={(props) => <TeamPage {...props} />} />
       <Route path="/volunteers" exact render={(props) => <VolunteersPage {...props} />} />
 
       <Redirect to="/" />

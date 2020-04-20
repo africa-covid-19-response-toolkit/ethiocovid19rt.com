@@ -125,12 +125,7 @@ class MainNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
 
-                  <NavItem>
-                    <NavLink to="/team" tag={Link} href="" role="tab">
-                      Team
-                    </NavLink>
-                  </NavItem>
-
+              
                   <NavItem>
                     <NavLink to="/volunteers" tag={Link} href="" role="tab">
                     Volunteers
