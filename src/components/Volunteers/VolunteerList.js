@@ -23,7 +23,7 @@ const Tabs = ({ tabs = [], currentTab }) => (
             className={classnames('mb-sm-3 mb-md-0', {
               active: currentTab === kebabCase(tab),
             })}
-            to={`${kebabCase(tab)}`}
+            to={`volunteers/${kebabCase(tab)}`}
             tag={Link}
             role="tab"
           >
@@ -145,7 +145,6 @@ const VolunteerList = () => {
   }, []);
 
   useEffect(() => {
-    console.log(slug);
     setCurrentTab(slug);
   }, [slug]);
 
