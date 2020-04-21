@@ -7,7 +7,6 @@ import 'assets/vendor/font-awesome/css/font-awesome.min.css';
 import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 
 import LandingPage from 'pages/LandingPage';
-import TeamPage from 'pages/TeamPage';
 import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
 
@@ -16,16 +15,15 @@ ReactDOM.render(
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
       <Route
-        path="/projects"
+        path="/projects/:slug?"
         exact
         render={(props) => <ProjectsPage {...props} />}
       />
       <Route
-        path="/projects/:slug"
+        path="/volunteers/:slug?"
         exact
-        render={(props) => <ProjectsPage {...props} />}
+        render={(props) => <VolunteersPage {...props} />}
       />
-      <Route path="/volunteers" exact render={(props) => <VolunteersPage {...props} />} />
 
       <Redirect to="/" />
     </Switch>
