@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f62cd63.chunk.css",
-    "main.js": "/static/js/main.788c1383.chunk.js",
-    "main.js.map": "/static/js/main.788c1383.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5433e4d5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5433e4d5.js.map",
-    "static/js/2.3013974b.chunk.js": "/static/js/2.3013974b.chunk.js",
-    "static/js/2.3013974b.chunk.js.map": "/static/js/2.3013974b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ba66d1ced409f477ca8f30b0da7d1f93.js": "/precache-manifest.ba66d1ced409f477ca8f30b0da7d1f93.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.9f62cd63.chunk.css.map": "/static/css/main.9f62cd63.chunk.css.map",
-    "static/js/2.3013974b.chunk.js.LICENSE.txt": "/static/js/2.3013974b.chunk.js.LICENSE.txt",
-    "static/media/ENELEGNA.JPG": "/static/media/ENELEGNA.aee89369.JPG",
-    "static/media/acr_toolkit_logo.webp": "/static/media/acr_toolkit_logo.a2faa9ec.webp",
-    "static/media/africa_covid19_2.svg": "/static/media/africa_covid19_2.d5360b11.svg",
-    "static/media/ecrt_logo.png": "/static/media/ecrt_logo.1aa6308c.png",
-    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/nucleo.css": "/static/media/nucleo-icons.f82ec6ba.ttf"
+    "main.css": "/ecrt-website/static/css/main.e0d32a30.chunk.css",
+    "main.js": "/ecrt-website/static/js/main.2f8f027a.chunk.js",
+    "main.js.map": "/ecrt-website/static/js/main.2f8f027a.chunk.js.map",
+    "runtime-main.js": "/ecrt-website/static/js/runtime-main.459bb09d.js",
+    "runtime-main.js.map": "/ecrt-website/static/js/runtime-main.459bb09d.js.map",
+    "static/js/2.3013974b.chunk.js": "/ecrt-website/static/js/2.3013974b.chunk.js",
+    "static/js/2.3013974b.chunk.js.map": "/ecrt-website/static/js/2.3013974b.chunk.js.map",
+    "index.html": "/ecrt-website/index.html",
+    "precache-manifest.3fdc3fb42ef3c88d0045644ef84d71ad.js": "/ecrt-website/precache-manifest.3fdc3fb42ef3c88d0045644ef84d71ad.js",
+    "service-worker.js": "/ecrt-website/service-worker.js",
+    "static/css/main.e0d32a30.chunk.css.map": "/ecrt-website/static/css/main.e0d32a30.chunk.css.map",
+    "static/js/2.3013974b.chunk.js.LICENSE.txt": "/ecrt-website/static/js/2.3013974b.chunk.js.LICENSE.txt",
+    "static/media/ENELEGNA.JPG": "/ecrt-website/static/media/ENELEGNA.aee89369.JPG",
+    "static/media/acr_toolkit_logo.webp": "/ecrt-website/static/media/acr_toolkit_logo.a2faa9ec.webp",
+    "static/media/africa_covid19_2.svg": "/ecrt-website/static/media/africa_covid19_2.d5360b11.svg",
+    "static/media/ecrt_logo.png": "/ecrt-website/static/media/ecrt_logo.1aa6308c.png",
+    "static/media/font-awesome.min.css": "/ecrt-website/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/nucleo.css": "/ecrt-website/static/media/nucleo-icons.f82ec6ba.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.5433e4d5.js",
+    "static/js/runtime-main.459bb09d.js",
     "static/js/2.3013974b.chunk.js",
-    "static/css/main.9f62cd63.chunk.css",
-    "static/js/main.788c1383.chunk.js"
+    "static/css/main.e0d32a30.chunk.css",
+    "static/js/main.2f8f027a.chunk.js"
   ]
 }
