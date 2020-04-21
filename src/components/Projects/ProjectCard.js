@@ -22,16 +22,11 @@ const ProjectCard = ({ project, showIcon = false, showTags = false }) => {
       <Col lg="4">
         <Card className="card-lift--hover shadow border-10">
           <CardBody className="py-10">
-            {showIcon && (
-              <div className="icon icon-shape rounded-circle">
-                <i className="fa fa-star text-yellow" />
-              </div>
-            )}
             <h6 className="text-black text-uppercase">
               {truncate(project.name, { length: 24 })}
             </h6>
             <p className="description mt-3">
-              {truncate(project.summary, { length: 60 })}
+              {truncate(project.summary, { length: 400 })}
             </p>
             {showTags && (
               <div>
@@ -49,7 +44,7 @@ const ProjectCard = ({ project, showIcon = false, showTags = false }) => {
             )}
             <Button
               className="mt-4"
-              color="primary"
+              color="secondary"
               to={`projects/${project.slug}`}
               tag={Link}
             >

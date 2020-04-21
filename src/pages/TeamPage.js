@@ -14,32 +14,70 @@ import {
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
-import volunteerlist from '../data/volunteers.json';
+//import volunteerlist from '../data/volunteers.json';
+import Tabletop from 'tabletop';
 
 class TeamPage extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      data: [],
+    };
+  }
+
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
-  }
 
-  renderTableData(workstreamTable) {
-    return volunteerlist.map((volunteer, index) => {
-      const { name, handles, workstream } = volunteer; //destructuring
-      if (workstream === workstreamTable) {
-        return (
-          <tr key={index}>
-            <td>{name}</td>
-            <td>
-              <a className="fa fa-facebook-square" href={handles.facebook}></a>
-            </td>
-          </tr>
-        );
-      }
+    Tabletop.init({
+      key: 'https://docs.google.com/spreadsheets/d/18iq-c-NvggsY3Yl5qElgovUzD6awAXSCzzHZ91Bwbzs/pubhtml',
+      simpleSheet: true,
+      callback: (googleData) => {
+        this.setState({
+          data: googleData,
+        });
+      },
     });
   }
 
+  renderTableData(a){
+    
+  }
+
+  renderTableDataTwo(data){
+    data.map((obj) => {
+      return (
+        <tr>
+          <td>{obj.Name} gag</td>
+          <td>
+            <a
+              className="fa fa-facebook-square"
+              href={'https://'+obj.LinkedIn}
+            >
+            </a>
+          </td>
+        </tr>
+      );
+    })
+  }
+  /**
+ * 
+ *   return (
+            <tr>
+              <td>{obj.Name} gag</td>
+              <td>
+                <a className="fa fa-facebook-square" href={obj.LinkedIn}>
+                  {obj.LinkedIn}
+                </a>
+              </td>
+            </tr>
+          );
+        });
+ */
+
   render() {
+    const { data } = this.state;
     return (
       <>
         <MainNavbar />
@@ -70,6 +108,7 @@ class TeamPage extends React.Component {
                   points="2560 0 2560 100 0 100"
                 />
               </svg>
+
             </div>
           </section>
           <section className="section">
@@ -105,7 +144,7 @@ class TeamPage extends React.Component {
                     </Col>
                   </Row>
                   <Row className="mt-5 py-5 border-top text-center">
-                    <Col lg="3" classname="text-center mt-5 py-5">
+                    <Col lg="3" className="text-center mt-5 py-5">
                       <Button
                         color="default"
                         block
@@ -160,7 +199,7 @@ class TeamPage extends React.Component {
                       <UncontrolledCollapse toggler="#togglerOps">
                         <Card>
                           <CardBody>
-                            <table class="table">
+                            <table className="table">
                               <thead>
                                 <tr>
                                   <th scope="col">Name</th>
@@ -175,7 +214,7 @@ class TeamPage extends React.Component {
                       <UncontrolledCollapse toggler="#togglersurv">
                         <Card>
                           <CardBody>
-                            <table class="table">
+                            <table className="table">
                               <thead>
                                 <tr>
                                   <th scope="col">Name</th>
@@ -192,7 +231,7 @@ class TeamPage extends React.Component {
                       <UncontrolledCollapse toggler="#togglerawarness">
                         <Card>
                           <CardBody>
-                            <table class="table">
+                            <table className="table">
                               <thead>
                                 <tr>
                                   <th scope="col">Name</th>
@@ -207,7 +246,7 @@ class TeamPage extends React.Component {
                       <UncontrolledCollapse toggler="#togglerdiy">
                         <Card>
                           <CardBody>
-                            <table class="table">
+                            <table className="table">
                               <thead>
                                 <tr>
                                   <th scope="col">Name</th>
@@ -222,14 +261,14 @@ class TeamPage extends React.Component {
                       <UncontrolledCollapse toggler="#togglerdelv">
                         <Card>
                           <CardBody>
-                            <table class="table">
+                            <table className="table">
                               <thead>
                                 <tr>
                                   <th scope="col">Name</th>
                                   <th scope="col">Handle</th>
                                 </tr>
                               </thead>
-                              <tbody>{this.renderTableData('delivery')}</tbody>
+                              <tbody>{this.renderTableDataTwo(data)}</tbody>
                             </table>
                           </CardBody>
                         </Card>
@@ -237,14 +276,29 @@ class TeamPage extends React.Component {
                       <UncontrolledCollapse toggler="#togglercivc">
                         <Card>
                           <CardBody>
-                            <table class="table">
+                            <table className="table">
                               <thead>
                                 <tr>
                                   <th scope="col">Name</th>
                                   <th scope="col">Handle</th>
                                 </tr>
                               </thead>
-                              <tbody>{this.renderTableData('civic')}</tbody>
+                              <tbody>
+                                {data.map((obj) => {
+                                  return (
+                                    <tr>
+                                      <td>{obj.Name} gag</td>
+                                      <td>
+                                        <a
+                                          className="fa fa-facebook-square"
+                                          href={'https://'+obj.LinkedIn}
+                                        >
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  );
+                                })}
+                              </tbody>
                             </table>
                           </CardBody>
                         </Card>
@@ -256,6 +310,7 @@ class TeamPage extends React.Component {
             </Container>
           </section>
         </main>
+
         <SimpleFooter />
       </>
     );

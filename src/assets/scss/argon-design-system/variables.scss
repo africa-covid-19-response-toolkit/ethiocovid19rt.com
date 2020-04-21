@@ -676,9 +676,9 @@ $navbar-nav-link-border-radius:     $border-radius !default;
 $navbar-dark-bg:                    transparent !default;
 $navbar-dark-hover-bg:              rgba(255, 255, 255, .1);
 $navbar-dark-active-bg:             rgba(255, 255, 255, .1);
-$navbar-dark-color:                 rgba($white, .95);
-$navbar-dark-hover-color:           rgba($white, .65);
-$navbar-dark-active-color:          rgba($white, .65);
+$navbar-dark-color:                 rgba($black, .95);
+$navbar-dark-hover-color:           rgba($red, .65);
+$navbar-dark-active-color:          rgba($black, .65);
 $navbar-dark-disabled-color:        rgba($white, .25);
 $navbar-dark-toggler-border-color:  transparent !default;
 
