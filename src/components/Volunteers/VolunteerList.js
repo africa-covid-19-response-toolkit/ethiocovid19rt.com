@@ -3,11 +3,12 @@ import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 import Tabletop from 'tabletop';
 import classnames from 'classnames';
 import { kebabCase } from 'lodash';
+import { Link, useParams } from 'react-router-dom';
 
 const DATA_URL =
   'https://docs.google.com/spreadsheets/d/18iq-c-NvggsY3Yl5qElgovUzD6awAXSCzzHZ91Bwbzs/pubhtml';
 
-const Tabs = ({ tabs = [], currentTab, onTabClick }) => (
+const Tabs = ({ tabs = [], currentTab }) => (
   <div className="nav-wrapper">
     <Nav
       className="nav-fill flex-column flex-md-row"
@@ -22,11 +23,8 @@ const Tabs = ({ tabs = [], currentTab, onTabClick }) => (
             className={classnames('mb-sm-3 mb-md-0', {
               active: currentTab === kebabCase(tab),
             })}
-            onClick={(e) => {
-              e.preventDefault();
-              if (onTabClick) onTabClick(kebabCase(tab));
-            }}
-            href=""
+            to={`${kebabCase(tab)}`}
+            tag={Link}
             role="tab"
           >
             {tab}
@@ -116,8 +114,10 @@ const CurrentTabContent = ({ currentTab, data = [] }) => (
 );
 
 const VolunteerList = () => {
+  const { slug } = useParams();
   const [data, setData] = useState({ tabs: [], tables: {} });
   const [currentTab, setCurrentTab] = useState('');
+
   useEffect(() => {
     Tabletop.init({
       key: DATA_URL,
@@ -136,19 +136,22 @@ const VolunteerList = () => {
         });
         setData(mappedData);
         // Select the first tab by default
-        setCurrentTab(kebabCase(mappedData.tabs[0]));
+        const defaultTab = slug ? slug : kebabCase(mappedData.tabs[0]);
+
+        setCurrentTab(defaultTab);
       },
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    console.log(slug);
+    setCurrentTab(slug);
+  }, [slug]);
 
   return (
     <>
-      <Tabs
-        tabs={data.tabs}
-        currentTab={currentTab}
-        onTabClick={(currentTab) => setCurrentTab(currentTab)}
-      />
-
+      <Tabs tabs={data.tabs} currentTab={currentTab} />
       <CurrentTabContent data={data.tables} currentTab={currentTab} />
     </>
   );
