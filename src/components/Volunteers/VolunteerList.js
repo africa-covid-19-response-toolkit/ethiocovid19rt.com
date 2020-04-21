@@ -23,7 +23,7 @@ const Tabs = ({ tabs = [], currentTab }) => (
             className={classnames('mb-sm-3 mb-md-0', {
               active: currentTab === kebabCase(tab),
             })}
-            to={`volunteers/${kebabCase(tab)}`}
+            to={`/volunteers/${kebabCase(tab)}`}
             tag={Link}
             role="tab"
           >
