@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/Ethiopia-COVID19/ecrt-website/issues"
   },
-  "homepage": "https://ethiopia-covid19.github.io/ecrt-website/",
+  "homepage": "https://ethiocovid19rt.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && cp build/index.html build/404.html && gulp licenses",
