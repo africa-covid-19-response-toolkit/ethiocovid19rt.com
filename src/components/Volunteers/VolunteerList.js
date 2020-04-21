@@ -11,7 +11,7 @@ const DATA_URL =
 const Tabs = ({ tabs = [], currentTab }) => (
   <div className="nav-wrapper">
     <Nav
-      className="nav-fill flex-column flex-md-row"
+      className="nav-fill flex-column flex-md-row "
       id="tabs-icons-text"
       pills
       role="tablist"
@@ -40,25 +40,48 @@ const formatCellData = (type, value) => {
     case 'linkedin':
       return (
         <td key={type.toLocaleLowerCase()} className="text-center">
-          <a href={value}>
-            <i className="fa fa-linkedin-square" />
-          </a>
+          <NavLink
+            className="nav-link-icon"
+            color="linkedin"
+            href={value}
+            id="tooltip495507257"
+            target="_blank"
+          >
+            <i className="fa fa-linkedin" />
+            <span className="nav-link-inner--text d-lg-none ml-2">
+              LinkedIn
+            </span>
+          </NavLink>
         </td>
       );
     case 'twitter':
       return (
         <td key={type.toLocaleLowerCase()} className="text-center">
-          <a href={value}>
-            <i className="fa fa-twitter-square" />
-          </a>
+          <NavLink
+            className="nav-link-icon"
+            color="twitter"
+            href={value}
+            id="tooltip495507257"
+            target="_blank"
+          >
+            <i className="fa fa-twitter" />
+            <span className="nav-link-inner--text d-lg-none ml-2">Twitter</span>
+          </NavLink>
         </td>
       );
     case 'github':
       return (
         <td key={type.toLocaleLowerCase()} className="text-center">
-          <a href={value}>
-            <i className="fa fa-github-square" />
-          </a>
+          <NavLink
+            className="nav-link-icon"
+            color="github"
+            href={value}
+            id="tooltip495507257"
+            target="_blank"
+          >
+            <i className="fa fa-github" />
+            <span className="nav-link-inner--text d-lg-none ml-2">Github</span>
+          </NavLink>
         </td>
       );
 
