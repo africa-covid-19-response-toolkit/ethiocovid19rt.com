@@ -1,34 +1,72 @@
-# [Argon Design System React](https://demos.creative-tim.com/argon-design-system-react?ref=adsr-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Design%20System%20is%20a%20Free%20Bootstrap%204,%20React%20and%20Reactstrap%20Dashboard%20made%20using%20create-react-app%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/argon-design-system-react%20%23react%20%23reactstrap%20%23createreactapp%20%23argon%20%23argondesign%20%23reactkit%20%23argonreact%20%23reactdesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
+<div align="center">
+  <img alt="ACRT Website" src="acrt_19_awareness_website.png" width="650px">
+</div>
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
- ![version](https://img.shields.io/badge/version-1.1.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-design-system-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-design-system-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+# EthiopiaCOVID-19 Response Team Main Site
 
+## View current build (Builds from master branch)
 
-![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-design-system-react/argon-design-system-react.gif)
+```
+https://ethiocovid19rt.com
+```
 
-Start your development with a Design System for [Bootstrap 4](https://getbootstrap.com/?ref=creativetim), [React](https://reactjs.org/?ref=creativetim) and [Reactstrap](https://reactstrap.github.io/?ref=creativetim). It is open source, free and it features many components that can help you create amazing websites.
+## Project setup
 
-**Fully Coded Components**
+```
+yarn
+```
 
-Argon Design System React is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in color, that you can easily modify using SASS files.
+### Compiles and hot-reloads for development
 
-You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Design System is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
+```
+yarn start
+```
 
-Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
+### Compiles and minifies for production
 
-View [all components here](https://demos.creative-tim.com/argon-design-system-react/#/?ref=adsr-github-readme).
+```
+yarn build
+```
 
-**Complex Documentation**
+### Deploy for production to GitHub Pages
 
-Each element is well presented in a very complex documentation. You can read more about the [idea behind this design system here](https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview?ref=adsr-github-readme). You can [check the components here](https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-github-readme) and [the foundation here](https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?ref=adsr-github-readme).
+```
+yarn deploy
+```
 
+### Lints and fixes files
 
+```
+yarn lint
+```
 
-## Quick start
+### Customize configuration
 
-- `npm i argon-design-system-react`
-- [Download from Github](https://github.com/creativetimofficial/argon-design-system-react/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-github-readme).
-- Install with [Bower](https://bower.io/?ref=creativetim): ```bower install argon-design-system-react```.
-- Clone the repo: `git clone https://github.com/creativetimofficial/argon-design-system-react.git`.
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/faithwins"><img src="https://avatars3.githubusercontent.com/u/30636223?v=4" width="100px;" alt=""/><br /><sub><b>faithwins</b></sub></a><br /><a href="https://github.com/Ethiopia-COVID19/covid-19-homepage/commits?author=faithwins" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/gedion"><img src="https://avatars3.githubusercontent.com/u/1224206?v=4" width="100px;" alt=""/><br /><sub><b>Gedion Woldeselassie</b></sub></a><br /><a href="https://github.com/Ethiopia-COVID19/covid-19-homepage/commits?author=gedion" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.twitter.com/mikeendale"><img src="https://avatars1.githubusercontent.com/u/430112?v=4" width="100px;" alt=""/><br /><sub><b>Mike Endale</b></sub></a><br /><a href="https://github.com/Ethiopia-COVID19/covid-19-homepage/commits?author=dotmike" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/abelhbeyene"><img src="https://avatars1.githubusercontent.com/u/12272815?v=4" width="100px;" alt=""/><br /><sub><b>Abel</b></sub></a><br /><a href="https://github.com/Ethiopia-COVID19/covid-19-homepage/commits?author=abelhbeyene" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/tgd-oss"><img src="https://avatars3.githubusercontent.com/u/62493213?v=4" width="100px;" alt=""/><br /><sub><b>tgd-oss</b></sub></a><br /><a href="https://github.com/Ethiopia-COVID19/covid-19-homepage/commits?author=tgd-oss" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
