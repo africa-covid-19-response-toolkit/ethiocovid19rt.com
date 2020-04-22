@@ -212,7 +212,7 @@ class MainNavbar extends React.Component {
                       className="nav-link-icon"
                       color="linkedin"
                       href="https://www.linkedin.com/company/ethiocovid19rt/"
-                      id="tooltip495507257"
+                      id="tooltip49550735339"
                       target="_blank"
                     >
                       <i className="fa fa-linkedin" />
@@ -220,27 +220,33 @@ class MainNavbar extends React.Component {
                         Github
                       </span>
                     </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip49550735339">
+                      Follow us on Linkedin
+                    </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       color="youtube"
                       href="https://www.youtube.com/company/ethiocovid19rt/"
-                      id="tooltip495507257"
                       target="_blank"
+                      id="tooltip495507359"
                     >
                       <i className="fa fa-youtube" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
                         Youtube
                       </span>
                     </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip495507359">
+                      Subscribe on Youtube 
+                    </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       color="youtube"
                       href="https://t.me/ethiocovid19rt/"
-                      id="tooltip495507257"
+                      id="tooltip495507259"
                       target="_blank"
                     >
                       <i className="fa fa-telegram" />
@@ -248,6 +254,9 @@ class MainNavbar extends React.Component {
                         Youtube
                       </span>
                     </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip495507259">
+                      Message us on Telegram
+                    </UncontrolledTooltip>
                   </NavItem>
                 </Nav>
               </UncontrolledCollapse>
