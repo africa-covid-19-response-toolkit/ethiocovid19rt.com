@@ -19,7 +19,11 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
+  Button,
 } from 'reactstrap';
+
+const DONATE_URL =  "https://www.ethiopiatrustfund.org/covid-19-donation/";
+const SINGUP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform";
 
 class MainNavbar extends React.Component {
   componentDidMount() {
@@ -143,7 +147,26 @@ class MainNavbar extends React.Component {
                   </NavItem>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                  <NavItem>
+                <NavItem>
+                <Button
+                    className="mb-3 mb-sm-0"
+                    color="dark"
+                    target="_blank"
+                    href= {DONATE_URL}
+                  >
+                    Donate
+                  </Button>
+                  <Button
+                    className="mb-3 mb-sm-0"
+                    color="dark"
+                    target="_blank"
+                    href={SINGUP_FORM_URL}
+                  >
+                    Sign up!
+                  </Button>
+                </NavItem>
+
+{/*                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       href="https://www.facebook.com/EthioCovid19RT"
@@ -158,6 +181,7 @@ class MainNavbar extends React.Component {
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
                       Like us on Facebook
                     </UncontrolledTooltip>
+                 
                   </NavItem>
                   <NavItem>
                     <NavLink
@@ -257,7 +281,8 @@ class MainNavbar extends React.Component {
                     <UncontrolledTooltip delay={0} target="tooltip495507259">
                       Message us on Telegram
                     </UncontrolledTooltip>
-                  </NavItem>
+                  </NavItem> */}
+               
                 </Nav>
               </UncontrolledCollapse>
             </Container>
