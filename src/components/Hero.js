@@ -4,12 +4,10 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
   Button,
   Container,
   Row,
-  Col,
-  UncontrolledCarousel,
+  Col
 } from 'reactstrap';
 import { truncate } from 'lodash';
 const items = [
@@ -26,7 +24,6 @@ const items = [
     id: 2,
     heading: 'ECRT Partners with EDTF',
     summary: `ADTF Emergency COVID-19 or EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the wellbeing and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
-    // image: `'https://www.ethiopiatrustfund.org/wp-content/uploads/2018/09/edtf-yellow-alt.png`,
     image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
     actionbutton:'Donate',
     buttonLink:
@@ -73,7 +70,7 @@ const Hero = (props) => {
         onExited={() => setAnimating(false)}
         key={item.id}
       >
-        <Container className="py-md">
+        <Container className="py-md align-items-center h-50vh">
           <Row className="justify-content-between align-items-center">
             <Col className="mb-lg-auto" lg="6">
               <h2 className="text-dark font-weight-bold">{item.heading}</h2>
@@ -88,12 +85,11 @@ const Hero = (props) => {
                 {item.actionbutton || 'Read More'}
               </Button>
             </Col>
-            <Col className="mb-5 mb-lg-0" lg="5">
+            <Col className="mb-lg-auto" lg="5">
               <img
                 alt="..."
                 className="img-center img-fluid"
                 src={item.image}
-                // src={require('assets/img/theme/africa_covid19_2.svg')}
               />
             </Col>
           </Row>
@@ -103,7 +99,7 @@ const Hero = (props) => {
   });
 
   return (
-    <Row className="justify-content-between align-items-center">
+    <Row className="justify-content-between align-items-center pt-100 pb-50 ">
       <Col>
         <Carousel activeIndex={activeIndex} next={next} previous={previous}>
           <CarouselIndicators
