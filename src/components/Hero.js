@@ -24,20 +24,18 @@ const items = [
     id: 2,
     heading: 'ECRT Partners with EDTF',
     summary: `ADTF Emergency COVID-19 or EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the wellbeing and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
-    image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
+    image: `${require('assets/img/theme/edtf-yellow.png')}`,
     actionbutton:'Donate',
     buttonLink:
-      'https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page',
+      'https://www.ethiopiatrustfund.org/covid-19-donation/',
   },
   {
     id: 3,
-    heading: 'Slide 3',
-    summary: `Argon Design System comes with four pre-built pages to help you
-    get started faster. You can change the text and images and
-    you're good to go.'`,
-    image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
+    heading: 'What makes a modern-day hero?',
+    summary: `An untold story of the Ethiopian warriors`,
+    image: `${require('assets/img/theme/news_3.png')}`,
     buttonLink:
-      'https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page',
+      'https://medium.com/africa-covid-19-response-toolkit/what-makes-a-modern-day-hero-66ff3c5a0aef',
   },
 ];
 
@@ -74,7 +72,7 @@ const Hero = (props) => {
           <Row className="justify-content-between align-items-center">
             <Col className="mb-lg-auto" lg="6">
               <h2 className="text-dark font-weight-bold">{item.heading}</h2>
-              <p className="lead text-dark mt-4">
+              <p className="text-dark mt-4">
               {truncate(item.summary, { length: 200 })}
               </p>
               <Button
@@ -85,7 +83,7 @@ const Hero = (props) => {
                 {item.actionbutton || 'Read More'}
               </Button>
             </Col>
-            <Col className="mb-lg-auto" lg="5">
+            <Col className="mb-lg-auto align-items-center" lg="5">
               <img
                 alt="..."
                 className="img-center img-fluid"
@@ -99,7 +97,7 @@ const Hero = (props) => {
   });
 
   return (
-    <Row className="justify-content-between align-items-center pt-100 pb-50 ">
+    <Row className="justify-content-between align-items-center pt-50 ">
       <Col>
         <Carousel activeIndex={activeIndex} next={next} previous={previous}>
           <CarouselIndicators
