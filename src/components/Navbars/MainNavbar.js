@@ -104,7 +104,7 @@ class MainNavbar extends React.Component {
                       <i className="ni ni-collection d-lg-none mr-1" />
                       <span className="nav-link-inner--text">Projects</span>
                     </DropdownToggle>
-                    <DropdownMenu>
+                  {/*   <DropdownMenu>
                       <DropdownItem to="/projects/civic-engagement" tag={Link}>
                         Civic Engagement
                       </DropdownItem>
@@ -126,7 +126,7 @@ class MainNavbar extends React.Component {
                       <DropdownItem to="/projects/mutual-aid" tag={Link}>
                         Mutual Aid
                       </DropdownItem>
-                    </DropdownMenu>
+                    </DropdownMenu> */}
                   </UncontrolledDropdown>
 
               
