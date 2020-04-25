@@ -9,6 +9,7 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 import LandingPage from 'pages/LandingPage';
 import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
+import MutualAidPage from 'pages/MutualAidPage';
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -24,6 +25,12 @@ ReactDOM.render(
         exact
         render={(props) => <VolunteersPage {...props} />}
       />
+       <Route
+        path="/mutualaid/:slug?"
+        exact
+        render={(props) => <MutualAidPage {...props} />}
+      />
+
 
       <Redirect to="/" />
     </Switch>

@@ -137,7 +137,7 @@ class MainNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      to="/projects/mutual-aid"
+                      to="/mutualaid"
                       tag={Link}
                       href=""
                       role="tab"
