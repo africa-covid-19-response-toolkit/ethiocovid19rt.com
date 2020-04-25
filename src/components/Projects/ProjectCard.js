@@ -20,13 +20,13 @@ const ProjectCard = ({ project, showIcon = false, showTags = false }) => {
   return (
     <>
       <Col lg="4">
-        <Card className="card-lift--hover shadow border-10">
+        <Card className="card-lift--hover shadow border-10 ">
           <CardBody className="py-10">
             <h6 className="text-black text-uppercase">
               {truncate(project.name, { length: 24 })}
             </h6>
-            <p className="description mt-3">
-              {truncate(project.summary, { length: 400 })}
+            <p className="description mt-3 h-10vh">
+              {truncate(project.summary, { length: 300 })}
             </p>
             {showTags && (
               <div>
