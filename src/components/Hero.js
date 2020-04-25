@@ -23,7 +23,7 @@ const items = [
   {
     id: 2,
     heading: 'ECRT Partners with EDTF',
-    summary: `ADTF Emergency COVID-19 or EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the wellbeing and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
+    summary: `EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the well being and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
     image: `${require('assets/img/theme/edtf-yellow.png')}`,
     actionbutton:'Donate',
     buttonLink:
@@ -32,7 +32,8 @@ const items = [
   {
     id: 3,
     heading: 'What makes a modern-day hero?',
-    summary: `An untold story of the Ethiopian warriors`,
+    summary: `A story of one of  @EthioCovid19RT’s volunteers about why the health care professionals are the modern-day heroes.
+    The story chronicles her personal journey and what we can all do practically to support these brave warriors.`,
     image: `${require('assets/img/theme/news_3.png')}`,
     buttonLink:
       'https://medium.com/africa-covid-19-response-toolkit/what-makes-a-modern-day-hero-66ff3c5a0aef',
@@ -73,7 +74,7 @@ const Hero = (props) => {
             <Col className="mb-lg-auto" lg="6">
               <h2 className="text-dark font-weight-bold">{item.heading}</h2>
               <p className="text-dark mt-4">
-              {truncate(item.summary, { length: 200 })}
+              {truncate(item.summary, { length: 300 })}
               </p>
               <Button
                 className="btn-white mt-4"

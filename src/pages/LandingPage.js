@@ -65,7 +65,7 @@ const LandingPage = (props) => {
           </section>
           {/* 1st Hero Variation */}
         </div>
-        <section className="section section-sm pt-lg-0 mt--200">
+        <section className="section section-sm pt-lg-0 mt--300">
           <Container>
             <h3 className="display-4 text-black">Featured Projects</h3>
             <Row className="justify-content-center">

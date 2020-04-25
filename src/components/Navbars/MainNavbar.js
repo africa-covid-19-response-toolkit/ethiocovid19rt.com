@@ -6,8 +6,8 @@ import Headroom from 'headroom.js';
 // reactstrap components
 import {
   UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
+//  DropdownMenu,
+//  DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
   NavbarBrand,
@@ -18,7 +18,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
+ // UncontrolledTooltip,
   Button,
 } from 'reactstrap';
 
