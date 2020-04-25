@@ -2,6 +2,71 @@ import CivicEngagementDetail from 'components/Projects/CivicEngagement/CivicEnga
 
 export default [
   {
+    name: 'Surveillance Forms',
+    slackChannel: 'cccc',
+    summary:
+      'Unified internal dashboard that shows real-time data on COVID-19 cases',
+    tags: [
+      {
+        key: 'status',
+        value: 'in progress',
+      },
+      {
+        key: 'work stream',
+        value: 'surveillance',
+      },
+      {
+        key: 'volunteers',
+        value: 'needed',
+      },
+    ],
+    slug: 'surveillance-reporting',
+    url: 'https://github.com/africa-covid-19-response-toolkit/surveillance-forms'
+  },
+  {
+    name: 'Internal Dashboard',
+    slackChannel: 'cccc',
+    summary:
+      'Internal dashboard for officials to get real time data and updates on COVID-19 on surveillance, case tracking, and monitoring.',
+    tags: [
+      {
+        key: 'status',
+        value: 'in progress',
+      },
+      {
+        key: 'work stream',
+        value: 'surveillance',
+      },
+      {
+        key: 'volunteers',
+        value: 'needed',
+      },
+    ],
+    slug: 'public-awareness',
+    url: 'https://github.com/africa-covid-19-response-toolkit/internal-dashboard'
+  },
+  {
+    name: 'API',
+    slackChannel: 'cccc',
+    url: 'https://github.com/africa-covid-19-response-toolkit/api',
+    summary:
+      'Creating a single beautiful API to rule them all for critical systems to access and push data- forms, dashboards, bots, SMS',
+    tags: [
+      {
+        key: 'status',
+        value: 'in progress',
+      },
+      {
+        key: 'work stream',
+        value: 'surveillance',
+      },
+      {
+        key: 'volunteers',
+        value: 'needed',
+      },
+    ],
+  },
+  {
     name: 'Civic Engagement',
     summary:
       'Civic Engagement Workstream, is aimed at information, galvanizing SHORT!',
@@ -22,68 +87,6 @@ export default [
     ],
     components: [CivicEngagementDetail],
     slug: 'civic-engagement',
-  },
-  {
-    name: 'Public Dashboard',
-    slackChannel: 'cccc',
-    summary:
-      'Unified internal dashboard that shows real-time data on COVID-19 cases',
-    tags: [
-      {
-        key: 'status',
-        value: 'in progress',
-      },
-      {
-        key: 'work stream',
-        value: 'surveillance',
-      },
-      {
-        key: 'volunteers',
-        value: 'needed',
-      },
-    ],
-    slug: 'public-awareness',
-  },
-  {
-    name: 'API',
-    slackChannel: 'cccc',
-    summary:
-      'Creating a single beautiful API to rule them all for critical systems to access and push data- forms, dashboards, bots, SMS',
-    tags: [
-      {
-        key: 'status',
-        value: 'in progress',
-      },
-      {
-        key: 'work stream',
-        value: 'surveillance',
-      },
-      {
-        key: 'volunteers',
-        value: 'needed',
-      },
-    ],
-  },
-  {
-    name: 'Surveillance and Reporting',
-    slackChannel: 'cccc',
-    summary:
-      'Unified internal dashboard that shows real-time data on COVID-19 cases',
-    tags: [
-      {
-        key: 'status',
-        value: 'in progress',
-      },
-      {
-        key: 'work stream',
-        value: 'surveillance',
-      },
-      {
-        key: 'volunteers',
-        value: 'needed',
-      },
-    ],
-    slug: 'surveillance-reporting',
   },
   {
     name: 'Delivery',

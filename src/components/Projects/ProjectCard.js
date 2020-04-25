@@ -45,8 +45,10 @@ const ProjectCard = ({ project, showIcon = false, showTags = false }) => {
             <Button
               className="mt-4"
               color="secondary"
-              to={`projects/${project.slug}`}
-              tag={Link}
+              target="_blank"
+              href= {project.url}
+            //  to={ `${project.url}`||`projects/${project.slug}`}
+            //  tag={Link}
             >
               Learn more
             </Button>
