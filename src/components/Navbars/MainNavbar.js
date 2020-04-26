@@ -145,6 +145,16 @@ class MainNavbar extends React.Component {
                       Mutual Aid
                     </NavLink>
                   </NavItem>
+                  <NavItem>
+                    <NavLink
+                      to="/mutualaidform"
+                      tag={Link}
+                      href=""
+                      role="tab"
+                    >
+                      Mutual Aid Form
+                    </NavLink>
+                  </NavItem>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                 <NavItem>
