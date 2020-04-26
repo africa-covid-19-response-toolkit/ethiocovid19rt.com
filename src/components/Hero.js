@@ -7,7 +7,7 @@ import {
   Button,
   Container,
   Row,
-  Col
+  Col,
 } from 'reactstrap';
 import { truncate } from 'lodash';
 const items = [
@@ -25,9 +25,8 @@ const items = [
     heading: 'ECRT Partners with EDTF',
     summary: `EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the well being and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
     image: `${require('assets/img/theme/edtf-yellow.png')}`,
-    actionbutton:'Donate',
-    buttonLink:
-      'https://www.ethiopiatrustfund.org/covid-19-donation/',
+    actionbutton: 'Donate',
+    buttonLink: 'https://www.ethiopiatrustfund.org/covid-19-donation/',
   },
   {
     id: 3,
@@ -62,7 +61,6 @@ const Hero = (props) => {
   };
 
   const slides = items.map((item) => {
-    
     return (
       <CarouselItem
         onExiting={() => setAnimating(true)}
@@ -74,7 +72,7 @@ const Hero = (props) => {
             <Col className="mb-lg-auto" lg="6">
               <h2 className="text-dark font-weight-bold">{item.heading}</h2>
               <p className="text-dark mt-4">
-              {truncate(item.summary, { length: 300 })}
+                {truncate(item.summary, { length: 300 })}
               </p>
               <Button
                 className="btn-white mt-4"
@@ -100,7 +98,12 @@ const Hero = (props) => {
   return (
     <Row className="justify-content-between align-items-center pt-50 ">
       <Col>
-        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <Carousel
+          ride="carousel"
+          activeIndex={activeIndex}
+          next={next}
+          previous={previous}
+        >
           <CarouselIndicators
             items={items}
             activeIndex={activeIndex}
