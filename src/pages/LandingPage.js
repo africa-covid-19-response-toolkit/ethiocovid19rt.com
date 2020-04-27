@@ -262,13 +262,13 @@ const LandingPage = (props) => {
                   >
                     Sign up!
                   </Button>
-                  <Button
+{/*                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
                     href="/projects"
                   >
                     Join an exsisting project
-                  </Button>
+                  </Button> */}
                 </div>
               </Col>
             </Row>

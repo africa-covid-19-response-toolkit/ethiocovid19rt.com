@@ -22,7 +22,7 @@ import {
   Button,
 } from 'reactstrap';
 
-const DONATE_URL =  "https://www.ethiopiatrustfund.org/covid-19-donation/";
+const DONATE_URL =  "https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/";
 const SINGUP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform";
 
 class MainNavbar extends React.Component {
@@ -98,13 +98,19 @@ class MainNavbar extends React.Component {
                       About
                     </NavLink>
                   </NavItem>
-
+                  
+                  <NavItem>
+                    <NavLink smooth href= "https://github.com/africa-covid-19-response-toolkit/"  role="tab">
+                      Projects
+                    </NavLink>
+                  </NavItem>
+  {/*  
                   <UncontrolledDropdown nav>
-                    <DropdownToggle nav to="/projects" tag={Link}>
+                    <DropdownToggle nav  href= "https://github.com/africa-covid-19-response-toolkit/" tag={Link}>
                       <i className="ni ni-collection d-lg-none mr-1" />
                       <span className="nav-link-inner--text">Projects</span>
                     </DropdownToggle>
-                  {/*   <DropdownMenu>
+                 <DropdownMenu>
                       <DropdownItem to="/projects/civic-engagement" tag={Link}>
                         Civic Engagement
                       </DropdownItem>
@@ -126,8 +132,8 @@ class MainNavbar extends React.Component {
                       <DropdownItem to="/projects/mutual-aid" tag={Link}>
                         Mutual Aid
                       </DropdownItem>
-                    </DropdownMenu> */}
-                  </UncontrolledDropdown>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>  */}
 
               
                   <NavItem>

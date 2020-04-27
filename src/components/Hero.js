@@ -26,7 +26,7 @@ const items = [
     summary: `EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the well being and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
     image: `${require('assets/img/theme/edtf-yellow.png')}`,
     actionbutton: 'Donate',
-    buttonLink: 'https://www.ethiopiatrustfund.org/covid-19-donation/',
+    buttonLink: 'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
   },
   {
     id: 3,
