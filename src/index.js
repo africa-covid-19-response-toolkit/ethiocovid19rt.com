@@ -10,7 +10,6 @@ import LandingPage from 'pages/LandingPage';
 import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
 import MutualAidPage from 'pages/MutualAidPage';
-import MutualAidContactForm from 'pages/MutualAidContactForm';
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -31,10 +30,7 @@ ReactDOM.render(
         exact
         render={(props) => <MutualAidPage {...props} />}
       />
-      <Route
-        path="/mutualaidform:slug?"
-        render={(props) => <MutualAidContactForm {...props} />}
-      />
+
 
 
       <Redirect to="/" />
