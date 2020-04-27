@@ -9,6 +9,7 @@ import {
   Row,
   Col,
 } from 'reactstrap';
+import { Link, NavLink } from 'react-router-dom';
 import { truncate } from 'lodash';
 const items = [
   {
@@ -26,6 +27,7 @@ const items = [
     summary: `EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the well being and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
     image: `${require('assets/img/theme/edtf-yellow.png')}`,
     actionbutton: 'Donate',
+    secondactionbutton:'Read more',
     buttonLink: 'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
   },
   {
@@ -60,6 +62,18 @@ const Hero = (props) => {
     setActiveIndex(newIndex);
   };
 
+  const isDonateCarousel = (item) => {
+    if (item.secondactionbutton) {
+      return (
+        <Link to="/aboutedtf">
+          <Button className="btn-white mt-4" color="default">
+            {item.secondactionbutton || 'About EDTF'}
+          </Button>
+        </Link>
+      );
+    }
+  };
+
   const slides = items.map((item) => {
     return (
       <CarouselItem
@@ -81,6 +95,7 @@ const Hero = (props) => {
               >
                 {item.actionbutton || 'Read More'}
               </Button>
+              {isDonateCarousel(item)}
             </Col>
             <Col className="mb-lg-auto align-items-center" lg="5">
               <img
