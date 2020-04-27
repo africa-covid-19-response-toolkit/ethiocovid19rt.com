@@ -27,7 +27,7 @@ const items = [
     summary: `EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the well being and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
     image: `${require('assets/img/theme/edtf-yellow.png')}`,
     actionbutton: 'Donate',
-    aboutEdtfbutton:'About EDTF',
+    secondactionbutton:'Read more',
     buttonLink: 'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
   },
   {
@@ -63,11 +63,11 @@ const Hero = (props) => {
   };
 
   const isDonateCarousel = (item) => {
-    if (item.aboutEdtfbutton) {
+    if (item.secondactionbutton) {
       return (
         <Link to="/aboutedtf">
           <Button className="btn-white mt-4" color="default">
-            {item.aboutEdtfbutton || 'About EDTF'}
+            {item.secondactionbutton || 'About EDTF'}
           </Button>
         </Link>
       );

@@ -3,13 +3,15 @@ import MainLayout from 'components/Layout/MainLayout';
 
 const AboutEdtfPage = () => {
   return (
-    <MainLayout  title="About EDTF">
-      <div style={{padding: '12px 0'}}>
+    <MainLayout  title="About ECRT Donations">
+      <div style={{padding: '42px 0'}}>
         <h5>
           ETHIOPIA DIASPORA TRUST FUND (EDTF) and Ethiopia COVID-19 Response
           Team (ECRT)
         </h5>
-        <h6>Partnership Note</h6>
+
+        <h5>Partnership Note</h5>
+        <hr/>
         <h6>Purpose</h6>
         <p>
           The Joint Ethiopia Diaspora Trust Fund (EDTF) and Ethiopia COVID-19
@@ -32,7 +34,7 @@ const AboutEdtfPage = () => {
           support first responders and healthcare professionals and meeting the
           critical needs of disadvantaged
         </p>
-
+        <hr/>
         <h6>Operational Modality</h6>
         <p>
           The campaign against COVID-19, particularly in countries like Ethiopia
@@ -57,7 +59,7 @@ const AboutEdtfPage = () => {
           transparent reporting of donations received in the ECRT account and
           the amount used out of it.
         </p>
-
+        <hr/>
         <h6>Approval Process</h6>
         <p>
           The EDTF x ECRT fund is not a project-based intervention similar to
@@ -72,6 +74,7 @@ const AboutEdtfPage = () => {
           The approved purchases will be sent to the EDTF Secretariat for
           dispersal; in quantities of 10K or more.
         </p>
+        <hr/>
         <h6>Payments</h6>
         <p>
           Similar to the EDTF COVID-19 fund, the EDTF x ECRT fund will be
@@ -87,6 +90,7 @@ const AboutEdtfPage = () => {
           responsible for identifying donors and raising the necessary funds to
           execute on our initiatives.
         </p>
+        <hr/>
         <p>
           As funds are collected, ECRT will allocate them towards the priorities
           listed in the Strategic Pillars:
