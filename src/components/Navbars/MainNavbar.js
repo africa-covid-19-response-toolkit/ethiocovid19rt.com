@@ -94,7 +94,7 @@ class MainNavbar extends React.Component {
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>
-                    <NavLink smooth to="/#about" tag={HashLink} role="tab">
+                    <NavLink smooth to="/about" tag={Link} role="tab">
                       About
                     </NavLink>
                   </NavItem>
