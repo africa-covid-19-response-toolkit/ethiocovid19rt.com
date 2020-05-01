@@ -8,14 +8,17 @@ const Partners = () => {
     </div>
   ));
 
-  return (
-    <div className="partners-section  ">
-      <div className="title">
-        <h2 class="display-3">Out Partners</h2>
+  if (LogoNames.length > 0) {
+    return (
+      <div className="partners-section  ">
+        <div className="title">
+          <h2 class="display-3">Our Partners</h2>
+        </div>
+        <div className="partners-list">{items}</div>
       </div>
-      <div className="partners-list">{items}</div>
-    </div>
-  );
+    );
+  }
+  return <></>
 };
 
 export default Partners;
