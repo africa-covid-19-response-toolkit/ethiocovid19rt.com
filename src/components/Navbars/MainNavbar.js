@@ -24,6 +24,7 @@ import {
 
 const DONATE_URL =  "https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/";
 const SINGUP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform";
+const MUTUAL_AID_URL = "https://airtable.com/shrQYzxVlYy1asBRK";
 
 class MainNavbar extends React.Component {
   componentDidMount() {
@@ -154,6 +155,15 @@ class MainNavbar extends React.Component {
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                 <NavItem>
+
+                <Button
+                    className="mb-3 mb-sm-0"
+                    color="dark"
+                    target="_blank"
+                    href= {MUTUAL_AID_URL}    
+                >
+                  Aid Form
+                </Button>
                 <Button
                     className="mb-3 mb-sm-0"
                     color="dark"
