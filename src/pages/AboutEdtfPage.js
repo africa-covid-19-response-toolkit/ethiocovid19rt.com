@@ -5,14 +5,17 @@ const AboutEdtfPage = () => {
   return (
     <MainLayout title="About ECRT Donations">
       <div style={{ padding: '42px 0' }}>
-        <h5>
-          ETHIOPIA DIASPORA TRUST FUND (EDTF) and Ethiopia COVID-19 Response
-          Team (ECRT)
-        </h5>
+        <div style={{ 'text-align': 'center' }}>
+          <h2 className="font-weight-600">Partnership Note</h2>
 
-        <h5>Partnership Note</h5>
+          <h4 className="text-black-50">
+            Ethiopian Diaspora Trust Fund (EDTF) and Ethiopia COVID-19 Response
+            Team (ECRT)
+          </h4>
+        </div>
+
         <hr />
-        <h6>Purpose</h6>
+        <h5 className="font-weight-600">Purpose</h5>
         <p>
           The Joint Ethiopia Diaspora Trust Fund (EDTF) and Ethiopia COVID-19
           Response Team (ECRT) subaccount, Ethiopian COVID-19 Response Team
@@ -21,7 +24,7 @@ const AboutEdtfPage = () => {
           the new challenge and existential threat that coronavirus (i.e.
           SARS-COV-2) represents the wellbeing and livelihood of the Ethiopian
           people and in particular the most disadvantaged segments of the
-          population.
+          population
         </p>
         <p>
           This initiative will support the ECRT mission to minimize morbidity
@@ -37,7 +40,7 @@ const AboutEdtfPage = () => {
           disadvantaged.
         </p>
         <hr />
-        <h6>Operational Modality</h6>
+        <h5 className="font-weight-600">Operational Modality</h5>
         <p>
           The campaign against COVID-19, particularly in countries like Ethiopia
           that face institutional and financial resource challenges, requires
@@ -62,7 +65,7 @@ const AboutEdtfPage = () => {
           donations received in the ECRT account and the amount used out of it.
         </p>
         <hr />
-        <h6>Approval Process</h6>
+        <h5 className="font-weight-600">Approval Process</h5>
         <p>
           The ECRT fund is not a project-based intervention similar to the EDTF
           COVID-19 donations. To appropriately allocate the available funds,
@@ -74,7 +77,7 @@ const AboutEdtfPage = () => {
           Pillars.
         </p>
         <hr />
-        <h6>Payments</h6>
+        <h5 className="font-weight-600">Payments</h5>
         <p>
           Similar to the EDTF COVID-19 fund, the ECRT fund will be governed by
           the EDTF Advisory Council. ECRT agrees to contribute initially 10K to
@@ -89,6 +92,7 @@ const AboutEdtfPage = () => {
           standard form for invoicing and reporting.
         </p>
         <hr />
+        <h5 className="font-weight-600">Allocation</h5>
         <p>
           As funds are collected, ECRT will allocate them towards the priorities
           listed in the Strategic Pillars:
@@ -165,7 +169,7 @@ const AboutEdtfPage = () => {
           </li>
         </ol>
 
-        <h6>Duration of the EDTF Emergency COVID-19</h6>
+        <h5 className="font-weight-600">Duration of ECRT Donation</h5>
         <p>
           The ECRT Donation sub-account will be open for the duration of the
           time COVID-19 continues to be an existential threat to the Ethiopian
