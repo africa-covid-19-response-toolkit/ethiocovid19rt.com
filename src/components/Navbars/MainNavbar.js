@@ -100,7 +100,7 @@ class MainNavbar extends React.Component {
                   </NavItem>
                   
                   <NavItem>
-                    <NavLink smooth href= "https://github.com/africa-covid-19-response-toolkit/"  role="tab">
+                  <NavLink to="/featuredProjects" tag={Link} href="" role="tab">
                       Projects
                     </NavLink>
                   </NavItem>
