@@ -13,7 +13,7 @@ import {
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
-
+import Partners from 'components/Partners/Partners.js'
 // index page sections
 
 import Hero from 'components/Hero';
@@ -83,8 +83,8 @@ const LandingPage = (props) => {
               <Button
                 size="lg"
                 className="btn-default text-black text-uppercase"
-                href= "https://github.com/africa-covid-19-response-toolkit/"
-//onClick={() => props.history.push('/projects')}
+                href="https://github.com/africa-covid-19-response-toolkit/"
+                //onClick={() => props.history.push('/projects')}
               >
                 View all Tech Projects
               </Button>
@@ -262,7 +262,7 @@ const LandingPage = (props) => {
                   >
                     Sign up!
                   </Button>
-{/*                   <Button
+                  {/*                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
                     href="/projects"
@@ -274,6 +274,16 @@ const LandingPage = (props) => {
             </Row>
           </Container>
         </section>
+        <section className="section section-lg">
+        <Container>
+          <Row className="row-grid justify-content-center">
+            <Col>
+              <Partners />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       </main>
       <SimpleFooter />
     </>
