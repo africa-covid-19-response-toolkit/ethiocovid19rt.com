@@ -45,6 +45,7 @@ export default [
     slug: 'public-awareness',
     url: 'https://github.com/africa-covid-19-response-toolkit/internal-dashboard'
   },
+ 
   {
     name: 'API',
     slackChannel: 'cccc',
@@ -66,7 +67,7 @@ export default [
       },
     ],
   },
-  {
+   {
     name: 'Civic Engagement',
     summary:
       'Civic Engagement Workstream, is aimed at information, galvanizing SHORT!',
@@ -78,8 +79,9 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'civic engagement',
-      },
+        key: 'work stream',
+        value: 'civic engagement',
+      },,
       {
         key: 'volunteers',
         value: 'needed',
@@ -87,7 +89,7 @@ export default [
     ],
     components: [CivicEngagementDetail],
     slug: 'civic-engagement',
-  },
+  }, 
   {
     name: 'Delivery',
     summary:
@@ -235,7 +237,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'civic engagement',
+        key: 'work stream',
+        value: 'Civic Engagement',
       },
       {
         key: 'volunteers',
@@ -254,7 +257,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'civic engagement',
+        key: 'work stream',
+        value: 'ECRT Site',
       },
       {
         key: 'volunteers',
@@ -272,7 +276,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'food delivery',
+        key: 'work stream',
+        value: 'food delivery',
       },
       {
         key: 'volunteers',
@@ -290,7 +295,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'food delivery',
+        key: 'work stream',
+        value: 'food delivery',
       },
       {
         key: 'volunteers',
@@ -308,7 +314,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'diy gear',
+        key: 'work stream',
+        value: 'diy gear',
       },
       {
         key: 'volunteers',
@@ -327,7 +334,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'diy gear',
+        key: 'work stream',
+        value: 'diy gear',
       },
       {
         key: 'volunteers',
@@ -345,7 +353,8 @@ export default [
         value: 'in progress',
       },
       {
-        'work stream': 'diy gear',
+        key: 'work stream',
+        value: 'diy gear',
       },
       {
         key: 'volunteers',
@@ -370,5 +379,5 @@ export default [
         value: 'needed',
       },
     ],
-  },
+  }, 
 ];
