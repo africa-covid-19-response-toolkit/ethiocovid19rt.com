@@ -1,0 +1,28 @@
+.featured-projects {
+  .work-stream {
+    text-transform: capitalize;
+    padding: 24px 0 12px 0;
+  }
+  .project-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    .py-10 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .description {
+      flex-grow: 1;
+    }
+
+    .project-card-content {
+      display: flex;
+    }
+  }
+
+  .project-tags {
+    display: flex;
+    justify-content: center;
+  }
+}

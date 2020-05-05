@@ -11,6 +11,7 @@ import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
 import MutualAidPage from 'pages/MutualAidPage';
 import AboutEdtfPage from 'pages/AboutEdtfPage';
+import FeaturedProjectsPage from 'pages/FeaturedProjectsPage';
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -20,6 +21,11 @@ ReactDOM.render(
         path="/projects/:slug?"
         exact
         render={(props) => <ProjectsPage {...props} />}
+      />
+      <Route
+        path="/featuredProjects/:slug?"
+        exact
+        render={(props) => <FeaturedProjectsPage {...props} />}
       />
       <Route
         path="/volunteers/:slug?"

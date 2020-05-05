@@ -8,7 +8,23 @@ import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter';
 import MainLayoutHeader from './MainLayoutHeader';
 
-const MainLayout = ({ title, description, children }) => {
+const MainBody = ({cardStyle, children}) => {
+
+  if (cardStyle) {
+    return(
+      <Card className="card-profile shadow">
+        <div className="px-4">{children}</div>
+      </Card>
+    )
+  } else {
+    return(  
+        <div className="px-4 mt--100">{children}</div>
+    )
+  }
+}
+
+
+const MainLayout = ({ title, description, children, cardStyle=true}) => {
   const mainRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +37,7 @@ const MainLayout = ({ title, description, children }) => {
     <>
       <MainNavbar />
       <main className="profile-page" ref={mainRef}>
-        <section className="section section-lg section-shaped pb-250">
+        <section className="section section-lg section-shaped pb-150">
           {/* Circles background */}
           <div className="shape shape-style-1 shape-default alpha-4">
             <span />
@@ -48,11 +64,9 @@ const MainLayout = ({ title, description, children }) => {
           </div>
         </section>
         <section className="section">
-          <Container>
-            <Card className="card-profile shadow mt--300">
-              <div className="px-4">{children}</div>
-            </Card>
-          </Container>
+        <Container>
+          <MainBody children={children} cardStyle={cardStyle}/>
+        </Container>
         </section>
       </main>
       <SimpleFooter />
