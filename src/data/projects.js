@@ -13,7 +13,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'surveillance & reporting',
       },
       {
         key: 'volunteers',
@@ -35,7 +35,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'surveillance & reporting',
       },
       {
         key: 'volunteers',
@@ -59,7 +59,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'surveillance & reporting',
       },
       {
         key: 'volunteers',
@@ -101,7 +101,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'food & care package delivery',
       },
       {
         key: 'volunteers',
@@ -122,7 +122,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'Personal protective equipment',
       },
       {
         key: 'volunteers',
@@ -142,7 +142,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'surveillance & reporting',
       },
       {
         key: 'volunteers',
@@ -161,33 +161,13 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'surveillance',
+        value: 'surveillance & reporting',
       },
       {
         key: 'volunteers',
         value: 'needed',
       },
     ],
-  },
-  {
-    name: 'Quarantine location delivery',
-    summary:
-      'Funding and facilitating food and essential items delivery for quarantine centers, food-insecure families in Ethiopia, and healthcare workers',
-    tags: [
-      {
-        key: 'status',
-        value: 'in progress',
-      },
-      {
-        key: 'work stream',
-        value: 'surveillance',
-      },
-      {
-        key: 'volunteers',
-        value: 'needed',
-      },
-    ],
-    slug: 'delivery',
   },
   {
     name: 'Social Media Asset Creation',
@@ -238,7 +218,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'Civic Engagement',
+        value: 'civic engagement',
       },
       {
         key: 'volunteers',
@@ -258,7 +238,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'ECRT Site',
+        value: 'civic engagement',
       },
       {
         key: 'volunteers',
@@ -277,7 +257,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'food delivery',
+        value: 'food & care package delivery',
       },
       {
         key: 'volunteers',
@@ -288,7 +268,7 @@ export default [
   {
     name: 'Care packages / delivery promotion to communities',
     summary:
-      'Facilitate and promote food delivery in general; Source and support the delivery of care package/food and essentials/ for food-insecure and vulnerable families in Ethiopia.',
+      'Facilitate and promote food & care package delivery in general; Source and support the delivery of care package/food and essentials/ for food-insecure and vulnerable families in Ethiopia.',
     tags: [
       {
         key: 'status',
@@ -296,7 +276,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'food delivery',
+        value: 'food & care package delivery',
       },
       {
         key: 'volunteers',
@@ -315,7 +295,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'diy gear',
+        value: 'Personal protective equipment',
       },
       {
         key: 'volunteers',
@@ -335,7 +315,7 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'diy gear',
+        value: 'Personal protective equipment',
       },
       {
         key: 'volunteers',
@@ -354,30 +334,12 @@ export default [
       },
       {
         key: 'work stream',
-        value: 'diy gear',
+        value: 'Personal protective equipment',
       },
       {
         key: 'volunteers',
         value: 'needed',
       },
     ],
-  },
-  {
-    name: 'zz',
-    summary: 'zz',
-    tags: [
-      {
-        key: 'status',
-        value: 'in progress',
-      },
-      {
-        key: 'work stream',
-        value: 'awareness',
-      },
-      {
-        key: 'volunteers',
-        value: 'needed',
-      },
-    ],
-  }, 
+  }
 ];
