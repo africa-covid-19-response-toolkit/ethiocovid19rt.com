@@ -100,7 +100,7 @@ class MainNavbar extends React.Component {
                   </NavItem>
                   
                   <NavItem>
-                  <NavLink to="/featuredProjects" tag={Link} href="" role="tab">
+                  <NavLink to="/projects" tag={Link} href="" role="tab">
                       Projects
                     </NavLink>
                   </NavItem>
