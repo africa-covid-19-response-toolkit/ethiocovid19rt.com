@@ -37,7 +37,6 @@ ReactDOM.render(
         render={(props) => <AboutEdtfPage {...props} />}
       />
 
-
       <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
