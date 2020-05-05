@@ -81,7 +81,7 @@ export default [
       {
         key: 'work stream',
         value: 'civic engagement',
-      },,
+      },
       {
         key: 'volunteers',
         value: 'needed',

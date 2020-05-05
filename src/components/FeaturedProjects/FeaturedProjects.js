@@ -7,7 +7,7 @@ const FeaturedProjects = (props) => {
   const workStreams = projects.reduce((groups, item) => {
     const element =
       Array.isArray(item.tags) &&
-      item.tags.find((element) => element.key == keyId);
+      item.tags.find((element) => element.key === keyId);
     return {
       ...groups,
       [element['value']]: [...(groups[element['value']] || []), item],

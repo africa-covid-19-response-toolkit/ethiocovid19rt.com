@@ -9,7 +9,7 @@ import {
   Row,
   Col,
 } from 'reactstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { truncate } from 'lodash';
 const items = [
   {
