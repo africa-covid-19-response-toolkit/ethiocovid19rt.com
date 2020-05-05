@@ -83,7 +83,7 @@ const LandingPage = (props) => {
               <Button
                 size="lg"
                 className="btn-default text-black text-uppercase"
-                href="https://github.com/africa-covid-19-response-toolkit/"
+                href="/featuredProjects"
                 //onClick={() => props.history.push('/projects')}
               >
                 View all Tech Projects
