@@ -97,90 +97,97 @@ const AboutPage = ()=> {
             </Row>
           </Container>
         </section>
-        <section className="section pb-0 bg-gradient-warning">
+        <section className="section pb-0 bg-light">
             <Container>
-              <Row className="row-grid align-items-center">
-                <Col className="order-lg-2 ml-lg-auto" md="6">
-                  <div className="position-relative pl-md-5">
-                    <img
-                      alt="..."
-                      className="img-center img-fluid"
-                      src={require('assets/img/ill/ill-2.svg')}
-                    />
+              <Row className="row-grid">
+                <Col className="order-lg-2" md="7">
+                   <div className="d-flex px-3">
+                    <div className="pl-4">
+                      <h4 className="display-3 text-white">Strategic Pillars</h4>
+                      <Card>
+                        <CardBody>
+                          <div>
+                            <strong>Enabling compliance with public health guidelines</strong>
+                            <ul>
+                              <li>Awareness</li>
+                              <li>Handwashing and hand sanitizers</li>
+                              <li>Face masks for every person </li>
+                              <li>Care package delivery for vulnerable</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <strong>Supporting health/frontline workers with resources to ensure they have access to</strong>
+                            <ul>
+                              <li>Personal protective equipment (PPE)</li>
+                              <li>Medical equipment</li>
+                              <li>Emotional support services</li>
+                              <li>Adequate housing and transportation</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <strong>Facilitating knowledge exchange between regions and countries</strong>
+                            <ul>
+                              <li>Developing COVID-19 awareness content to inform citizens in local languages</li>
+                              <li>Encouraging the sharing of ideas through Civic Engagement</li>
+                              <li>Free and open-source resources</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <strong>Forming mission-aligned partnerships for amplified impact</strong>
+                            <ul>
+                              <li>Nonprofits and volunteer organizations</li>
+                              <li>Product and service providers</li>
+                              <li>Professional associations</li>
+                              <li>Governmental agencies that align with public health and community response</li>
+                              <li>Using our platform to help existing efforts gain visibility and resources (mutual aid)</li>
+                            </ul>
+                          </div>
+                        </CardBody>
+                      </Card>
+                     
+                    </div>
                   </div>
                 </Col>
-                <Col className="order-lg-1" lg="6">
+                <Col className="order-lg-1" lg="5">
                   <div className="d-flex px-3">
-                    <div>
-                      <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                        <i className="ni ni-building text-primary" />
-                      </div>
-                    </div>
                     <div className="pl-4">
-                      <h4 className="display-3 text-white">Modern Interface</h4>
-                      <p className="text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever.
-                      </p>
-                    </div>
-                  </div>
-                  <Card className="shadow shadow-lg--hover mt-5">
+                    <h4 className="display-3 text-white">Mission & Vision</h4>
+                    <Card className="shadow shadow-lg--hover">
                     <CardBody>
-                      <div className="d-flex px-3">
-                        <div>
-                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
-                            <i className="ni ni-satisfied" />
-                          </div>
-                        </div>
+                      <div className="d-flex">
                         <div className="pl-4">
                           <h5 className="title text-success">
-                            Awesome Support
+                            Mission
                           </h5>
                           <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
+                          ECRT envisions that by creating a platform for different professionals from all over the world to come together and collaborate,
+                           we will meaningfully flatten the curve, more readily available, and adopt technological solutions,
+                            and creatively address communal challenges that make preventive measures especially difficult in Ethiopia
                           </p>
-                          <a
-                            className="text-success"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
+                          <p>
+                          We will support first responders and healthcare professionals to drive effective efforts in stagnating the number 
+                          of cases and get to levels of control that countries that have been successful have reached.
+                          </p>
                         </div>
                       </div>
                     </CardBody>
                   </Card>
-                  <Card className="shadow shadow-lg--hover mt-5">
+                    <Card className="shadow shadow-lg--hover mt-5">
                     <CardBody>
                       <div className="d-flex px-3">
-                        <div>
-                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                            <i className="ni ni-active-40" />
-                          </div>
-                        </div>
                         <div className="pl-4">
                           <h5 className="title text-warning">
-                            Modular Components
+                          Vision
                           </h5>
                           <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
+                          Minimize morbidity and mortality from COVID-19 and make Ethiopia a leader in global COVID-19 response efforts
                           </p>
-                          <a
-                            className="text-warning"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
                         </div>
                       </div>
                     </CardBody>
                   </Card>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>
