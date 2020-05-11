@@ -97,49 +97,57 @@ const AboutPage = ()=> {
             </Row>
           </Container>
         </section>
-        <section className="section pb-0 bg-light">
+        <section className="section pb-0 bg-yellow">
             <Container>
               <Row className="row-grid">
                 <Col className="order-lg-2" md="7">
                    <div className="d-flex px-3">
                     <div className="pl-4">
-                      <h4 className="display-3 text-white">Strategic Pillars</h4>
-                      <Card>
-                        <CardBody>
+                      <h4 className="display-3 text-black">Strategic Pillars</h4>
+                      <Card style={{backgroundColor: '#007771'}}>
+                        <CardBody className="lead text-italic text-white" >
                           <div>
                             <strong>Enabling compliance with public health guidelines</strong>
                             <ul>
+                              <p>
                               <li>Awareness</li>
                               <li>Handwashing and hand sanitizers</li>
                               <li>Face masks for every person </li>
                               <li>Care package delivery for vulnerable</li>
+                              </p>
                             </ul>
                           </div>
                           <div>
                             <strong>Supporting health/frontline workers with resources to ensure they have access to</strong>
                             <ul>
+                            <p>
                               <li>Personal protective equipment (PPE)</li>
                               <li>Medical equipment</li>
                               <li>Emotional support services</li>
                               <li>Adequate housing and transportation</li>
+                              </p>
                             </ul>
                           </div>
                           <div>
                             <strong>Facilitating knowledge exchange between regions and countries</strong>
                             <ul>
+                            <p>
                               <li>Developing COVID-19 awareness content to inform citizens in local languages</li>
                               <li>Encouraging the sharing of ideas through Civic Engagement</li>
                               <li>Free and open-source resources</li>
+                              </p>
                             </ul>
                           </div>
                           <div>
                             <strong>Forming mission-aligned partnerships for amplified impact</strong>
                             <ul>
+                            <p>
                               <li>Nonprofits and volunteer organizations</li>
                               <li>Product and service providers</li>
                               <li>Professional associations</li>
                               <li>Governmental agencies that align with public health and community response</li>
                               <li>Using our platform to help existing efforts gain visibility and resources (mutual aid)</li>
+                              </p>
                             </ul>
                           </div>
                         </CardBody>
@@ -151,12 +159,12 @@ const AboutPage = ()=> {
                 <Col className="order-lg-1" lg="5">
                   <div className="d-flex px-3">
                     <div className="pl-4">
-                    <h4 className="display-3 text-white">Mission & Vision</h4>
-                    <Card className="shadow shadow-lg--hover">
-                    <CardBody>
+                    <h4 className="display-3 text-black">Mission & Vision</h4>
+                    <Card className="shadow shadow-lg--hover" style={{backgroundColor: '#007771'}}>
+                    <CardBody className="lead text-italic text-white" >
                       <div className="d-flex">
                         <div className="pl-4">
-                          <h5 className="title text-success">
+                          <h5 className="title text-white">
                             Mission
                           </h5>
                           <p>
@@ -172,15 +180,15 @@ const AboutPage = ()=> {
                       </div>
                     </CardBody>
                   </Card>
-                    <Card className="shadow shadow-lg--hover mt-5">
-                    <CardBody>
+                    <Card className="shadow shadow-lg--hover mt-5" style={{backgroundColor: '#007771'}}>
+                    <CardBody className="lead text-italic text-white" >
                       <div className="d-flex px-3">
                         <div className="pl-4">
-                          <h5 className="title text-warning">
+                          <h5 className="title text-white">
                           Vision
                           </h5>
                           <p>
-                          Minimize morbidity and mortality from COVID-19 and make Ethiopia a leader in global COVID-19 response efforts
+                          Minimize morbidity and mortality from COVID-19 and make Ethiopia a leader in global COVID-19 response efforts.
                           </p>
                         </div>
                       </div>
