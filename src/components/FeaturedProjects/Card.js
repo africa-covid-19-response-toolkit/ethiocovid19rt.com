@@ -1,6 +1,7 @@
 import React from 'react';
 import { Badge, Button, Card, CardBody, Col } from 'reactstrap';
 import { truncate } from 'lodash';
+import ProjectLearnMore from './LearnMore/ProjectLearnMore'
 
 const ProjectCard = ({ project }) => {
   const getTagColor = (tag) => {
@@ -41,14 +42,7 @@ const ProjectCard = ({ project }) => {
               )}
             </div>
           }
-          <Button
-            className="mt-4"
-            color="secondary"
-            target="_blank"
-            href={project.url}
-          >
-            Learn more
-          </Button>
+          <ProjectLearnMore centered='true' buttonLabel='Learn More' project={project}/>
         </CardBody>
       </Card>
     </Col>
