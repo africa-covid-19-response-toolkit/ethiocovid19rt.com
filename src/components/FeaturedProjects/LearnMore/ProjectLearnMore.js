@@ -13,7 +13,7 @@ const ProjectLearnMore = (props) => {
       <Button
         className="project-learn-more-trigger"
         outline
-        color="info"
+        color="secondary"
         onClick={toggle}
       >
         {buttonLabel}
