@@ -104,7 +104,7 @@ const AboutPage = ()=> {
                    <div className="d-flex px-3">
                     <div className="pl-4">
                       <h4 className="display-3 text-black">Strategic Pillars</h4>
-                      <Card style={{backgroundColor: '#007771'}}>
+                      <Card className="bg-secondary">
                         <CardBody className="lead text-italic text-white" >
                           <div>
                             <strong>Enabling compliance with public health guidelines</strong>
@@ -156,44 +156,44 @@ const AboutPage = ()=> {
                     </div>
                   </div>
                 </Col>
-                <Col className="order-lg-1" lg="5">
+                <Col className="order-lg-1" md="5">
                   <div className="d-flex px-3">
                     <div className="pl-4">
                     <h4 className="display-3 text-black">Mission & Vision</h4>
-                    <Card className="shadow shadow-lg--hover" style={{backgroundColor: '#007771'}}>
-                    <CardBody className="lead text-italic text-white" >
-                      <div className="d-flex">
-                        <div className="pl-4">
-                          <h5 className="title text-white">
-                            Mission
-                          </h5>
-                          <p>
-                          ECRT envisions that by creating a platform for different professionals from all over the world to come together and collaborate,
-                           we will meaningfully flatten the curve, more readily available, and adopt technological solutions,
-                            and creatively address communal challenges that make preventive measures especially difficult in Ethiopia
-                          </p>
-                          <p>
-                          We will support first responders and healthcare professionals to drive effective efforts in stagnating the number 
-                          of cases and get to levels of control that countries that have been successful have reached.
-                          </p>
+                    <Card className="bg-secondary shadow shadow-lg--hover">
+                      <CardBody className="lead text-italic text-white" >
+                        <div className="d-flex">
+                          <div className="pl-4">
+                            <h5 className="title text-white">
+                              Mission
+                            </h5>
+                            <p>
+                            ECRT envisions that by creating a platform for different professionals from all over the world to come together and collaborate,
+                            we will meaningfully flatten the curve, more readily available, and adopt technological solutions,
+                              and creatively address communal challenges that make preventive measures especially difficult in Ethiopia
+                            </p>
+                            <p>
+                            We will support first responders and healthcare professionals to drive effective efforts in stagnating the number 
+                            of cases and get to levels of control that countries that have been successful have reached.
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                    </CardBody>
-                  </Card>
-                    <Card className="shadow shadow-lg--hover mt-5" style={{backgroundColor: '#007771'}}>
-                    <CardBody className="lead text-italic text-white" >
-                      <div className="d-flex px-3">
-                        <div className="pl-4">
-                          <h5 className="title text-white">
-                          Vision
-                          </h5>
-                          <p>
-                          Minimize morbidity and mortality from COVID-19 and make Ethiopia a leader in global COVID-19 response efforts.
-                          </p>
+                      </CardBody>
+                    </Card>
+                      <Card className="bg-secondary shadow shadow-lg--hover mt-5">
+                      <CardBody className="lead text-italic text-white" >
+                        <div className="d-flex px-3">
+                          <div className="pl-4">
+                            <h5 className="title text-white">
+                            Vision
+                            </h5>
+                            <p>
+                            Minimize morbidity and mortality from COVID-19 and make Ethiopia a leader in global COVID-19 response efforts.
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                    </CardBody>
-                  </Card>
+                      </CardBody>
+                    </Card>
                     </div>
                   </div>
                 </Col>
