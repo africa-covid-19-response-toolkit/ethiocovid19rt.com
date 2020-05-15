@@ -11,12 +11,18 @@ import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
 import MutualAidPage from 'pages/MutualAidPage';
 import AboutEdtfPage from 'pages/AboutEdtfPage';
+import AboutPage from 'pages/AboutPage';
 
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
+      <Route
+        path="/about/:slug?"
+        exact
+        render={(props) => <AboutPage {...props} />}
+      />
       <Route
         path="/projects/:slug?"
         exact
