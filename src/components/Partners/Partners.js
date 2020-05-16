@@ -21,7 +21,7 @@ class Partners extends React.Component {
       <div>
         <div className="partners-section  ">
           <div className="title">
-            <h2 class="display-3">Our Partners</h2>
+            <h2 class="display-3">Corporate Sponsor</h2>
           </div>
           <div className="partners-list">{logos}</div>
         </div>

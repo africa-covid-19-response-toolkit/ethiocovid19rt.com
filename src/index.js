@@ -12,6 +12,7 @@ import VolunteersPage from 'pages/VolunteersPage';
 import MutualAidPage from 'pages/MutualAidPage';
 import AboutEdtfPage from 'pages/AboutEdtfPage';
 import AboutPage from 'pages/AboutPage';
+import PartnersPage from 'pages/PartnersPage';
 
 
 ReactDOM.render(
@@ -42,6 +43,11 @@ ReactDOM.render(
         path="/aboutedtf/:slug?"
         exact
         render={(props) => <AboutEdtfPage {...props} />}
+      />
+          <Route
+        path="/partners/:slug?"
+        exact
+        render={(props) => <PartnersPage {...props} />}
       />
 
       <Redirect to="/" />
