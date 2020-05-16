@@ -183,7 +183,9 @@ const AboutEdtfPage = () => {
           </li>
         </ol>
 
-        <h5 className="font-weight-600">V- Duration of the EDTF Emergency COVID-19</h5>
+        <h5 className="font-weight-600">
+          V- Duration of the EDTF Emergency COVID-19
+        </h5>
         <p>
           The EDTF ECRT Partnership subaccount will be open for the duration of
           the time the EDTF Emergency COVID-19 Mitigation continues, which is
