@@ -12,15 +12,7 @@ import {
 import { Link } from 'react-router-dom';
 import { truncate } from 'lodash';
 const items = [
-  {
-    id: 1,
-    heading: 'Africa COVID-19 Response Toolkit Launched',
-    summary: `We’re excited to announce the first release of the Africa COVID-19 Response Toolkit (ACRT), a set of open source projects developed by an international group of volunteer software engineers, designers, and PMs that allow any government or public entity to get up and running with a software toolset to respond to COVID-19.
-    `,
-    image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
-    buttonLink:
-      'https://github.com/africa-covid-19-response-toolkit/community/tree/readme-refresh',
-  },
+
   {
     id: 2,
     heading: 'ECRT Partners with EDTF',
@@ -31,6 +23,15 @@ const items = [
     buttonLink: 'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
   },
   {
+    id: 1,
+    heading: 'Africa COVID-19 Response Toolkit Launched',
+    summary: `We’re excited to announce the first release of the Africa COVID-19 Response Toolkit (ACRT), a set of open source projects developed by an international group of volunteer software engineers, designers, and PMs that allow any government or public entity to get up and running with a software toolset to respond to COVID-19.
+    `,
+    image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
+    buttonLink:
+      'https://github.com/africa-covid-19-response-toolkit/community/tree/readme-refresh',
+  },
+  {
     id: 3,
     heading: 'What makes a modern-day hero?',
     summary: `A story of one of  @EthioCovid19RT’s volunteers about why the health care professionals are the modern-day heroes.
@@ -38,15 +39,7 @@ const items = [
     image: `${require('assets/img/theme/news_3.png')}`,
     buttonLink:
       'https://medium.com/africa-covid-19-response-toolkit/what-makes-a-modern-day-hero-66ff3c5a0aef',
-  },
-  {
-    id: 4,
-    heading: 'Who we are',
-    summary: ` On March 21st, we started off as a Slack channel of 4 software engineers working on building digital tools to help the Ethiopian Ministry of Health (MoH) track COVID-19 cases. By March 25th we had grown to a global volunteer network of more than 1600 people, working on over 15+ open source projects. A few of our current initiatives and activities include; creating a database for case tracking, developing public awareness campaigns, building bots, facilitating enhanced delivery logistics, retrofitting underutilized buildings into treatment centers, and responding to many other needs to combat COVID-19 in Africa.`,
-    image: `${require('assets/img/theme/ENELEGNA.JPG')}`,
-    buttonLink:
-      'https://ethiocovid19rt.com/#about',
-  },
+  }
 ];
 
 const Hero = (props) => {
