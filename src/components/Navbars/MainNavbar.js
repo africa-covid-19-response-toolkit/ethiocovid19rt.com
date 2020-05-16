@@ -30,9 +30,9 @@ const SINGUP_FORM_URL =
 const BLOG_POST_URL = ' https://medium.com/@ethiocovid19RT';
 const PRESS_RELEASE = [
   {
-    name: 'May 16th 2020',
+    name: 'May 8th 2020',
     link:
-      'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
+      'https://drive.google.com/file/d/1fFUO3d1D9iUx79HON2-ZSGmFh7zc_RCu/view?usp=sharing',
   },
 ];
 
