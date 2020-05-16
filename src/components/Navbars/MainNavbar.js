@@ -76,7 +76,7 @@ class MainNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img
                   alt="..."
-                  src={require('assets/img/brand/ecrt_logo.png')}
+                  src={require('assets/img/brand/ECRT_Horizontal_Logo.svg')}
                 />
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
@@ -95,7 +95,7 @@ class MainNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require('assets/img/brand/ecrt_logo.png')}
+                          src={require('assets/img/brand/ECRT_Horizontal_Logo.svg')}
                         />
                       </Link>
                     </Col>
