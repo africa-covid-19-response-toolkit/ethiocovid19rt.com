@@ -6,10 +6,10 @@ import Headroom from 'headroom.js';
 // reactstrap components
 import {
   UncontrolledCollapse,
-//  DropdownMenu,
-//  DropdownItem,
- // DropdownToggle,
- // UncontrolledDropdown,
+  DropdownMenu,
+  DropdownItem,
+  DropdownToggle,
+  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -18,12 +18,27 @@ import {
   Container,
   Row,
   Col,
- // UncontrolledTooltip,
+  // UncontrolledTooltip,
   Button,
 } from 'reactstrap';
 
-const DONATE_URL =  "https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/";
-const SINGUP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform";
+const DONATE_URL =
+  'https://ecrt.ethiopiatrustfund.org/';
+const SINGUP_FORM_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform';
+
+const BLOG_POST_URL = ' https://medium.com/@ethiocovid19RT';
+const PRESS_RELEASE = [
+  {
+    name: 'May 16th 2020',
+    link:
+      'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
+  },
+];
+
+const PressReleases = PRESS_RELEASE.map((item) => {
+  return <DropdownItem href={item.link}>{item.name}</DropdownItem>;
+});
 
 class MainNavbar extends React.Component {
   componentDidMount() {
@@ -93,86 +108,81 @@ class MainNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavItem>
+                  {/* <NavItem>
                     <NavLink smooth to="/about" tag={Link} role="tab">
                       About
                     </NavLink>
-                  </NavItem>
-                  
+                  </NavItem> */}
+
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle
+                      nav
+                      href="https://github.com/africa-covid-19-response-toolkit/"
+                      tag={Link}
+                    >
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">About</span>
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem to="/about" tag={Link}>
+                        Mission & Vision
+                      </DropdownItem>
+                      <DropdownItem to="/volunteers" tag={Link}>
+                        Volunteers
+                      </DropdownItem>
+                      <DropdownItem to="/partners" tag={Link}>
+                        Our Partners
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+
                   <NavItem>
-                  <NavLink to="/projects" tag={Link} href="" role="tab">
+                    <NavLink to="/projects" tag={Link} href="" role="tab">
                       Projects
                     </NavLink>
                   </NavItem>
-  {/*  
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav  href= "https://github.com/africa-covid-19-response-toolkit/" tag={Link}>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Projects</span>
-                    </DropdownToggle>
-                 <DropdownMenu>
-                      <DropdownItem to="/projects/civic-engagement" tag={Link}>
-                        Civic Engagement
-                      </DropdownItem>
-                      <DropdownItem to="/projects/public-awareness" tag={Link}>
-                        Public Awareness
-                      </DropdownItem>
-                      <DropdownItem
-                        to="/projects/surveillance-reporting"
-                        tag={Link}
-                      >
-                        Surveillance and Reporting
-                      </DropdownItem>
-                      <DropdownItem to="/projects/delivery" tag={Link}>
-                        Delivery
-                      </DropdownItem>
-                      <DropdownItem to="/projects/diy-gear" tag={Link}>
-                        DIY Gear
-                      </DropdownItem>
-                      <DropdownItem to="/projects/mutual-aid" tag={Link}>
-                        Mutual Aid
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>  */}
-
-              
-                  <NavItem>
+                  {/* <NavItem>
                     <NavLink to="/volunteers" tag={Link} href="" role="tab">
                     Volunteers
                     </NavLink>
-                  </NavItem>
+                  </NavItem> */}
                   <NavItem>
-                    <NavLink
-                      to="/mutualaid"
-                      tag={Link}
-                      href=""
-                      role="tab"
-                    >
+                    <NavLink to="/mutualaid" tag={Link} href="" role="tab">
                       Mutual Aid
                     </NavLink>
                   </NavItem>
+                  <NavItem>
+                    <NavLink  href={BLOG_POST_URL} >
+                      Blogs
+                    </NavLink>
+                  </NavItem>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle
+                      nav
+                      href="https://github.com/africa-covid-19-response-toolkit/"
+                      tag={Link}
+                    >
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">
+                        Press Release
+                      </span>
+                    </DropdownToggle>
+                    <DropdownMenu>{PressReleases}</DropdownMenu>
+                  </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                <NavItem>
-                <Button
-                    className="mb-3 mb-sm-0"
-                    color="dark"
-                    target="_blank"
-                    href= {DONATE_URL}
-                  >
-                    Donate
-                  </Button>
-                  <Button
-                    className="mb-3 mb-sm-0"
-                    color="dark"
-                    target="_blank"
-                    href={SINGUP_FORM_URL}
-                  >
-                    Sign up!
-                  </Button>
-                </NavItem>
+                  <NavItem>
+                    <Button
+                      className="mb-3 mb-sm-0"
+                      color="dark"
+                      target="_blank"
+                      href={DONATE_URL}
+                    >
+                      Donate
+                    </Button>
+                  </NavItem>
 
-{/*                   <NavItem>
+                  {/*                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       href="https://www.facebook.com/EthioCovid19RT"
@@ -288,7 +298,6 @@ class MainNavbar extends React.Component {
                       Message us on Telegram
                     </UncontrolledTooltip>
                   </NavItem> */}
-               
                 </Nav>
               </UncontrolledCollapse>
             </Container>
