@@ -87,7 +87,7 @@ const Hero = (props) => {
             <Col className="mb-lg-auto" lg="6">
               <h2 className="text-dark font-weight-bold">{item.heading}</h2>
               <p className="text-dark mt-4">
-                {truncate(item.summary, { length: 300 })}
+                {truncate(item.summary, { length: 500 })}
               </p>
               <Button
                 className="btn-white mt-4"
