@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { map } from 'lodash';
+import { map, pickBy } from 'lodash';
 import { NavLink } from 'react-router-dom';
 
 const ProjectLearnMore = (props) => {
+  const excludedSheetColumns = [
+    'links',
+    'Project Name',
+    'Description',
+    'Summary',
+  ];
   const { buttonLabel, className, project } = props;
-
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
@@ -24,7 +29,27 @@ const ProjectLearnMore = (props) => {
         <ModalHeader toggle={toggle}>
           <b>{project['Project Name']}</b>
         </ModalHeader>
-        <ModalBody>{project.Description}</ModalBody>
+        <ModalBody>
+          <div>{project.Description}</div>
+
+          <br />
+          <div className="all-sheet-columns">
+            <table>
+              {map(
+                pickBy(
+                  project,
+                  (value, key) => !excludedSheetColumns.includes(key)
+                ),
+                (value, key) => (
+                  <tr>
+                    <th>{key}</th>
+                    <td>{value}</td>
+                  </tr>
+                )
+              )}
+            </table>
+          </div>
+        </ModalBody>
         <ModalFooter className="project-learn-more-footer">
           {map(project.links, (value, key) => (
             <a className="external-link" href={value} target="_blank">

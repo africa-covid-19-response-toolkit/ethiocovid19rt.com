@@ -12,6 +12,7 @@ const WorkStreams = ({ projects, workStreamName }) => {
         onClick={() => setToggle(!toggle)}
         id={workStreamName.replace(/[\W_]+/g, '')}
         className="work-stream display-4"
+        style={{cursor:'pointer'}}
       >
         {toggle && (
           <img
