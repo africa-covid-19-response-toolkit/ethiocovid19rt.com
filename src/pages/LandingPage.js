@@ -13,7 +13,6 @@ import {
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
-import Partners from 'components/Partners/Partners.js';
 // index page sections
 
 import Hero from 'components/Hero';

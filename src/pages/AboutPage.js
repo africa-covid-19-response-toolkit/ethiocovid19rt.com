@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from 'components/Layout/MainLayout';
-import { Container, Row, Col, Card, CardBody, CardImg } from 'reactstrap';
+import { Container, Row, Col} from 'reactstrap';
 const AboutContent = () => {
   return (
     <div>

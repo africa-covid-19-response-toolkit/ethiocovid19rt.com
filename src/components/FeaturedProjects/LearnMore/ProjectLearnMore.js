@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { map, pickBy } from 'lodash';
-import { NavLink } from 'react-router-dom';
 
 const ProjectLearnMore = (props) => {
   const excludedSheetColumns = [

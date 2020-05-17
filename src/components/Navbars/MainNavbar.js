@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+//import { HashLink } from 'react-router-hash-link';
 
 import Headroom from 'headroom.js';
 // reactstrap components
@@ -24,8 +24,8 @@ import {
 
 const DONATE_URL =
   'https://ecrt.ethiopiatrustfund.org/';
-const SINGUP_FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform';
+//const SINGUP_FORM_URL =
+  //'https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform';
 
 const BLOG_POST_URL = ' https://medium.com/@ethiocovid19RT';
 const PRESS_RELEASE = [
