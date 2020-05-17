@@ -25,8 +25,7 @@ const ProjectLearnMore = (props) => {
         </ModalHeader>
         <ModalBody>{project.Description}</ModalBody>
         <ModalFooter className="project-learn-more-footer">
-          {map(project.links, (value, key) => <a className="external-link" href={value} target='_blank'>{key}</a>)}
-        </ModalFooter>
+          {map(project.links, (value, key) => <a className="external-link" href={value} target='_blank'>{key}</a>)}        </ModalFooter>
       </Modal>
     </div>
   );

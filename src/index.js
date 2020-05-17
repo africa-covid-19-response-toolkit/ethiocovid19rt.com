@@ -11,12 +11,19 @@ import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
 import MutualAidPage from 'pages/MutualAidPage';
 import AboutEdtfPage from 'pages/AboutEdtfPage';
+import AboutPage from 'pages/AboutPage';
+import PartnersPage from 'pages/PartnersPage';
 
 
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route path="/" exact render={(props) => <LandingPage {...props} />} />
+      <Route
+        path="/about/:slug?"
+        exact
+        render={(props) => <AboutPage {...props} />}
+      />
       <Route
         path="/projects/:slug?"
         exact
@@ -36,6 +43,11 @@ ReactDOM.render(
         path="/aboutedtf/:slug?"
         exact
         render={(props) => <AboutEdtfPage {...props} />}
+      />
+          <Route
+        path="/partners/:slug?"
+        exact
+        render={(props) => <PartnersPage {...props} />}
       />
 
       <Redirect to="/" />

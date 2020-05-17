@@ -1,7 +1,7 @@
 import React from 'react';
 import { Badge, Button, Card, CardBody, Col } from 'reactstrap';
 import { truncate } from 'lodash';
-import ProjectLearnMore from './LearnMore/ProjectLearnMore'
+import ProjectLearnMore from './LearnMore/ProjectLearnMore';
 
 const ProjectCard = ({ project }) => {
   const getTagColor = (tag) => {
@@ -25,28 +25,31 @@ const ProjectCard = ({ project }) => {
           <p className="description mt-3">
             {truncate(project.Summary, { length: 200 })}
           </p>
-          
-            <div className="project-tags">
-                    <Badge
-                      color={getTagColor('status')}
-                      // key={index}
-                      pill
-                      className="mr-1"
-                    >
-                      {project.Status}
-                    </Badge>
-                    <Badge
-                    color={getTagColor('volunteers')}
-                    // key={index}
-                    pill
-                    className="mr-1"
-                  >
-                    {project.Volunteers}
-                  </Badge>
 
-            </div>
-          
-          <ProjectLearnMore centered='true' buttonLabel='Learn More' project={project}/>
+          <div className="project-tags">
+            <Badge
+              color={getTagColor('status')}
+              // key={index}
+              pill
+              className="mr-1"
+            >
+              {project.Status}
+            </Badge>
+            <Badge
+              color={getTagColor('volunteers')}
+              // key={index}
+              pill
+              className="mr-1"
+            >
+              {project.Volunteers}
+            </Badge>
+          </div>
+
+          <ProjectLearnMore
+            centered="true"
+            buttonLabel="Learn More"
+            project={project}
+          />
         </CardBody>
       </Card>
     </Col>
