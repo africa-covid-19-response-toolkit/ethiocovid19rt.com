@@ -24,6 +24,7 @@ import {
 
 const DONATE_URL =  "https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/";
 const SINGUP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform";
+const MEDIUM_BLOGS = "https://medium.com/@ethiocovid19RT"
 
 class MainNavbar extends React.Component {
   componentDidMount() {
@@ -149,6 +150,14 @@ class MainNavbar extends React.Component {
                       role="tab"
                     >
                       Mutual Aid
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      href={MEDIUM_BLOGS}
+                      target="_blank"
+                    >
+                      Blogs
                     </NavLink>
                   </NavItem>
                 </Nav>
