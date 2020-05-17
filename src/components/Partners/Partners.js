@@ -25,6 +25,12 @@ class Partners extends React.Component {
           </div>
           <div className="partners-list">{logos}</div>
         </div>
+        <div className="partners-section  ">
+          <div className="title">
+            <h2 class="display-3">More Partners</h2>
+            <div > Coming soon ...</div>
+          </div>
+        </div>
       </div>
     );
 
