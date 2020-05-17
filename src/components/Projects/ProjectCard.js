@@ -1,7 +1,6 @@
 import React from 'react';
 import { Badge, Button, Card, CardBody, Col } from 'reactstrap';
 import { truncate } from 'lodash';
-import { Link } from 'react-router-dom';
 
 const getTagColor = (tag) => {
   switch (tag) {
