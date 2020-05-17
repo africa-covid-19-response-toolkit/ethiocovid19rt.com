@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Card from './Card';
-import projects from 'data/projects';
 import Tabletop from 'tabletop';
 import { map } from 'lodash';
+import WorkStreams from './WorkStreams';
 const DATA_URL =
   'https://docs.google.com/spreadsheets/d/182fGJt36rJFLA3_he5J0i7tRbLvPEi-NyxMiHLN3b3M/pubhtml';
 
   const FeaturedProjects = (props) => {
   const [workStream, setWorkStream] = useState({});
-
   const formattedData = {};
 
   useEffect(() => {
@@ -45,16 +43,9 @@ const DATA_URL =
 
   return (
     <div className="featured-projects">
-      {Object.keys(workStream).map((item) => {
+      {map(workStream, (projects, workStreamName) => {
         return (
-          <>
-            <h3 className="work-stream display-4">{item}</h3>
-            <div className="project-card">
-              {map(workStream[item], (project, workStreamName) => (
-                <Card project={project} />
-              ))}
-            </div>
-          </>
+          <WorkStreams projects={projects} workStreamName={workStreamName} />
         );
       })}
     </div>

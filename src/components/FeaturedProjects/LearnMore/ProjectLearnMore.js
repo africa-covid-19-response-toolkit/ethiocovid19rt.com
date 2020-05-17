@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { map } from 'lodash';
+import { NavLink } from 'react-router-dom';
 
 const ProjectLearnMore = (props) => {
   const { buttonLabel, className, project } = props;
@@ -25,7 +26,12 @@ const ProjectLearnMore = (props) => {
         </ModalHeader>
         <ModalBody>{project.Description}</ModalBody>
         <ModalFooter className="project-learn-more-footer">
-          {map(project.links, (value, key) => <a className="external-link" href={value} target='_blank'>{key}</a>)}        </ModalFooter>
+          {map(project.links, (value, key) => (
+            <a className="external-link" href={value} target="_blank">
+              {key}
+            </a>
+          ))}
+        </ModalFooter>
       </Modal>
     </div>
   );
