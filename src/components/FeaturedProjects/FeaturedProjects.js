@@ -1,31 +1,51 @@
-import React from 'react';
-import Card from './Card';
-import projects from 'data/projects';
+import React, { useState, useEffect } from 'react';
+import Tabletop from 'tabletop';
+import { map } from 'lodash';
+import WorkStreams from './WorkStreams';
+const DATA_URL =
+  'https://docs.google.com/spreadsheets/d/182fGJt36rJFLA3_he5J0i7tRbLvPEi-NyxMiHLN3b3M/pubhtml';
 
-const FeaturedProjects = (props) => {
-  const keyId = 'work stream';
-  const workStreams = projects.reduce((groups, item) => {
-    const element =
-      Array.isArray(item.tags) &&
-      item.tags.find((element) => element.key === keyId);
-    return {
-      ...groups,
-      [element['value']]: [...(groups[element['value']] || []), item],
-    };
-  }, {});
+  const FeaturedProjects = (props) => {
+  const [workStream, setWorkStream] = useState({});
+  const formattedData = {};
+
+  useEffect(() => {
+    Tabletop.init({
+      key: DATA_URL,
+      callback: (allData) => {
+        map(allData, (sheetData, workStreamName) => {
+          Array.isArray(sheetData.elements) &&
+            sheetData.elements.map((row) => {
+              let links = {};
+              const cardData = {};
+              map(row, (cellValue, tableHeader) => {
+                if (tableHeader) {
+                  if (tableHeader.includes('Link')) {
+                    links[tableHeader.replace('Link', '')] = cellValue;
+                  } else {
+                    cardData[tableHeader] = cellValue;
+                  }
+                }
+              });
+              if (!formattedData[workStreamName]) {
+                formattedData[workStreamName] = [];
+              }
+              if (Object.keys(cardData).length) {
+                cardData['links'] = links;
+                formattedData[workStreamName].push(cardData);
+              }
+            });
+        });
+        setWorkStream(formattedData);
+      },
+    });
+  }, []);
 
   return (
     <div className="featured-projects">
-      {Object.keys(workStreams).map((item) => {
+      {map(workStream, (projects, workStreamName) => {
         return (
-          <>
-            <h3 className="work-stream display-4">{item}</h3>
-            <div className="project-card">
-              {workStreams[item].map((project) => {
-                return <Card project={project} />;
-              })}
-            </div>
-          </>
+          <WorkStreams projects={projects} workStreamName={workStreamName} />
         );
       })}
     </div>

@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { map, pickBy } from 'lodash';
+import { NavLink } from 'react-router-dom';
 
 const ProjectLearnMore = (props) => {
+  const excludedSheetColumns = [
+    'links',
+    'Project Name',
+    'Description',
+    'Summary',
+  ];
   const { buttonLabel, className, project } = props;
-
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div className="project-learn-more-container">
       <Button
         className="project-learn-more-trigger"
         outline
@@ -20,32 +27,35 @@ const ProjectLearnMore = (props) => {
       </Button>
       <Modal size="lg" isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>
-          <b>{project.name}</b>
+          <b>{project['Project Name']}</b>
         </ModalHeader>
-        <ModalBody>{project.description}</ModalBody>
-        <ModalFooter class="project-learn-more-footer">
-          <Button
-            className="btn-icon"
-            color="slack"
-            href={project.slackChannel}
-            target="_blank"
-          >
-            <span className="btn-inner--icon">
-              <i className="fa fa-slack" />
-            </span>
-            <span className="btn-inner--text">Slack</span>
-          </Button>
-          <Button
-            className="btn-icon"
-            color="github"
-            href={project.github}
-            target="_blank"
-          >
-            <span className="btn-inner--icon">
-              <i className="fa fa-github" />
-            </span>
-            <span className="btn-inner--text">Github</span>
-          </Button>
+        <ModalBody>
+          <div>{project.Description}</div>
+
+          <br />
+          <div className="all-sheet-columns">
+            <table>
+              {map(
+                pickBy(
+                  project,
+                  (value, key) => !excludedSheetColumns.includes(key)
+                ),
+                (value, key) => (
+                  <tr>
+                    <th>{key}</th>
+                    <td>{value}</td>
+                  </tr>
+                )
+              )}
+            </table>
+          </div>
+        </ModalBody>
+        <ModalFooter className="project-learn-more-footer">
+          {map(project.links, (value, key) => (
+            <a className="external-link" href={value} target="_blank">
+              {key}
+            </a>
+          ))}
         </ModalFooter>
       </Modal>
     </div>
