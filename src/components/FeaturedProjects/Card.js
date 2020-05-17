@@ -1,6 +1,7 @@
 import React from 'react';
 import { Badge, Button, Card, CardBody, Col } from 'reactstrap';
 import { truncate } from 'lodash';
+import ProjectLearnMore from './LearnMore/ProjectLearnMore'
 
 const ProjectCard = ({ project }) => {
   const getTagColor = (tag) => {
@@ -19,36 +20,33 @@ const ProjectCard = ({ project }) => {
       <Card className="card-lift--hover shadow border-10 ">
         <CardBody className="py-10">
           <h6 className="text-black text-uppercase">
-            {truncate(project.name, { length: 24 })}
+            {truncate(project['Project Name'], { length: 24 })}
           </h6>
           <p className="description mt-3">
-            {truncate(project.summary, { length: 200 })}
+            {truncate(project.Summary, { length: 200 })}
           </p>
-          {
+          
             <div className="project-tags">
-              {project.tags.map(
-                (tag, index) =>
-                  tag.key !== 'work stream' && (
                     <Badge
-                      color={getTagColor(tag.key)}
-                      key={index}
+                      color={getTagColor('status')}
+                      // key={index}
                       pill
                       className="mr-1"
                     >
-                      {tag.value}
+                      {project.Status}
                     </Badge>
-                  )
-              )}
+                    <Badge
+                    color={getTagColor('volunteers')}
+                    // key={index}
+                    pill
+                    className="mr-1"
+                  >
+                    {project.Volunteers}
+                  </Badge>
+
             </div>
-          }
-          <Button
-            className="mt-4"
-            color="secondary"
-            target="_blank"
-            href={project.url}
-          >
-            Learn more
-          </Button>
+          
+          <ProjectLearnMore centered='true' buttonLabel='Learn More' project={project}/>
         </CardBody>
       </Card>
     </Col>

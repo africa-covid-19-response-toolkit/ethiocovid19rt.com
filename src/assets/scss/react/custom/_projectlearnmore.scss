@@ -1,0 +1,24 @@
+.project-learn-more-summary {
+  padding: 16px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.project-learn-more-footer a {
+  text-decoration: underline;
+  color: #007771;
+  padding-left: 8px;
+}
+
+.project-learn-more-footer a:hover {
+  color: blue;
+}
+
+.project-learn-more-trigger {
+    flex-grow: 1;
+}
+
+.project-learn-more-container {
+    margin-top: 16px;
+    display: flex;
+}
