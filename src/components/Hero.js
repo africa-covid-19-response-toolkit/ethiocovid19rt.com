@@ -105,7 +105,7 @@ const Hero = (props) => {
               {isDonateCarousel(item)}
             </Col>
             <Col className="mb-lg-auto align-items-center" lg="5">
-              { item.iamge && <img
+              { item.image && <img
                 alt="..."
                 className="img-center img-fluid"
                 src={item.image}
