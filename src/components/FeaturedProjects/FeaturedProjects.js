@@ -4,9 +4,9 @@ import projects from 'data/projects';
 import Tabletop from 'tabletop';
 import { map } from 'lodash';
 const DATA_URL =
-  'https://docs.google.com/spreadsheets/d/1pjcAQkXXTlzwyIioUFCyZi3dVNQr_nzv13gVqB7UaMg/pubhtml';
+  'https://docs.google.com/spreadsheets/d/182fGJt36rJFLA3_he5J0i7tRbLvPEi-NyxMiHLN3b3M/pubhtml';
 
-const FeaturedProjects = (props) => {
+  const FeaturedProjects = (props) => {
   const [workStream, setWorkStream] = useState({});
 
   const formattedData = {};
