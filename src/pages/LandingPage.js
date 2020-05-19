@@ -118,8 +118,8 @@ const LandingPage = (props) => {
                       />
                     </svg>
                     <h2 className="font-weight-bold text-primary text-center">
-                    #EneLegna እኔለኛ
-                  </h2>
+                      #EneLegna እኔለኛ
+                    </h2>
                     <p className=" text-italic text-white">
                       During a time of crisis,
                       <b> #EneLegna </b>reminds us that our decisions can impact
@@ -129,11 +129,11 @@ const LandingPage = (props) => {
                       volunteering with our team.
                     </p>
                     <p className="text-italic text-white">
-                    #EneLegna (Me for Us), is a movement and a chance for each
-                    one of us to make a difference for all of us. The actions we
-                    take as individuals today will make the difference for our
-                    global community tomorrow.
-                  </p>
+                      #EneLegna (Me for Us), is a movement and a chance for each
+                      one of us to make a difference for all of us. The actions
+                      we take as individuals today will make the difference for
+                      our global community tomorrow.
+                    </p>
                   </blockquote>
                 </Card>
               </Col>
@@ -168,7 +168,6 @@ const LandingPage = (props) => {
                   </p>
 
                   <br />
-          
                 </div>
               </Col>
             </Row>
@@ -196,15 +195,13 @@ const LandingPage = (props) => {
                           Africa COVID-19 Response Toolkit
                         </h5>
                         <p className="text-black">
-                          Civic Engagement Workstream, is aimed at information,
-                          galvanizing, and coordinating volunteer and civic
-                          organizations responding to COVID-19 in Africa. The
-                          civic engagement team collects all the lessons,
-                          solutions and developed tools so that other groups in
-                          other countries in Africa are also able to take the
-                          information, adapt then implement it in their
-                          communities. We use our blog AFRICA COVID-19 TOOL KIT
-                          to collect and disband information.
+                          We’re excited to announce the first release of the
+                          Africa COVID-19 Response Toolkit (ACRT), a set of open
+                          source projects developed by an international group of
+                          volunteer software engineers, designers, and PMs that
+                          allow any government or public entity to get up and
+                          running with a software toolset to respond to
+                          COVID-19.
                         </p>
 
                         <Button
@@ -274,7 +271,6 @@ const LandingPage = (props) => {
             </Row>
           </Container>
         </section>
-
       </main>
       <SimpleFooter />
     </>

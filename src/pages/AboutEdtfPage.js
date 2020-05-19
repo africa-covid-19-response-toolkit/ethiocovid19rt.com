@@ -3,7 +3,14 @@ import MainLayout from 'components/Layout/MainLayout';
 
 const AboutEdtfPage = () => {
   return (
-    <MainLayout title="About ECRT Donations">
+    <MainLayout
+      title="ECRT Support First Responders"
+      description="ECRT is raising funds to support three initiatives to combat COVID-19 in Ethiopia. One, repairing existing medical devices in partnership with Tegbareid Polytechnic Technical College; two, purchasing essential medical supplies for local hospitals such as St. Peter's Specialized Hospital & Eka Kotebe General Hospital, and three, supporting Ethiopian manufacturing of face masks for the public, and personal protective equipment [PPE] for medical professionals. 
+
+
+    
+    EDTF serves as our fiscal sponsor and we are aligned in supporting first responders and healthcare professionals as they continue to meet the critical needs of this pandemic."
+    >
       <div style={{ padding: '42px 0' }}>
         <div style={{ 'text-align': 'center' }}>
           <h2 className="font-weight-600">Partnership Note</h2>
