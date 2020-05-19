@@ -13,7 +13,6 @@ import {
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
-
 // index page sections
 
 import Hero from 'components/Hero';
@@ -83,15 +82,14 @@ const LandingPage = (props) => {
               <Button
                 size="lg"
                 className="btn-default text-black text-uppercase"
-                href= "https://github.com/africa-covid-19-response-toolkit/"
-//onClick={() => props.history.push('/projects')}
+                href="/projects"
+                //onClick={() => props.history.push('/projects')}
               >
-                View all Tech Projects
+                View all Projects
               </Button>
             </Col>
           </Row>
         </section>
-
         <section className="section section-lg">
           <Container>
             <Row className="row-grid align-items-center">
@@ -119,61 +117,64 @@ const LandingPage = (props) => {
                         points="0,42 583,95 683,0 0,95"
                       />
                     </svg>
-                    <h4 className="display-3 font-weight-bold text-white">
-                      About
-                    </h4>
-                    <p className="lead text-italic text-white">
-                      The Ethiopia COVID-19 Response Team (ECRT) is a global
-                      volunteer team supporting the Ethiopian Ministry of Health
-                      (MoH) in its COVID-19 containment efforts.
+                    <h2 className="font-weight-bold text-primary text-center">
+                      #EneLegna እኔለኛ
+                    </h2>
+                    <p className=" text-italic text-white">
+                      During a time of crisis,
+                      <b> #EneLegna </b>reminds us that our decisions can impact
+                      our community, our service will change our country, and
+                      our collaboration makes a difference globally. Join us by
+                      sharing our content, donating to the fund, and
+                      volunteering with our team.
+                    </p>
+                    <p className="text-italic text-white">
+                      #EneLegna (Me for Us), is a movement and a chance for each
+                      one of us to make a difference for all of us. The actions
+                      we take as individuals today will make the difference for
+                      our global community tomorrow.
                     </p>
                   </blockquote>
                 </Card>
               </Col>
               <Col md="6">
                 <div id="about" className="pl-md-5">
-                  <p>
-                    On March 21st, we started off as a Slack channel of 4
-                    software engineers working on building digital tools to help
-                    the Ethiopian Ministry of Health (MoH) track COVID-19 cases.
-                    By March 25th we had grown to a global volunteer network of
-                    more than 1200 people, working on over 15+ open source
-                    projects.
-                  </p>
-                  <p>
-                    A few of our current initiatives and activities include;
-                    creating a database for case tracking, developing public
-                    awareness campaigns, building bots, facilitating enhanced
-                    delivery logistics, retrofitting underutilized buildings
-                    into treatment centers, and responding to many other needs
-                    to combat COVID-19 in Ethiopia.
-                  </p>
-                  <br />
                   <h2 className="font-weight-bold text-warning text-center">
-                    #EneLegna እኔለኛ
+                    Who we are
                   </h2>
+                  <p>
+                    The Ethiopia COVID-19 Response Team (ECRT) is a global
+                    volunteer team of engineers, doctors, designers, marketers,
+                    architects, product managers, and other industry
+                    professionals working to respond to combat COVID-19 in
+                    Ethiopia in partnership with the Federal Ministry of Health
+                    (FMoH).
+                  </p>
+                  <p>
+                    We have mobilized to build and support over 15+ open source
+                    projects such as: public awareness campaigns, analytics
+                    dashboards, case tracking databases, AI/ML bots,
+                    future-forward delivery logistics, COVID-19 symptom app
+                    trackers, and responding to many other immediate needs.
+                  </p>
+                  <p>
+                    ECRT is focused on sharing critical, factual and life-saving
+                    information while enhancing existing public health
+                    capabilities with digital tools. Kicking off on March 21st
+                    with four software engineers, by March 25th, ECRT had grown
+                    to almost 1,200 people across the globe. To date, we have
+                    mobilized 1,600 volunteers from more than 30 U.S. states and
+                    18 countries around the world.
+                  </p>
+
                   <br />
-                  <p>
-                    #EneLegna እኔለኛ (Me for Us), is a movement and a chance for
-                    each one of us to make a difference for all of us.
-                  </p>
-                  <p>
-                    The actions we take as individuals today will make the
-                    difference for our global community tomorrow. We work
-                    together in the spirit of Ubuntu - the universal principle
-                    of ‘ I am because we are’. The current health crisis
-                    highlights just how interconnected we all are. We have come
-                    together to work collectively, and across borders to create
-                    and share open source tools and valuable information. It is
-                    in this spirit that ECRT came to be and operates.
-                  </p>
                 </div>
               </Col>
             </Row>
           </Container>
         </section>
 
-        <section className="section pb-0 bg-primary">
+        <section className="section pb-0 bg-primary mt-5">
           <Container>
             <Row className="row-grid align-items-center">
               <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -194,15 +195,13 @@ const LandingPage = (props) => {
                           Africa COVID-19 Response Toolkit
                         </h5>
                         <p className="text-black">
-                          Civic Engagement Workstream, is aimed at information,
-                          galvanizing, and coordinating volunteer and civic
-                          organizations responding to COVID-19 in Africa. The
-                          civic engagement team collects all the lessons,
-                          solutions and developed tools so that other groups in
-                          other countries in Africa are also able to take the
-                          information, adapt then implement it in their
-                          communities. We use our blog AFRICA COVID-19 TOOL KIT
-                          to collect and disband information.
+                          We’re excited to announce the first release of the
+                          Africa COVID-19 Response Toolkit (ACRT), a set of open
+                          source projects developed by an international group of
+                          volunteer software engineers, designers, and PMs that
+                          allow any government or public entity to get up and
+                          running with a software toolset to respond to
+                          COVID-19.
                         </p>
 
                         <Button
@@ -247,12 +246,10 @@ const LandingPage = (props) => {
           <Container>
             <Row className="row-grid justify-content-center">
               <Col className="text-center" lg="8">
-                <h2 className="display-3">
-                  Do you love this awesome{' '}
-                  <span className="text-black">
-                    work being done by volunteers like you ?
-                  </span>
-                </h2>
+                <h3 className="display-3">
+                  Are you looking for a way to use your skills to combat
+                  COVID-19 in Ethiopia?
+                </h3>
                 <div className="btn-wrapper">
                   <Button
                     className="mb-3 mb-sm-0"
@@ -262,7 +259,7 @@ const LandingPage = (props) => {
                   >
                     Sign up!
                   </Button>
-{/*                   <Button
+                  {/*                   <Button
                     className="mb-3 mb-sm-0"
                     color="primary"
                     href="/projects"

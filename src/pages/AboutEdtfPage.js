@@ -3,7 +3,14 @@ import MainLayout from 'components/Layout/MainLayout';
 
 const AboutEdtfPage = () => {
   return (
-    <MainLayout title="About ECRT Donations">
+    <MainLayout
+      title="ECRT Support First Responders"
+      description="ECRT is raising funds to support three initiatives to combat COVID-19 in Ethiopia. One, repairing existing medical devices in partnership with Tegbareid Polytechnic Technical College; two, purchasing essential medical supplies for local hospitals such as St. Peter's Specialized Hospital & Eka Kotebe General Hospital, and three, supporting Ethiopian manufacturing of face masks for the public, and personal protective equipment [PPE] for medical professionals. 
+
+
+    
+    EDTF serves as our fiscal sponsor and we are aligned in supporting first responders and healthcare professionals as they continue to meet the critical needs of this pandemic."
+    >
       <div style={{ padding: '42px 0' }}>
         <div style={{ 'text-align': 'center' }}>
           <h2 className="font-weight-600">Partnership Note</h2>
@@ -15,87 +22,101 @@ const AboutEdtfPage = () => {
         </div>
 
         <hr />
-        <h5 className="font-weight-600">Purpose</h5>
+        <h5 className="font-weight-600">I- Introduction</h5>
         <p>
-          The Joint Ethiopia Diaspora Trust Fund (EDTF) and Ethiopia COVID-19
-          Response Team (ECRT) subaccount, Ethiopian COVID-19 Response Team
-          Donation, is established by the EDTF Advisory Council in partnership
-          with the volunteer Ethiopian COVID-19 Response Team, in recognition of
-          the new challenge and existential threat that coronavirus (i.e.
-          SARS-COV-2) represents the wellbeing and livelihood of the Ethiopian
-          people and in particular the most disadvantaged segments of the
-          population
+          EDTF is a nonprofit organization whose mission is to mobilize the
+          Ethiopian global Diaspora to raise funds for vital social-economic
+          projects to benefit disadvantaged Ethiopians. It finances projects
+          that meet critical needs selected based on their potential to make the
+          highest positive impact on groups and communities in Ethiopia in such
+          areas as health, education, water and sanitation facilities,
+          habilitation and rehabilitation of persons with disability,
+          agricultural development, technology, small scale entrepreneurship and
+          other income and employment generating projects.
         </p>
         <p>
-          This initiative will support the ECRT mission to minimize morbidity
-          and mortality from COVID-19 in Ethiopia, to support adoption of
-          technological solutions and make them more readily available, and to
-          creatively address communal challenges that make preventive measures
-          especially difficult in Ethiopia.
-        </p>
-        <p>
-          ECRT Donation conforms with the aligned objective of EDTF Emergency
-          COVID-19 Mitigation (EDTF COVID-19) window to support first responders
-          and healthcare professionals and meet the critical needs of the
-          disadvantaged.
-        </p>
-        <hr />
-        <h5 className="font-weight-600">Operational Modality</h5>
-        <p>
-          The campaign against COVID-19, particularly in countries like Ethiopia
-          that face institutional and financial resource challenges, requires
-          effective national coordination of the activities to be undertaken. As
-          a result, the ECRT Donation fund will be primarily guided by the
-          overall COVID-19 Ethiopian national priorities and the work done by
-          our nonprofit and healthcare partners on the ground.
-        </p>
-        <p>
-          EDTF COVID-19 recognizes other organizations that have already
-          initiated activities to support the national COVID-19 campaign through
-          medical advisory and financial support. Whenever the opportunity
-          exists, EDTF COVID-19 will work in partnership with such organizations
-          while ensuring the transparent and accountable reporting of the funds
-          contributed by its Ethiopian Diaspora and other donors.
-        </p>
-        <p>
-          ECRT will be established as a separate window in the EDTF donation
-          portal so as to enable ECRT donors to contribute specifically to the
-          initiatives under ECRT Strategic pillars. The separate window will
-          also facilitate separate and identifiable transparent reporting of
-          donations received in the ECRT account and the amount used out of it.
+          ECRT is a global volunteer team of engineers, doctors, designers,
+          marketers, architects, product managers, and other industry
+          professionals to respond to COVID-19 in Ethiopia. ECRT is a movement,
+          #EneLegna #እኔለኛ (Me for Us) which is guided by the principle that the
+          actions we take as individuals today will make a difference for our
+          global community tomorrow. We work together in the spirit of Ubuntu --
+          the universal principle of “I am because we are’”. The COVID-19 crisis
+          highlights just how interconnected we all are. We have come together
+          to work collectively, and across borders to create and share open
+          source tools and valuable information.
         </p>
         <hr />
-        <h5 className="font-weight-600">Approval Process</h5>
+        <h5 className="font-weight-600">
+          II- Rationale for ECRT collaboration with EDTF
+        </h5>
         <p>
-          The ECRT fund is not a project-based intervention similar to the EDTF
-          COVID-19 donations. To appropriately allocate the available funds,
-          approval will be made by the full ECRT Operations Team within a
-          one-day approval process or objection with quorum vote (three-fourths
-          present). The approved amount will be used to directly pay suppliers,
-          selected through a competitive solicitation process, and/or
-          organizations that will implement activities under ECRT Strategic
-          Pillars.
+          Following the EDTF Advisory Council’s establishment of the ‘“​EDTF
+          Emergency COVID-19 Mitigation Fund​”, ECRT sees an opportunity for
+          collaboration between EDTF and ECRT that will amplify ECRT’s efforts.
+          Given the urgency that COVID-19 demands, ECRT has deliberately chosen
+          to focus its time and energy on volunteer work and not to include fund
+          management in its activities. Instead, it prefers to establish a
+          partnership with an existing fund, such as EDTF. Through its work
+          streams, ECRT has identified priority needs at different levels of
+          government and society and aims to connect work on the ground with
+          existing donors.
         </p>
         <hr />
-        <h5 className="font-weight-600">Payments</h5>
+        <h5 className="font-weight-600">
+          III- EDTF and ECRT Scope of Partnership:
+        </h5>
         <p>
-          Similar to the EDTF COVID-19 fund, the ECRT fund will be governed by
-          the EDTF Advisory Council. ECRT agrees to contribute initially 10K to
-          cover the estimated operational costs of EDTF in hosting ECRT and
-          administering and disbursing ECRT funds. The actual costs will be
-          assessed periodically every six-months on the basis of experience
-          gained.
+          ECRT shall promote the EDTF Emergency COVID-19 activities and
+          milestones through its various networks.
         </p>
         <p>
-          ECRT will be responsible for identifying donors and raising the
-          necessary funds to execute on its initiatives. ECRT will follow EDTF
-          standard form for invoicing and reporting.
+          ECRT will make its volunteers and networks available to meet EDTF’s
+          technical, communications, and operational needs.{' '}
         </p>
+        <p>
+          EDTF will establish a dedicated sub-account under the EDTF COVID-19
+          window to receive funds arising from ECRT’s fundraising efforts
+          including, but not limited to, ECRT’s Support Service Delivery and
+          Personal Protective Equipment (PPE) fundraising activities.
+        </p>
+        <p>
+          ECRT or its donors will deposit donations from institutional funding
+          sources and individuals into the ECRT sub-account through on-line
+          payments, wire transfers or other methods as agreed between EDTF and
+          ECRT.
+        </p>
+        <p>
+          EDTF will disburse amounts from the dedicated ECRT sub-account to
+          accounts designated by ECRT in accordance with the disbursement
+          guidelines set forth in the attached Exhibit A.
+        </p>
+        <p>
+          EDTF will disburse amounts from the dedicated ECRT sub-account to
+          accounts designated by ECRT in accordance with the disbursement
+          guidelines set forth in the attached Exhibit A.
+        </p>
+        <p>
+          ECRT will pay EDTF an amount equal to $10,000 to cover the estimated
+          costs of EDTF hosting ECRT’s dedicated sub-account and administering
+          and disbursing its donations.
+        </p>
+        <p>
+          ECRT and EDTF will review on a six-monthly basis the actual costs
+          based on experiences gained; provided that, the fees associated with
+          administering the ECRT sub-account shall not exceed $15,000, unless
+          agreed upon by both parties.
+        </p>
+        <p>
+          No party hereto commits to raising any minimum amount of funds through
+          any campaign.
+        </p>
+
         <hr />
-        <h5 className="font-weight-600">Allocation</h5>
+        <h5 className="font-weight-600">IV-ECRT Strategic Pillars</h5>
         <p>
-          As funds are collected, ECRT will allocate them towards the priorities
-          listed in the Strategic Pillars:
+          As ECRT mobilizes funds, it will allocate them towards the priorities
+          listed in the following five Strategic Pillars:
         </p>
         <ol type="1">
           <li>
@@ -169,11 +190,14 @@ const AboutEdtfPage = () => {
           </li>
         </ol>
 
-        <h5 className="font-weight-600">Duration of ECRT Donation</h5>
+        <h5 className="font-weight-600">
+          V- Duration of the EDTF Emergency COVID-19
+        </h5>
         <p>
-          The ECRT Donation sub-account will be open for the duration of the
-          time COVID-19 continues to be an existential threat to the Ethiopian
-          people.
+          The EDTF ECRT Partnership subaccount will be open for the duration of
+          the time the EDTF Emergency COVID-19 Mitigation continues, which is
+          expected to be until COVID-19 ceases to be an existential threat to
+          the Ethiopian people.
         </p>
       </div>
     </MainLayout>

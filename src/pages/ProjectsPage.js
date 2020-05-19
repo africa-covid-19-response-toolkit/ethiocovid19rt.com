@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from 'components/Layout/MainLayout';
-import Projects from 'components/Projects';
+import FeaturedProjects from 'components/FeaturedProjects/FeaturedProjects';
 
 const ProjectsPage = (props) => {
   return (
@@ -12,7 +12,7 @@ const ProjectsPage = (props) => {
     families struggling in this pandemic to building surveillance and
     reporting dashboards to aid the fight against COVID-19."
     >
-      <Projects {...props} />
+      <FeaturedProjects />
     </MainLayout>
   );
 };

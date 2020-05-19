@@ -9,18 +9,10 @@ import {
   Row,
   Col,
 } from 'reactstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { truncate } from 'lodash';
 const items = [
-  {
-    id: 1,
-    heading: 'Africa COVID-19 Response Toolkit Launched',
-    summary: `We’re excited to announce the first release of the Africa COVID-19 Response Toolkit (ACRT), a set of open source projects developed by an international group of volunteer software engineers, designers, and PMs that allow any government or public entity to get up and running with a software toolset to respond to COVID-19.
-    `,
-    image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
-    buttonLink:
-      'https://github.com/africa-covid-19-response-toolkit/community/tree/readme-refresh',
-  },
+
   {
     id: 2,
     heading: 'ECRT Partners with EDTF',
@@ -31,6 +23,15 @@ const items = [
     buttonLink: 'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
   },
   {
+    id: 1,
+    heading: 'Africa COVID-19 Response Toolkit Launched',
+    summary: `We’re excited to announce the first release of the Africa COVID-19 Response Toolkit (ACRT), a set of open source projects developed by an international group of volunteer software engineers, designers, and PMs that allow any government or public entity to get up and running with a software toolset to respond to COVID-19.
+    `,
+    image: `${require('assets/img/theme/africa_covid19_2.svg')}`,
+    buttonLink:
+      'https://github.com/africa-covid-19-response-toolkit/community/tree/readme-refresh',
+  },
+  {
     id: 3,
     heading: 'What makes a modern-day hero?',
     summary: `A story of one of  @EthioCovid19RT’s volunteers about why the health care professionals are the modern-day heroes.
@@ -38,7 +39,7 @@ const items = [
     image: `${require('assets/img/theme/news_3.png')}`,
     buttonLink:
       'https://medium.com/africa-covid-19-response-toolkit/what-makes-a-modern-day-hero-66ff3c5a0aef',
-  },
+  }
 ];
 
 const Hero = (props) => {
@@ -86,7 +87,7 @@ const Hero = (props) => {
             <Col className="mb-lg-auto" lg="6">
               <h2 className="text-dark font-weight-bold">{item.heading}</h2>
               <p className="text-dark mt-4">
-                {truncate(item.summary, { length: 300 })}
+                {truncate(item.summary, { length: 500 })}
               </p>
               <Button
                 className="btn-white mt-4"
