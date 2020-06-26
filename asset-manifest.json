@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ebfcf549.chunk.css",
-    "main.js": "/static/js/main.6777a4bd.chunk.js",
-    "main.js.map": "/static/js/main.6777a4bd.chunk.js.map",
+    "main.js": "/static/js/main.cb23bda1.chunk.js",
+    "main.js.map": "/static/js/main.cb23bda1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5433e4d5.js",
     "runtime-main.js.map": "/static/js/runtime-main.5433e4d5.js.map",
     "static/js/2.76c674c5.chunk.js": "/static/js/2.76c674c5.chunk.js",
     "static/js/2.76c674c5.chunk.js.map": "/static/js/2.76c674c5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cdb8fd4923a9891a5e13ae6c2ee32f96.js": "/precache-manifest.cdb8fd4923a9891a5e13ae6c2ee32f96.js",
+    "precache-manifest.fff3af1aac694f42d0389bb4cc9d5acd.js": "/precache-manifest.fff3af1aac694f42d0389bb4cc9d5acd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.ebfcf549.chunk.css.map": "/static/css/main.ebfcf549.chunk.css.map",
     "static/js/2.76c674c5.chunk.js.LICENSE.txt": "/static/js/2.76c674c5.chunk.js.LICENSE.txt",
@@ -16,18 +16,19 @@
     "static/media/ECRT_Vertical_Logo.svg": "/static/media/ECRT_Vertical_Logo.0cf978ba.svg",
     "static/media/EITLogo.png": "/static/media/EITLogo.7fd272b0.png",
     "static/media/ENELEGNA.JPG": "/static/media/ENELEGNA.aee89369.JPG",
+    "static/media/HN_GOLD-logo.png": "/static/media/HN_GOLD-logo.52362826.png",
     "static/media/acr_toolkit_logo.webp": "/static/media/acr_toolkit_logo.a2faa9ec.webp",
     "static/media/africa_covid19_2.svg": "/static/media/africa_covid19_2.d5360b11.svg",
     "static/media/arrow_drop_down-24px.svg": "/static/media/arrow_drop_down-24px.322e5a60.svg",
     "static/media/arrow_right-24px.svg": "/static/media/arrow_right-24px.a82b3f01.svg",
+    "static/media/delivery.png": "/static/media/delivery.6784de9e.png",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/news_3.png": "/static/media/news_3.21b753d9.png",
     "static/media/nucleo.css": "/static/media/nucleo-icons.f82ec6ba.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.5433e4d5.js",
     "static/js/2.76c674c5.chunk.js",
     "static/css/main.ebfcf549.chunk.css",
-    "static/js/main.6777a4bd.chunk.js"
+    "static/js/main.cb23bda1.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc945c03e0707e92d81f3335fbf6c533",
+    "revision": "71e967f83150749d329499422a8e9c91",
     "url": "/index.html"
   },
   {
-    "revision": "bd825b314fb984f0d151",
+    "revision": "49848aa3c4b02b7410c2",
     "url": "/static/css/main.ebfcf549.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.76c674c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd825b314fb984f0d151",
-    "url": "/static/js/main.6777a4bd.chunk.js"
+    "revision": "49848aa3c4b02b7410c2",
+    "url": "/static/js/main.cb23bda1.chunk.js"
   },
   {
     "revision": "d4c8883e82006e060e70",
@@ -40,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ENELEGNA.aee89369.JPG"
   },
   {
+    "revision": "52362826afc45ef266c974829ea1361e",
+    "url": "/static/media/HN_GOLD-logo.52362826.png"
+  },
+  {
     "revision": "a2faa9ecf3975bc6ccaa8b4e451f4e76",
     "url": "/static/media/acr_toolkit_logo.a2faa9ec.webp"
   },
@@ -54,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a82b3f01b2b6c791b9eaf144060c34c9",
     "url": "/static/media/arrow_right-24px.a82b3f01.svg"
+  },
+  {
+    "revision": "6784de9e675e0b980b3dd34bd19fe42d",
+    "url": "/static/media/delivery.6784de9e.png"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -74,10 +82,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/static/media/fontawesome-webfont.fee66e71.woff"
-  },
-  {
-    "revision": "21b753d9765d4a3743a4c5f59813e0fc",
-    "url": "/static/media/news_3.21b753d9.png"
   },
   {
     "revision": "0b8a30b10cbe7708d5f3a4b007c1d665",
