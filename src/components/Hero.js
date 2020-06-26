@@ -12,15 +12,21 @@ import {
 import { Link } from 'react-router-dom';
 import { truncate } from 'lodash';
 const items = [
-
   {
     id: 2,
-    heading: 'ECRT Partners with EDTF',
-    summary: `EDTF COVID-19 is established by the EDTF Advisory Council in recognition of the new challenge and existential threat that coronavirus represents to the well being and livelihood of the Ethiopian people and in particular the most disadvantaged segments of the population.`,
-    image: `${require('assets/img/theme/edtf-yellow.png')}`,
+    heading: 'ECRT Partners with Habesha Networks',
+    summary: `Habesha Network is a grassroots non-profit organization in multiple cities around
+    the world committed to developing and implementing methods of
+    connectivity and support between Habesha communities across the globe.
+    With an emphasis on community development, philanthropy, thought
+    leadership, and social and professional networking, our goal is to
+    provide members resources while bridging the gaps and growing a
+    stronger Habesha Network.`,
+    image: `${require('assets/img/icons/HN_GOLD-logo.png')}`,
     actionbutton: 'Donate',
-    secondactionbutton:'Read more',
-    buttonLink: 'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
+    secondactionbutton: 'Read more',
+    buttonLink:
+      'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
   },
   {
     id: 1,
@@ -33,13 +39,15 @@ const items = [
   },
   {
     id: 3,
-    heading: 'What makes a modern-day hero?',
-    summary: `A story of one of  @EthioCovid19RT’s volunteers about why the health care professionals are the modern-day heroes.
-    The story chronicles her personal journey and what we can all do practically to support these brave warriors.`,
-    image: `${require('assets/img/theme/news_3.png')}`,
-    buttonLink:
-      'https://medium.com/africa-covid-19-response-toolkit/what-makes-a-modern-day-hero-66ff3c5a0aef',
-  }
+    heading: 'Delivery Initiatives Drive Change',
+    summary: `Our Delivery Workstream Team is engaged in a range of on-the-ground initiatives from donation drives which provide clothing and sanitary products for people in quarantine centers to promotion of local services that have recently increased the provision of food and grocery home delivery.
+
+    Collaboration with businesses on the ground (e.g., hotels, laundromats, shops) has contributed to the success of our delivery projects to date and the team looks forward to the exciting partnerships ahead!
+    `,
+    image: `${require('assets/img/theme/delivery.png')}`,
+    actionbutton: 'See Pictures',
+    buttonLink: 'https://www.instagram.com/p/CAKR1fQHro9/',
+  },
 ];
 
 const Hero = (props) => {
@@ -66,9 +74,9 @@ const Hero = (props) => {
   const isDonateCarousel = (item) => {
     if (item.secondactionbutton) {
       return (
-        <Link to="/aboutedtf">
+        <Link to="/fundraising">
           <Button className="btn-white mt-4" color="default">
-            {item.secondactionbutton || 'About EDTF'}
+            {item.secondactionbutton || 'More'}
           </Button>
         </Link>
       );
