@@ -10,7 +10,7 @@ import LandingPage from 'pages/LandingPage';
 import ProjectsPage from 'pages/ProjectsPage';
 import VolunteersPage from 'pages/VolunteersPage';
 import MutualAidPage from 'pages/MutualAidPage';
-import AboutEdtfPage from 'pages/AboutEdtfPage';
+import FundraisingPage from 'pages/FundraisingPage';
 import AboutPage from 'pages/AboutPage';
 import PartnersPage from 'pages/PartnersPage';
 
@@ -40,9 +40,9 @@ ReactDOM.render(
         render={(props) => <MutualAidPage {...props} />}
       />
       <Route
-        path="/aboutedtf/:slug?"
+        path="/fundraising/:slug?"
         exact
-        render={(props) => <AboutEdtfPage {...props} />}
+        render={(props) => <FundraisingPage {...props} />}
       />
           <Route
         path="/partners/:slug?"
