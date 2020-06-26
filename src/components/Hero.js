@@ -20,13 +20,13 @@ const items = [
     connectivity and support between Habesha communities across the globe.
     With an emphasis on community development, philanthropy, thought
     leadership, and social and professional networking, our goal is to
-    provide members resources while bridging the gaps and growing a
+    provide members resources while brdging the gaps and growing a
     stronger Habesha Network.`,
     image: `${require('assets/img/icons/HN_GOLD-logo.png')}`,
-    actionbutton: 'Donate',
-    secondactionbutton: 'Read more',
+    actionbutton: 'Partnership Note',
+   // secondactionbutton: 'Read more',
     buttonLink:
-      'https://www.ethiopiatrustfund.org/donations/ecrt-emergency-covid-19-donation/',
+      '/fundraising'
   },
   {
     id: 1,
