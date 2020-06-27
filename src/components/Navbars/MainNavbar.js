@@ -23,7 +23,7 @@ import {
 } from 'reactstrap';
 
 const DONATE_URL =
-  'https://ecrt.ethiopiatrustfund.org/';
+  'https://ethiocovid19rt.com/';
 //const SINGUP_FORM_URL =
   //'https://docs.google.com/forms/d/e/1FAIpQLSdYEaHBgkJpolgbrD3Y8ESbiDsx-WPY-S1j6hcNaq2KCthIBA/viewform';
 
